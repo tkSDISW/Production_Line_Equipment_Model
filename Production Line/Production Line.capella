@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--Capella_Version_7.0.1-->
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:libraries="http://www.polarsys.org/capella/common/libraries/7.0.0" xmlns:org.polarsys.capella.core.data.capellacommon="http://www.polarsys.org/capella/core/common/7.0.0"
+<org.polarsys.capella.core.data.capellamodeller:Library xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/7.0.0"
+    xmlns:org.polarsys.capella.core.data.capellacommon="http://www.polarsys.org/capella/core/common/7.0.0"
     xmlns:org.polarsys.capella.core.data.capellacore="http://www.polarsys.org/capella/core/core/7.0.0"
     xmlns:org.polarsys.capella.core.data.capellamodeller="http://www.polarsys.org/capella/core/modeller/7.0.0"
     xmlns:org.polarsys.capella.core.data.cs="http://www.polarsys.org/capella/core/cs/7.0.0"
@@ -14,418 +15,414 @@
     xmlns:org.polarsys.capella.core.data.information.datavalue="http://www.polarsys.org/capella/core/information/datavalue/7.0.0"
     xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/7.0.0"
     xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/7.0.0"
-    xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/7.0.0">
-  <org.polarsys.capella.core.data.capellamodeller:Library id="4a04b40f-d94d-4ec1-99b0-d292ca382225"
-      name="Production Line">
-    <ownedExtensions xsi:type="libraries:ModelInformation" href="#945d3e01-9d36-4dff-818f-d6ee769dd3ba"/>
-    <ownedEnumerationPropertyTypes xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyType"
-        id="bbe2693f-f423-407d-91a2-19460f4e5776" name="ProgressStatus">
-      <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
-          id="c8405907-255b-4ec5-bfac-7fe852f62755" name="DRAFT"/>
-      <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
-          id="386fcd52-489f-41ae-b142-1bad19e58472" name="TO_BE_REVIEWED"/>
-      <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
-          id="e26bec02-e744-42d4-a890-b9d923bb2e27" name="TO_BE_DISCUSSED"/>
-      <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
-          id="eceefccf-00b6-4ef7-919a-0ed3d03a5dd3" name="REWORK_NECESSARY"/>
-      <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
-          id="95114ae5-157f-4aaa-b711-9a3d27576174" name="UNDER_REWORK"/>
-      <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
-          id="466ea11f-a431-4573-88ca-c73ddfc6ec25" name="REVIEWED_OK"/>
-    </ownedEnumerationPropertyTypes>
-    <keyValuePairs xsi:type="org.polarsys.capella.core.data.capellacore:KeyValue"
-        href="#c9349dfc-eaae-415e-9fa7-85a2659f8eee"/>
-    <ownedModelRoots xsi:type="org.polarsys.capella.core.data.capellamodeller:SystemEngineering"
-        id="8e1caf1a-8e41-41e1-ba54-453f9f2a0c03" name="Production Line">
-      <ownedArchitectures xsi:type="org.polarsys.capella.core.data.oa:OperationalAnalysis"
-          id="a44d3815-1e2f-40c2-a1f5-cc414ac8a368" name="Operational Analysis">
-        <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalActivityPkg"
-            id="fa08b436-50a6-4836-976a-845123b5f279" name="Operational Activities">
-          <ownedOperationalActivities xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
-              id="7e0d1fe8-356e-4978-8b40-e0b44f127d45" name="Root Operational Activity"/>
-        </ownedFunctionPkg>
-        <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
-            id="6f570c4a-d123-41a0-ac36-a4fd4c0d2c2f" name="Operational Capabilities"/>
-        <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
-            id="fb7e94ba-70fb-4a1a-8ced-0965c3e014e1" name="Interfaces"/>
-        <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
-            id="5cf9c92b-5a30-4f04-82e2-660ec2369011" name="Data"/>
-        <ownedRolePkg xsi:type="org.polarsys.capella.core.data.oa:RolePkg" id="b248c8b6-ec08-439e-b6b4-ad38f5baa0fb"
-            name="Roles"/>
-        <ownedEntityPkg xsi:type="org.polarsys.capella.core.data.oa:EntityPkg" id="445bd97b-4d06-41ad-9cd4-785b7bc6127d"
-            name="Operational Entities"/>
-      </ownedArchitectures>
-      <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
-          id="a566a708-402a-4dca-8cf4-75a8e51cfd9d" name="System Analysis">
-        <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemFunctionPkg"
-            id="e0dbeac9-26c4-42ee-8ab6-e487b3d304bc" name="System Functions">
-          <ownedSystemFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-              id="e8e7d0d9-43a1-4bc7-be38-643dc6c896a6" name="Root System Function">
-            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
-                id="8ce78ee9-4326-4147-9761-bb47548a65cf" targetElement="#7e0d1fe8-356e-4978-8b40-e0b44f127d45"/>
-          </ownedSystemFunctions>
-        </ownedFunctionPkg>
-        <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.ctx:CapabilityPkg"
-            id="40d634c6-d149-46e8-a591-a3146e26343e" name="Capabilities"/>
-        <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
-            id="dbb2c42d-8017-489d-80aa-aa78ec29663f" name="Interfaces"/>
-        <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
-            id="0f45e9ef-7cf9-4cfa-8b09-ffa7255bd8ec" name="Data">
-          <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
-              id="c5c8c268-dd0d-4adc-8ecb-d23145b0b73a" name="Predefined Types">
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:BooleanType"
-                id="d5c2e278-9c4d-4caa-89ee-cef6f0ef9db6" name="Boolean" visibility="PUBLIC">
-              <ownedLiterals xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralBooleanValue"
-                  id="7427066e-0969-4766-acae-fd3d2386ecc6" name="True" value="true"/>
-              <ownedLiterals xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralBooleanValue"
-                  id="d668a200-7b0e-437e-9a6a-da3842736b69" name="False"/>
-            </ownedDataTypes>
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
-                id="9eebd347-27a8-4581-bb51-fd5916987771" name="Byte" visibility="PUBLIC">
-              <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
-                  id="1c5569cf-857b-4175-a0a6-93900f218f41" name="" value="0"/>
-              <ownedMaxValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
-                  id="8e9fc257-db4b-41ef-9835-095cc4d83afe" name="" value="255"/>
-            </ownedDataTypes>
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:StringType"
-                id="ccecd494-e6a5-4811-9255-dfa8edd0d346" name="Char" visibility="PUBLIC">
-              <ownedMinLength xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
-                  id="4204c926-b48a-4bb0-a961-68fa8e7f20b2" name="" abstractType="#837f282e-8d10-407a-adb1-a1ffc1964eaa"
-                  value="1"/>
-              <ownedMaxLength xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
-                  id="f761b4f0-c771-43aa-bb76-f2a006e1d931" name="" abstractType="#837f282e-8d10-407a-adb1-a1ffc1964eaa"
-                  value="1"/>
-            </ownedDataTypes>
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
-                id="96578dc2-d551-4eb3-9358-312516e508db" name="Double" discrete="false"
-                visibility="PUBLIC" kind="FLOAT"/>
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
-                id="e2b7bd23-dae7-4ab9-b1eb-15548389a260" name="Float" discrete="false"
-                visibility="PUBLIC" kind="FLOAT"/>
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
-                id="2b8c48f3-f379-453e-b9c7-e0734216a781" name="Hexadecimal" visibility="PUBLIC">
-              <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
-                  id="aa82a5ab-a05d-473d-87aa-0aef9bb1cb8b" name="" abstractType="#2b8c48f3-f379-453e-b9c7-e0734216a781"
-                  value="0"/>
-              <ownedMaxValue xsi:type="org.polarsys.capella.core.data.information.datavalue:BinaryExpression"
-                  id="a8f7836e-3c86-4cae-8ddb-0d13ebe34ccb" abstractType="#2b8c48f3-f379-453e-b9c7-e0734216a781"
-                  operator="SUB">
-                <ownedLeftOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:BinaryExpression"
-                    id="2592503c-3115-4992-ae86-4ae2a3c6c3db" operator="POW">
-                  <ownedLeftOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
-                      id="e5f41b05-ce63-48a8-a208-96f4b2148490" value="2"/>
-                  <ownedRightOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
-                      id="f1315698-704a-44e8-8077-a9792b7509ac" value="64"/>
-                </ownedLeftOperand>
+    xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/7.0.0" id="4a04b40f-d94d-4ec1-99b0-d292ca382225"
+    name="Production Line">
+  <ownedExtensions xsi:type="libraries:ModelInformation" href="#945d3e01-9d36-4dff-818f-d6ee769dd3ba"/>
+  <ownedEnumerationPropertyTypes xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyType"
+      id="bbe2693f-f423-407d-91a2-19460f4e5776" name="ProgressStatus">
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="c8405907-255b-4ec5-bfac-7fe852f62755" name="DRAFT"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="386fcd52-489f-41ae-b142-1bad19e58472" name="TO_BE_REVIEWED"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="e26bec02-e744-42d4-a890-b9d923bb2e27" name="TO_BE_DISCUSSED"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="eceefccf-00b6-4ef7-919a-0ed3d03a5dd3" name="REWORK_NECESSARY"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="95114ae5-157f-4aaa-b711-9a3d27576174" name="UNDER_REWORK"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="466ea11f-a431-4573-88ca-c73ddfc6ec25" name="REVIEWED_OK"/>
+  </ownedEnumerationPropertyTypes>
+  <keyValuePairs xsi:type="org.polarsys.capella.core.data.capellacore:KeyValue" href="#c9349dfc-eaae-415e-9fa7-85a2659f8eee"/>
+  <ownedModelRoots xsi:type="org.polarsys.capella.core.data.capellamodeller:SystemEngineering"
+      id="8e1caf1a-8e41-41e1-ba54-453f9f2a0c03" name="Production Line">
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.oa:OperationalAnalysis"
+        id="a44d3815-1e2f-40c2-a1f5-cc414ac8a368" name="Operational Analysis">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalActivityPkg"
+          id="fa08b436-50a6-4836-976a-845123b5f279" name="Operational Activities">
+        <ownedOperationalActivities xsi:type="org.polarsys.capella.core.data.oa:OperationalActivity"
+            id="7e0d1fe8-356e-4978-8b40-e0b44f127d45" name="Root Operational Activity"/>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
+          id="6f570c4a-d123-41a0-ac36-a4fd4c0d2c2f" name="Operational Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="fb7e94ba-70fb-4a1a-8ced-0965c3e014e1" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="5cf9c92b-5a30-4f04-82e2-660ec2369011" name="Data"/>
+      <ownedRolePkg xsi:type="org.polarsys.capella.core.data.oa:RolePkg" id="b248c8b6-ec08-439e-b6b4-ad38f5baa0fb"
+          name="Roles"/>
+      <ownedEntityPkg xsi:type="org.polarsys.capella.core.data.oa:EntityPkg" id="445bd97b-4d06-41ad-9cd4-785b7bc6127d"
+          name="Operational Entities"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
+        id="a566a708-402a-4dca-8cf4-75a8e51cfd9d" name="System Analysis">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemFunctionPkg"
+          id="e0dbeac9-26c4-42ee-8ab6-e487b3d304bc" name="System Functions">
+        <ownedSystemFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+            id="e8e7d0d9-43a1-4bc7-be38-643dc6c896a6" name="Root System Function">
+          <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+              id="8ce78ee9-4326-4147-9761-bb47548a65cf" targetElement="#7e0d1fe8-356e-4978-8b40-e0b44f127d45"/>
+        </ownedSystemFunctions>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.ctx:CapabilityPkg"
+          id="40d634c6-d149-46e8-a591-a3146e26343e" name="Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="dbb2c42d-8017-489d-80aa-aa78ec29663f" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="0f45e9ef-7cf9-4cfa-8b09-ffa7255bd8ec" name="Data">
+        <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+            id="c5c8c268-dd0d-4adc-8ecb-d23145b0b73a" name="Predefined Types">
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:BooleanType"
+              id="d5c2e278-9c4d-4caa-89ee-cef6f0ef9db6" name="Boolean" visibility="PUBLIC">
+            <ownedLiterals xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralBooleanValue"
+                id="7427066e-0969-4766-acae-fd3d2386ecc6" name="True" value="true"/>
+            <ownedLiterals xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralBooleanValue"
+                id="d668a200-7b0e-437e-9a6a-da3842736b69" name="False"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="9eebd347-27a8-4581-bb51-fd5916987771" name="Byte" visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="1c5569cf-857b-4175-a0a6-93900f218f41" name="" value="0"/>
+            <ownedMaxValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="8e9fc257-db4b-41ef-9835-095cc4d83afe" name="" value="255"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:StringType"
+              id="ccecd494-e6a5-4811-9255-dfa8edd0d346" name="Char" visibility="PUBLIC">
+            <ownedMinLength xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="4204c926-b48a-4bb0-a961-68fa8e7f20b2" name="" abstractType="#837f282e-8d10-407a-adb1-a1ffc1964eaa"
+                value="1"/>
+            <ownedMaxLength xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="f761b4f0-c771-43aa-bb76-f2a006e1d931" name="" abstractType="#837f282e-8d10-407a-adb1-a1ffc1964eaa"
+                value="1"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="96578dc2-d551-4eb3-9358-312516e508db" name="Double" discrete="false"
+              visibility="PUBLIC" kind="FLOAT"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="e2b7bd23-dae7-4ab9-b1eb-15548389a260" name="Float" discrete="false"
+              visibility="PUBLIC" kind="FLOAT"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="2b8c48f3-f379-453e-b9c7-e0734216a781" name="Hexadecimal" visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="aa82a5ab-a05d-473d-87aa-0aef9bb1cb8b" name="" abstractType="#2b8c48f3-f379-453e-b9c7-e0734216a781"
+                value="0"/>
+            <ownedMaxValue xsi:type="org.polarsys.capella.core.data.information.datavalue:BinaryExpression"
+                id="a8f7836e-3c86-4cae-8ddb-0d13ebe34ccb" abstractType="#2b8c48f3-f379-453e-b9c7-e0734216a781"
+                operator="SUB">
+              <ownedLeftOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:BinaryExpression"
+                  id="2592503c-3115-4992-ae86-4ae2a3c6c3db" operator="POW">
+                <ownedLeftOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                    id="e5f41b05-ce63-48a8-a208-96f4b2148490" value="2"/>
                 <ownedRightOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
-                    id="4f0e2b32-e1f0-4ca5-85e8-13d6f61adb34" value="1"/>
-              </ownedMaxValue>
-            </ownedDataTypes>
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
-                id="9bc6aab8-788f-4e0c-b427-8166e972b7e9" name="Integer" visibility="PUBLIC"/>
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
-                id="fc2e6778-4390-4c86-a8ad-8de865b2ba08" name="Long" visibility="PUBLIC"/>
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
-                id="9e3f8133-48cf-4096-a6b0-546500088064" name="LongLong" visibility="PUBLIC"/>
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
-                id="58003b39-f572-491a-86cf-d740923f3df1" name="Short" visibility="PUBLIC"/>
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:StringType"
-                id="1677de88-d46b-43aa-b818-461143c5b342" name="String" visibility="PUBLIC"/>
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
-                id="2d110128-2e8d-4836-b736-3f7670e73a7c" name="UnsignedInteger" maxInclusive="false"
-                visibility="PUBLIC">
-              <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
-                  id="d7e35e77-0a50-452b-9cfb-cca2a0ee34f7" name="" value="0"/>
-            </ownedDataTypes>
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
-                id="837f282e-8d10-407a-adb1-a1ffc1964eaa" name="UnsignedShort" maxInclusive="false"
-                visibility="PUBLIC">
-              <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
-                  id="49846856-f89d-4c44-809b-1719d89ea9b0" name="" abstractType="#837f282e-8d10-407a-adb1-a1ffc1964eaa"
-                  value="0"/>
-            </ownedDataTypes>
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
-                id="b98bcc38-c26c-499b-a744-bf0c2ec60222" name="UnsignedLong" maxInclusive="false"
-                visibility="PUBLIC">
-              <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
-                  id="6d212918-ba3e-45d6-8167-d7df54d0ddc6" name="" value="0"/>
-            </ownedDataTypes>
-            <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
-                id="7f5925a6-f2dc-47f5-940b-d410f2015cce" name="UnsignedLongLong"
-                maxInclusive="false" visibility="PUBLIC">
-              <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
-                  id="ce783cc0-8558-402f-8dd7-4abc31d5ee7c" name="" abstractType="#7f5925a6-f2dc-47f5-940b-d410f2015cce"
-                  value="0"/>
-            </ownedDataTypes>
-          </ownedDataPkgs>
-        </ownedDataPkg>
-        <ownedSystemComponentPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemComponentPkg"
-            id="cd40fbe9-3a92-4504-8062-2bb3f80a40ca" name="Structure">
-          <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="3a4f3479-7d9b-4756-89b0-f6661bdc2b05"
-              name="System" abstractType="#d9113f53-bd75-4226-98fd-0b2f8a238657"/>
-          <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
-              id="d9113f53-bd75-4226-98fd-0b2f8a238657" name="System">
+                    id="f1315698-704a-44e8-8077-a9792b7509ac" value="64"/>
+              </ownedLeftOperand>
+              <ownedRightOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                  id="4f0e2b32-e1f0-4ca5-85e8-13d6f61adb34" value="1"/>
+            </ownedMaxValue>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="9bc6aab8-788f-4e0c-b427-8166e972b7e9" name="Integer" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="fc2e6778-4390-4c86-a8ad-8de865b2ba08" name="Long" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="9e3f8133-48cf-4096-a6b0-546500088064" name="LongLong" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="58003b39-f572-491a-86cf-d740923f3df1" name="Short" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:StringType"
+              id="1677de88-d46b-43aa-b818-461143c5b342" name="String" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="2d110128-2e8d-4836-b736-3f7670e73a7c" name="UnsignedInteger" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="d7e35e77-0a50-452b-9cfb-cca2a0ee34f7" name="" value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="837f282e-8d10-407a-adb1-a1ffc1964eaa" name="UnsignedShort" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="49846856-f89d-4c44-809b-1719d89ea9b0" name="" abstractType="#837f282e-8d10-407a-adb1-a1ffc1964eaa"
+                value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="b98bcc38-c26c-499b-a744-bf0c2ec60222" name="UnsignedLong" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="6d212918-ba3e-45d6-8167-d7df54d0ddc6" name="" value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="7f5925a6-f2dc-47f5-940b-d410f2015cce" name="UnsignedLongLong" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="ce783cc0-8558-402f-8dd7-4abc31d5ee7c" name="" abstractType="#7f5925a6-f2dc-47f5-940b-d410f2015cce"
+                value="0"/>
+          </ownedDataTypes>
+        </ownedDataPkgs>
+      </ownedDataPkg>
+      <ownedSystemComponentPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemComponentPkg"
+          id="cd40fbe9-3a92-4504-8062-2bb3f80a40ca" name="Structure">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="3a4f3479-7d9b-4756-89b0-f6661bdc2b05"
+            name="System" abstractType="#d9113f53-bd75-4226-98fd-0b2f8a238657"/>
+        <ownedSystemComponents xsi:type="org.polarsys.capella.core.data.ctx:SystemComponent"
+            id="d9113f53-bd75-4226-98fd-0b2f8a238657" name="System">
+          <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
+              id="d954d4a2-8a72-4c9b-9b7d-e02f859d145e" name="System State Machine">
+            <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                id="6c716368-8b7b-41b3-8b16-1f51ecde2d4a" name="Default Region"/>
+          </ownedStateMachines>
+        </ownedSystemComponents>
+      </ownedSystemComponentPkg>
+      <ownedMissionPkg xsi:type="org.polarsys.capella.core.data.ctx:MissionPkg" id="a4d43095-efa2-43c4-8e31-f17e90a050cf"
+          name="Missions"/>
+      <ownedOperationalAnalysisRealizations xsi:type="org.polarsys.capella.core.data.ctx:OperationalAnalysisRealization"
+          id="2a830e81-647d-4f9a-9ff3-a621874752f0" sourceElement="#a566a708-402a-4dca-8cf4-75a8e51cfd9d"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.la:LogicalArchitecture"
+        id="9042e154-d5a6-41b5-aef8-ad5ddfb934aa" name="Logical Architecture">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.la:LogicalFunctionPkg"
+          id="cb636308-1cfa-4fa5-9811-96344659cec0" name="Logical Functions">
+        <ownedLogicalFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+            id="f5098174-bb84-478d-a3cd-ba3b2ab1811a" name="Root Logical Function">
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="9b6bb5c9-c82d-4e0f-afa1-865d39e50373" name="Control Machine">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="18042899-3598-4c74-9a49-f43c0c18fd3b" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="794c5d6f-6c44-4ac9-b12e-e1cb35a07aa7" name="Control Machine">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="1af68d62-5199-4677-a46c-d5006a5e7f21" name="FIP 1"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="6f82835b-497c-4abb-927f-f8b725cadc5f" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="c40e99f0-78a1-4f01-92ae-cc0e0338f1a9" name="Manage States">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="c6b9a1e5-5fe0-4cfc-b09e-47aa9b73ae13" name="FIP 1"/>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="37d8bb13-b1bd-4457-b15a-d3a119516d54" name="FIP 2"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="9e12e5a9-4f4b-4523-a08c-5c502b36e93e" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="17e927fe-b778-46f7-a4fc-a2560f986a61" name="Manage States"/>
+          <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+              id="d26da4ef-3f77-48f4-b9d0-252424679ee7" sourceElement="#f5098174-bb84-478d-a3cd-ba3b2ab1811a"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="6aa5f41b-062f-4170-8d33-29074330f1c1" name="Operator Control" target="#c6b9a1e5-5fe0-4cfc-b09e-47aa9b73ae13"
+              source="#18042899-3598-4c74-9a49-f43c0c18fd3b" exchangedItems="#a9556d07-c77a-4c92-bced-269417bbe4a9 #cd6016d8-0fe9-45b4-a70b-e18c1ff4add2 #2091100a-571d-402d-b4e7-269c01ec26ee #458458d8-39c7-4a29-a2d5-dbe847bbc7db #88ebd2bd-ae30-43b4-af7b-fd074e7e75f6 #73fcf1dd-1f92-4c88-b25a-8263f10465e1"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="ff92d6d7-db65-4e44-a891-619f3cdf8cac" name="Line Control" target="#37d8bb13-b1bd-4457-b15a-d3a119516d54"
+              source="#6f82835b-497c-4abb-927f-f8b725cadc5f" exchangedItems="#dffb0f1a-9a3b-4f4a-9313-2378c2570bcd #26c2b103-9c6d-4594-8a45-23bc74d3715d"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="88e47106-6766-4687-bd80-bc15d7c4f17f" name="Machine Status" target="#1af68d62-5199-4677-a46c-d5006a5e7f21"
+              source="#9e12e5a9-4f4b-4523-a08c-5c502b36e93e" exchangedItems="#2d72bf14-dac4-47e6-90a2-8e6a6946c1c2 #3d1f2b89-09d5-4aa7-9f2d-0a469609ac20"/>
+        </ownedLogicalFunctions>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
+          id="b0ea8734-4e4e-4d7f-9fc7-ecc841bf4f4e" name="Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="dcc1c78d-2706-41fa-8f9e-1c7dfedee30f" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="3a648e92-bca8-4adf-9f16-bd43161a2a3c" name="Data">
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="a9556d07-c77a-4c92-bced-269417bbe4a9" name="stop" exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="88ebd2bd-ae30-43b4-af7b-fd074e7e75f6" name="reset" exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="dffb0f1a-9a3b-4f4a-9313-2378c2570bcd" name="suspend" exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="2d72bf14-dac4-47e6-90a2-8e6a6946c1c2" name="abort" exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="2091100a-571d-402d-b4e7-269c01ec26ee" name="hold" exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="73fcf1dd-1f92-4c88-b25a-8263f10465e1" name="clear" exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="cd6016d8-0fe9-45b4-a70b-e18c1ff4add2" name="start" exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="26c2b103-9c6d-4594-8a45-23bc74d3715d" name="unsuspend" exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="3d1f2b89-09d5-4aa7-9f2d-0a469609ac20" name="machine state complete"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="458458d8-39c7-4a29-a2d5-dbe847bbc7db" name="unhold" exchangeMechanism="EVENT"/>
+      </ownedDataPkg>
+      <ownedLogicalComponentPkg xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
+          id="43d74527-681c-4e84-b6ac-e459527d878a" name="Structure">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="22109f94-8954-4788-9ceb-ebf07e59ce33"
+            name="Logical System" abstractType="#43f3ca86-31b0-4358-a2b3-88deab2da32f"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="bb7a154e-0823-466e-b621-dc3e7f33e837"
+            name="Operator" abstractType="#e664c49c-0430-46ae-8662-fec20329b5af"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="2590c413-0bf7-4ad5-843d-4a57e3ab27b1"
+            name="Line Control" abstractType="#5af96d98-13f5-47f5-8cef-a1e47893791d"/>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="43f3ca86-31b0-4358-a2b3-88deab2da32f" name="Logical System">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="32580e7f-3f92-4887-a267-a358907af827"
+              name="Master TR88 Seven State " abstractType="#5c74d990-9098-48cf-a445-59182d69fa9a"/>
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="73df2e7d-ed81-44e0-91d9-9cbd34c031fe" targetElement="#d9113f53-bd75-4226-98fd-0b2f8a238657"
+              sourceElement="#43f3ca86-31b0-4358-a2b3-88deab2da32f"/>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="5c74d990-9098-48cf-a445-59182d69fa9a" name="Master TR88 Seven State ">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="e82b2613-72ed-46a0-8843-5b74af966c73" targetElement="#c40e99f0-78a1-4f01-92ae-cc0e0338f1a9"
+                sourceElement="#5c74d990-9098-48cf-a445-59182d69fa9a"/>
             <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
-                id="d954d4a2-8a72-4c9b-9b7d-e02f859d145e" name="System State Machine">
+                id="adf70202-7826-4c7a-9fd9-cbca405ae2ad" name="StateMachine 1">
               <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
-                  id="6c716368-8b7b-41b3-8b16-1f51ecde2d4a" name="Default Region"/>
+                  id="5c5ab4f8-7238-4995-b890-813c0bf634a2" name="Default Region"
+                  involvedStates="#c943619b-a930-4fbd-bf6f-cd510db794ce #a09d6923-2fd4-4159-8163-891a4f4bca5e #b1bf0b6d-48c7-48b7-8bcc-529ce617fe77 #d03f2477-24d3-4585-b10f-c847928a340d #1aa700b9-5d61-4e0c-82cf-a923352190df #5fef6834-a840-485f-a672-093cc2896514 #f10d60fc-e18a-4026-94af-b9e6a1af0e62">
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="c943619b-a930-4fbd-bf6f-cd510db794ce" name="Stopped" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine is halted and not ready to produce. This is the default state after power-up or a full Stop, before any Reset has been issued. No PackTags/recipe data are being processed.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="7f390943-efac-44d6-a8d8-9072edcf39ca" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="a09d6923-2fd4-4159-8163-891a4f4bca5e" name="Idle" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has been reset and is clean/ready to run, waiting for a Start command. This is the common entry point reached from Stopped, Complete, or Aborted after their respective Reset/Clear events.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="4e253981-5a62-41c8-a795-a057ec536c54" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="b1bf0b6d-48c7-48b7-8bcc-529ce617fe77" name="Execute" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine is actively producing/processing product. This is the sole 'productive' wait state in the model and the source of all exception paths (Hold, Suspend, Abort) as well as the normal completion path (state complete).&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="801642ae-f771-49d9-8ece-d904856d07c9" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="d03f2477-24d3-4585-b10f-c847928a340d" name="Complete" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has finished its programmed run (batch/job/cycle) without exception and is holding in this state until a Reset command returns it to Idle for the next run.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="9ec6c8e5-ff56-4469-a77c-2305aa86b848" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="1aa700b9-5d61-4e0c-82cf-a923352190df" name="Held" description="&lt;p>Per ANSI/ISA-TR88.00.02: a lighter-weight pause triggered by a condition internal to the machine itself — low material, a minor sensor flag, or an operator intervention need. Distinct from Aborted in that no fault is logged and no Clear/root-cause step is required; Unhold returns directly to Execute.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="b228ed6f-e34c-4041-95a9-ed9f23b5c75a" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="5fef6834-a840-485f-a672-093cc2896514" name="Suspended" description="&lt;p>Per ANSI/ISA-TR88.00.02: a lighter-weight pause triggered by a condition external to the machine — typically a line-level signal such as the downstream station being full (blocked) or the upstream station not yet delivering material (starved). As with Held, no fault is logged; Unsuspend returns directly to Execute once the line condition clears.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="a335690b-2e61-485d-8ef6-604c9d296035" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="f10d60fc-e18a-4026-94af-b9e6a1af0e62" name="Aborted" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has faulted during Execute in a way that cannot be resolved by Hold or Suspend. The machine cannot leave this state except via an explicit Clear command, by design — this prevents the machine from resuming with an unaddressed fault. Recovery requires diagnosis/repair before Clear returns it to Idle.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="b0707af7-3047-49e5-81f5-f206734952ad" name="region"/>
+                </ownedStates>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="0851752a-de02-45f0-89bb-0dd2b966c460" description="&lt;p>The &amp;#39;start&amp;#39; command. Issued from Idle once the machine is ready to begin production; moves the machine into Execute.&lt;/p>&#xA;"
+                    triggerDescription="" source="#a09d6923-2fd4-4159-8163-891a4f4bca5e"
+                    target="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77" triggers="#cd6016d8-0fe9-45b4-a70b-e18c1ff4add2"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="5edcb522-cc21-44da-a49d-e870853f8b2f" name="Process Complete"
+                    description="&lt;p>The 'state complete' event (SC in TR88 notation), not an operator command but an internal condition raised automatically when the current production run finishes normally. Moves the machine from Execute to Complete without passing through Held, Suspended, or Aborted.&lt;/p>"
+                    triggerDescription="" source="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77"
+                    target="#d03f2477-24d3-4585-b10f-c847928a340d" triggers="#3d1f2b89-09d5-4aa7-9f2d-0a469609ac20"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="d78b6521-d050-4c9d-b9c4-86727a8a6b70" description="&lt;p>The 'suspend' command, raised when an external/line-level condition (e.g. downstream full, upstream empty) requires the machine to pause. Moves Execute to Suspended.&lt;/p>"
+                    triggerDescription="" source="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77"
+                    target="#5fef6834-a840-485f-a672-093cc2896514" triggers="#dffb0f1a-9a3b-4f4a-9313-2378c2570bcd"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="6a519dbe-6ac5-4456-a9cc-b0f3fc6c973f" description="&lt;p>The 'hold' command, raised when an internal condition (e.g. low material, minor sensor flag, operator intervention) requires the machine to pause. Moves Execute to Held.&lt;/p>"
+                    triggerDescription="" source="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77"
+                    target="#1aa700b9-5d61-4e0c-82cf-a923352190df" triggers="#2091100a-571d-402d-b4e7-269c01ec26ee"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="b866874c-7ec1-49d4-8a0a-ea926a2d5627" description="&lt;p>The &amp;#39;abort&amp;#39; event/command, raised when a fault occurs during Execute that cannot be handled by Hold or Suspend. Moves Execute to Aborted; per TR88, this transition can occur from most/any state, though this model currently only wires it from Execute.&lt;/p>&#xA;"
+                    triggerDescription="" source="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77"
+                    target="#f10d60fc-e18a-4026-94af-b9e6a1af0e62" triggers="#2d72bf14-dac4-47e6-90a2-8e6a6946c1c2"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="78917e86-0c52-4a70-a6af-6145d7a8e78a" description="&lt;p>The &amp;#39;clear&amp;#39; command, issued once the fault causing Abort has been diagnosed and corrected. This is the only way out of Aborted, by design, ensuring no fault goes unacknowledged. Moves Aborted to Idle.&lt;/p>&#xA;"
+                    triggerDescription="" source="#f10d60fc-e18a-4026-94af-b9e6a1af0e62"
+                    target="#a09d6923-2fd4-4159-8163-891a4f4bca5e" triggers="#73fcf1dd-1f92-4c88-b25a-8263f10465e1"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="cbc327de-3569-45fb-9929-26a09611efc1" description="&lt;p>The 'reset' command, issued from Complete once a finished run has been acknowledged, preparing the machine for its next run. Moves Complete to Idle.&lt;/p>"
+                    triggerDescription="" source="#d03f2477-24d3-4585-b10f-c847928a340d"
+                    target="#a09d6923-2fd4-4159-8163-891a4f4bca5e" triggers="#88ebd2bd-ae30-43b4-af7b-fd074e7e75f6"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="545d8a35-7fea-4b3d-82bd-699b166c2368" description="&lt;p>The &amp;#39;reset&amp;#39; command, issued from Stopped to prepare the machine to run again after a full stop. Moves Stopped to Idle.&lt;/p>&#xA;"
+                    triggerDescription="" source="#c943619b-a930-4fbd-bf6f-cd510db794ce"
+                    target="#a09d6923-2fd4-4159-8163-891a4f4bca5e" triggers="#88ebd2bd-ae30-43b4-af7b-fd074e7e75f6"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="3388d3fc-8a86-435c-a552-0f479950932d" description="&lt;p>The 'unhold' command, issued once the internal condition causing Hold has been resolved. Moves Held directly back to Execute — no Clear or diagnostic step required, since Held is not a logged fault.&lt;/p>"
+                    triggerDescription="" source="#1aa700b9-5d61-4e0c-82cf-a923352190df"
+                    target="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77" triggers="#458458d8-39c7-4a29-a2d5-dbe847bbc7db"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="79a7abc3-2696-4207-aae5-e79180de943e" description="&lt;p>The 'unsuspend' command, issued once the external/line-level condition causing Suspend has resolved. Moves Suspended directly back to Execute — no Clear or diagnostic step required, since Suspended is not a logged fault.&lt;/p>"
+                    triggerDescription="" source="#5fef6834-a840-485f-a672-093cc2896514"
+                    target="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77" triggers="#26c2b103-9c6d-4594-8a45-23bc74d3715d"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="22db8c22-fbe2-4d3e-a374-47cfecd5124a" description="&lt;p>The &amp;#39;stop&amp;#39; command, typically issued for a planned shutdown of the machine. Moves Execute to Stopped; a subsequent Reset is required before the machine can run again.&lt;/p>&#xA;"
+                    triggerDescription="" source="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77"
+                    target="#c943619b-a930-4fbd-bf6f-cd510db794ce" triggers="#a9556d07-c77a-4c92-bced-269417bbe4a9"/>
+              </ownedRegions>
             </ownedStateMachines>
-          </ownedSystemComponents>
-        </ownedSystemComponentPkg>
-        <ownedMissionPkg xsi:type="org.polarsys.capella.core.data.ctx:MissionPkg"
-            id="a4d43095-efa2-43c4-8e31-f17e90a050cf" name="Missions"/>
-        <ownedOperationalAnalysisRealizations xsi:type="org.polarsys.capella.core.data.ctx:OperationalAnalysisRealization"
-            id="2a830e81-647d-4f9a-9ff3-a621874752f0" sourceElement="#a566a708-402a-4dca-8cf4-75a8e51cfd9d"/>
-      </ownedArchitectures>
-      <ownedArchitectures xsi:type="org.polarsys.capella.core.data.la:LogicalArchitecture"
-          id="9042e154-d5a6-41b5-aef8-ad5ddfb934aa" name="Logical Architecture">
-        <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.la:LogicalFunctionPkg"
-            id="cb636308-1cfa-4fa5-9811-96344659cec0" name="Logical Functions">
-          <ownedLogicalFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="f5098174-bb84-478d-a3cd-ba3b2ab1811a" name="Root Logical Function">
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="9b6bb5c9-c82d-4e0f-afa1-865d39e50373" name="Control Machine">
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="18042899-3598-4c74-9a49-f43c0c18fd3b" name="FOP 1"/>
-            </ownedFunctions>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="794c5d6f-6c44-4ac9-b12e-e1cb35a07aa7" name="Control Machine">
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="1af68d62-5199-4677-a46c-d5006a5e7f21" name="FIP 1"/>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="6f82835b-497c-4abb-927f-f8b725cadc5f" name="FOP 1"/>
-            </ownedFunctions>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="c40e99f0-78a1-4f01-92ae-cc0e0338f1a9" name="Manage States">
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="c6b9a1e5-5fe0-4cfc-b09e-47aa9b73ae13" name="FIP 1"/>
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="37d8bb13-b1bd-4457-b15a-d3a119516d54" name="FIP 2"/>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="9e12e5a9-4f4b-4523-a08c-5c502b36e93e" name="FOP 1"/>
-            </ownedFunctions>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="17e927fe-b778-46f7-a4fc-a2560f986a61" name="Manage States"/>
-            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
-                id="d26da4ef-3f77-48f4-b9d0-252424679ee7" sourceElement="#f5098174-bb84-478d-a3cd-ba3b2ab1811a"/>
-            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="6aa5f41b-062f-4170-8d33-29074330f1c1" name="Operator Control"
-                target="#c6b9a1e5-5fe0-4cfc-b09e-47aa9b73ae13" source="#18042899-3598-4c74-9a49-f43c0c18fd3b"
-                exchangedItems="#a9556d07-c77a-4c92-bced-269417bbe4a9"/>
-            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="ff92d6d7-db65-4e44-a891-619f3cdf8cac" name="Line Control" target="#37d8bb13-b1bd-4457-b15a-d3a119516d54"
-                source="#6f82835b-497c-4abb-927f-f8b725cadc5f"/>
-            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="88e47106-6766-4687-bd80-bc15d7c4f17f" name="Machine Status" target="#1af68d62-5199-4677-a46c-d5006a5e7f21"
-                source="#9e12e5a9-4f4b-4523-a08c-5c502b36e93e"/>
-          </ownedLogicalFunctions>
-        </ownedFunctionPkg>
-        <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
-            id="b0ea8734-4e4e-4d7f-9fc7-ecc841bf4f4e" name="Capabilities"/>
-        <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
-            id="dcc1c78d-2706-41fa-8f9e-1c7dfedee30f" name="Interfaces"/>
-        <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
-            id="3a648e92-bca8-4adf-9f16-bd43161a2a3c" name="Data">
-          <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-              id="a9556d07-c77a-4c92-bced-269417bbe4a9" name="stop" exchangeMechanism="EVENT"/>
-          <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-              id="88ebd2bd-ae30-43b4-af7b-fd074e7e75f6" name="reset" exchangeMechanism="EVENT"/>
-          <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-              id="dffb0f1a-9a3b-4f4a-9313-2378c2570bcd" name="suspend" exchangeMechanism="EVENT"/>
-          <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-              id="2d72bf14-dac4-47e6-90a2-8e6a6946c1c2" name="abort" exchangeMechanism="EVENT"/>
-          <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-              id="2091100a-571d-402d-b4e7-269c01ec26ee" name="hold" exchangeMechanism="EVENT"/>
-          <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-              id="73fcf1dd-1f92-4c88-b25a-8263f10465e1" name="clear" exchangeMechanism="EVENT"/>
-          <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-              id="cd6016d8-0fe9-45b4-a70b-e18c1ff4add2" name="start" exchangeMechanism="EVENT"/>
-          <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-              id="26c2b103-9c6d-4594-8a45-23bc74d3715d" name="unsuspend" exchangeMechanism="EVENT"/>
-          <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-              id="3d1f2b89-09d5-4aa7-9f2d-0a469609ac20" name="machine state complete"
-              exchangeMechanism="EVENT"/>
-          <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-              id="458458d8-39c7-4a29-a2d5-dbe847bbc7db" name="unhold" exchangeMechanism="EVENT"/>
-        </ownedDataPkg>
-        <ownedLogicalComponentPkg xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
-            id="43d74527-681c-4e84-b6ac-e459527d878a" name="Structure">
-          <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="22109f94-8954-4788-9ceb-ebf07e59ce33"
-              name="Logical System" abstractType="#43f3ca86-31b0-4358-a2b3-88deab2da32f"/>
-          <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="bb7a154e-0823-466e-b621-dc3e7f33e837"
-              name="Operator" abstractType="#e664c49c-0430-46ae-8662-fec20329b5af"/>
-          <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="2590c413-0bf7-4ad5-843d-4a57e3ab27b1"
-              name="Line Control" abstractType="#5af96d98-13f5-47f5-8cef-a1e47893791d"/>
-          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-              id="43f3ca86-31b0-4358-a2b3-88deab2da32f" name="Logical System">
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="32580e7f-3f92-4887-a267-a358907af827"
-                name="Master TR88 Seven State " abstractType="#5c74d990-9098-48cf-a445-59182d69fa9a"/>
-            <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
-                id="73df2e7d-ed81-44e0-91d9-9cbd34c031fe" targetElement="#d9113f53-bd75-4226-98fd-0b2f8a238657"
-                sourceElement="#43f3ca86-31b0-4358-a2b3-88deab2da32f"/>
-            <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="5c74d990-9098-48cf-a445-59182d69fa9a" name="Master TR88 Seven State ">
-              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                  id="e82b2613-72ed-46a0-8843-5b74af966c73" targetElement="#c40e99f0-78a1-4f01-92ae-cc0e0338f1a9"
-                  sourceElement="#5c74d990-9098-48cf-a445-59182d69fa9a"/>
-              <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
-                  id="adf70202-7826-4c7a-9fd9-cbca405ae2ad" name="StateMachine 1">
-                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
-                    id="5c5ab4f8-7238-4995-b890-813c0bf634a2" name="Default Region"
-                    involvedStates="#c943619b-a930-4fbd-bf6f-cd510db794ce #a09d6923-2fd4-4159-8163-891a4f4bca5e #b1bf0b6d-48c7-48b7-8bcc-529ce617fe77 #d03f2477-24d3-4585-b10f-c847928a340d #1aa700b9-5d61-4e0c-82cf-a923352190df #5fef6834-a840-485f-a672-093cc2896514 #f10d60fc-e18a-4026-94af-b9e6a1af0e62">
-                  <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
-                      id="c943619b-a930-4fbd-bf6f-cd510db794ce" name="Stopped" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine is halted and not ready to produce. This is the default state after power-up or a full Stop, before any Reset has been issued. No PackTags/recipe data are being processed.&lt;/p>">
-                    <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
-                        id="7f390943-efac-44d6-a8d8-9072edcf39ca" name="region"/>
-                  </ownedStates>
-                  <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
-                      id="a09d6923-2fd4-4159-8163-891a4f4bca5e" name="Idle" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has been reset and is clean/ready to run, waiting for a Start command. This is the common entry point reached from Stopped, Complete, or Aborted after their respective Reset/Clear events.&lt;/p>">
-                    <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
-                        id="4e253981-5a62-41c8-a795-a057ec536c54" name="region"/>
-                  </ownedStates>
-                  <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
-                      id="b1bf0b6d-48c7-48b7-8bcc-529ce617fe77" name="Execute" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine is actively producing/processing product. This is the sole 'productive' wait state in the model and the source of all exception paths (Hold, Suspend, Abort) as well as the normal completion path (state complete).&lt;/p>">
-                    <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
-                        id="801642ae-f771-49d9-8ece-d904856d07c9" name="region"/>
-                  </ownedStates>
-                  <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
-                      id="d03f2477-24d3-4585-b10f-c847928a340d" name="Complete" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has finished its programmed run (batch/job/cycle) without exception and is holding in this state until a Reset command returns it to Idle for the next run.&lt;/p>">
-                    <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
-                        id="9ec6c8e5-ff56-4469-a77c-2305aa86b848" name="region"/>
-                  </ownedStates>
-                  <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
-                      id="1aa700b9-5d61-4e0c-82cf-a923352190df" name="Held" description="&lt;p>Per ANSI/ISA-TR88.00.02: a lighter-weight pause triggered by a condition internal to the machine itself — low material, a minor sensor flag, or an operator intervention need. Distinct from Aborted in that no fault is logged and no Clear/root-cause step is required; Unhold returns directly to Execute.&lt;/p>">
-                    <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
-                        id="b228ed6f-e34c-4041-95a9-ed9f23b5c75a" name="region"/>
-                  </ownedStates>
-                  <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
-                      id="5fef6834-a840-485f-a672-093cc2896514" name="Suspended" description="&lt;p>Per ANSI/ISA-TR88.00.02: a lighter-weight pause triggered by a condition external to the machine — typically a line-level signal such as the downstream station being full (blocked) or the upstream station not yet delivering material (starved). As with Held, no fault is logged; Unsuspend returns directly to Execute once the line condition clears.&lt;/p>">
-                    <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
-                        id="a335690b-2e61-485d-8ef6-604c9d296035" name="region"/>
-                  </ownedStates>
-                  <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
-                      id="f10d60fc-e18a-4026-94af-b9e6a1af0e62" name="Aborted" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has faulted during Execute in a way that cannot be resolved by Hold or Suspend. The machine cannot leave this state except via an explicit Clear command, by design — this prevents the machine from resuming with an unaddressed fault. Recovery requires diagnosis/repair before Clear returns it to Idle.&lt;/p>">
-                    <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
-                        id="b0707af7-3047-49e5-81f5-f206734952ad" name="region"/>
-                  </ownedStates>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="0851752a-de02-45f0-89bb-0dd2b966c460" description="&lt;p>The &amp;#39;start&amp;#39; command. Issued from Idle once the machine is ready to begin production; moves the machine into Execute.&lt;/p>&#xA;"
-                      triggerDescription="" source="#a09d6923-2fd4-4159-8163-891a4f4bca5e"
-                      target="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77" triggers="#cd6016d8-0fe9-45b4-a70b-e18c1ff4add2"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="5edcb522-cc21-44da-a49d-e870853f8b2f" name="Process Complete"
-                      description="&lt;p>The 'state complete' event (SC in TR88 notation), not an operator command but an internal condition raised automatically when the current production run finishes normally. Moves the machine from Execute to Complete without passing through Held, Suspended, or Aborted.&lt;/p>"
-                      triggerDescription="" source="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77"
-                      target="#d03f2477-24d3-4585-b10f-c847928a340d" triggers="#3d1f2b89-09d5-4aa7-9f2d-0a469609ac20"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="d78b6521-d050-4c9d-b9c4-86727a8a6b70" description="&lt;p>The 'suspend' command, raised when an external/line-level condition (e.g. downstream full, upstream empty) requires the machine to pause. Moves Execute to Suspended.&lt;/p>"
-                      triggerDescription="" source="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77"
-                      target="#5fef6834-a840-485f-a672-093cc2896514" triggers="#dffb0f1a-9a3b-4f4a-9313-2378c2570bcd"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="6a519dbe-6ac5-4456-a9cc-b0f3fc6c973f" description="&lt;p>The 'hold' command, raised when an internal condition (e.g. low material, minor sensor flag, operator intervention) requires the machine to pause. Moves Execute to Held.&lt;/p>"
-                      triggerDescription="" source="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77"
-                      target="#1aa700b9-5d61-4e0c-82cf-a923352190df" triggers="#2091100a-571d-402d-b4e7-269c01ec26ee"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="b866874c-7ec1-49d4-8a0a-ea926a2d5627" description="&lt;p>The &amp;#39;abort&amp;#39; event/command, raised when a fault occurs during Execute that cannot be handled by Hold or Suspend. Moves Execute to Aborted; per TR88, this transition can occur from most/any state, though this model currently only wires it from Execute.&lt;/p>&#xA;"
-                      triggerDescription="" source="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77"
-                      target="#f10d60fc-e18a-4026-94af-b9e6a1af0e62" triggers="#2d72bf14-dac4-47e6-90a2-8e6a6946c1c2"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="78917e86-0c52-4a70-a6af-6145d7a8e78a" description="&lt;p>The &amp;#39;clear&amp;#39; command, issued once the fault causing Abort has been diagnosed and corrected. This is the only way out of Aborted, by design, ensuring no fault goes unacknowledged. Moves Aborted to Idle.&lt;/p>&#xA;"
-                      triggerDescription="" source="#f10d60fc-e18a-4026-94af-b9e6a1af0e62"
-                      target="#a09d6923-2fd4-4159-8163-891a4f4bca5e" triggers="#73fcf1dd-1f92-4c88-b25a-8263f10465e1"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="cbc327de-3569-45fb-9929-26a09611efc1" description="&lt;p>The 'reset' command, issued from Complete once a finished run has been acknowledged, preparing the machine for its next run. Moves Complete to Idle.&lt;/p>"
-                      triggerDescription="" source="#d03f2477-24d3-4585-b10f-c847928a340d"
-                      target="#a09d6923-2fd4-4159-8163-891a4f4bca5e" triggers="#88ebd2bd-ae30-43b4-af7b-fd074e7e75f6"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="545d8a35-7fea-4b3d-82bd-699b166c2368" description="&lt;p>The &amp;#39;reset&amp;#39; command, issued from Stopped to prepare the machine to run again after a full stop. Moves Stopped to Idle.&lt;/p>&#xA;"
-                      triggerDescription="" source="#c943619b-a930-4fbd-bf6f-cd510db794ce"
-                      target="#a09d6923-2fd4-4159-8163-891a4f4bca5e" triggers="#88ebd2bd-ae30-43b4-af7b-fd074e7e75f6"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="3388d3fc-8a86-435c-a552-0f479950932d" description="&lt;p>The 'unhold' command, issued once the internal condition causing Hold has been resolved. Moves Held directly back to Execute — no Clear or diagnostic step required, since Held is not a logged fault.&lt;/p>"
-                      triggerDescription="" source="#1aa700b9-5d61-4e0c-82cf-a923352190df"
-                      target="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77" triggers="#458458d8-39c7-4a29-a2d5-dbe847bbc7db"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="79a7abc3-2696-4207-aae5-e79180de943e" description="&lt;p>The 'unsuspend' command, issued once the external/line-level condition causing Suspend has resolved. Moves Suspended directly back to Execute — no Clear or diagnostic step required, since Suspended is not a logged fault.&lt;/p>"
-                      triggerDescription="" source="#5fef6834-a840-485f-a672-093cc2896514"
-                      target="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77" triggers="#26c2b103-9c6d-4594-8a45-23bc74d3715d"/>
-                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                      id="22db8c22-fbe2-4d3e-a374-47cfecd5124a" description="&lt;p>The &amp;#39;stop&amp;#39; command, typically issued for a planned shutdown of the machine. Moves Execute to Stopped; a subsequent Reset is required before the machine can run again.&lt;/p>&#xA;"
-                      triggerDescription="" source="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77"
-                      target="#c943619b-a930-4fbd-bf6f-cd510db794ce" triggers="#a9556d07-c77a-4c92-bced-269417bbe4a9"/>
-                </ownedRegions>
-              </ownedStateMachines>
-            </ownedLogicalComponents>
           </ownedLogicalComponents>
-          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-              id="e664c49c-0430-46ae-8662-fec20329b5af" name="Operator" actor="true"
-              human="true">
-            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                id="8e54a21c-82a6-46bd-9bc9-16ec07cb6e86" targetElement="#9b6bb5c9-c82d-4e0f-afa1-865d39e50373"
-                sourceElement="#e664c49c-0430-46ae-8662-fec20329b5af"/>
-          </ownedLogicalComponents>
-          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-              id="5af96d98-13f5-47f5-8cef-a1e47893791d" name="Line Control" actor="true">
-            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                id="9e8e85c2-38e5-4a4a-89b1-62cb15c35d8d" targetElement="#794c5d6f-6c44-4ac9-b12e-e1cb35a07aa7"
-                sourceElement="#5af96d98-13f5-47f5-8cef-a1e47893791d"/>
-          </ownedLogicalComponents>
-        </ownedLogicalComponentPkg>
-        <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
-            id="eee0d9e3-254a-46f1-a0f9-13981cd8fe75" targetElement="#a566a708-402a-4dca-8cf4-75a8e51cfd9d"
-            sourceElement="#9042e154-d5a6-41b5-aef8-ad5ddfb934aa"/>
-      </ownedArchitectures>
-      <ownedArchitectures xsi:type="org.polarsys.capella.core.data.pa:PhysicalArchitecture"
-          id="1ba7162b-18b4-4592-ad95-a641f8f2c744" name="Physical Architecture">
-        <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunctionPkg"
-            id="19507910-e407-41c2-b7cc-753afaa72c1f" name="Physical Functions">
-          <ownedPhysicalFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
-              id="da981d3f-a77f-4eac-9de9-f20fc4f432c7" name="Root Physical Function">
-            <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
-                id="24c298ff-b0fe-45ab-8397-36530f2c4c32" targetElement="#f5098174-bb84-478d-a3cd-ba3b2ab1811a"
-                sourceElement="#da981d3f-a77f-4eac-9de9-f20fc4f432c7"/>
-          </ownedPhysicalFunctions>
-        </ownedFunctionPkg>
-        <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
-            id="43268081-8288-4f03-9819-d267c6462aec" name="Capabilities"/>
-        <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
-            id="e2bda00b-8bae-4c97-9a09-0471579bd87d" name="Interfaces"/>
-        <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
-            id="096547dc-f1ef-47ca-a2d5-4f2df047085a" name="Data"/>
-        <ownedPhysicalComponentPkg xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponentPkg"
-            id="24f1e19f-7550-4656-b52c-56da33295f13" name="Structure">
-          <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="8988c776-3b77-4004-a5b0-5242375ac62f"
-              name="Physical System" abstractType="#d88b318c-9faf-43d3-a371-6b7e0e5aa9ff"/>
-          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="d88b318c-9faf-43d3-a371-6b7e0e5aa9ff" name="Physical System">
-            <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
-                id="9ddbc412-8797-47f8-937b-f4b0b6a4ab5b" targetElement="#43f3ca86-31b0-4358-a2b3-88deab2da32f"
-                sourceElement="#d88b318c-9faf-43d3-a371-6b7e0e5aa9ff"/>
-          </ownedPhysicalComponents>
-        </ownedPhysicalComponentPkg>
-        <ownedLogicalArchitectureRealizations xsi:type="org.polarsys.capella.core.data.pa:LogicalArchitectureRealization"
-            id="dd25e164-31de-4be5-b7a5-972fe93e6817" targetElement="#9042e154-d5a6-41b5-aef8-ad5ddfb934aa"
-            sourceElement="#1ba7162b-18b4-4592-ad95-a641f8f2c744"/>
-      </ownedArchitectures>
-      <ownedArchitectures xsi:type="org.polarsys.capella.core.data.epbs:EPBSArchitecture"
-          id="867637b9-1cb7-4f65-8eee-8f2c36ffe4cf" name="EPBS Architecture">
-        <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
-            id="6c66f2c2-ed5b-4f6b-9b96-bd058828ea9c" name="Capabilities"/>
-        <ownedConfigurationItemPkg xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItemPkg"
-            id="8921ce1f-82e7-41fb-a4b5-e74e4bb09049" name="Structure">
-          <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="7aa27359-b393-4813-b1b1-7f0c53c922af"
-              name="System" abstractType="#2b361d37-c230-435e-a54b-5d59f032c8f2"/>
-          <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
-              id="2b361d37-c230-435e-a54b-5d59f032c8f2" name="System" kind="SystemCI">
-            <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
-                id="98c0cb10-698e-4300-aa85-1a1cc5470a83" targetElement="#d88b318c-9faf-43d3-a371-6b7e0e5aa9ff"
-                sourceElement="#2b361d37-c230-435e-a54b-5d59f032c8f2"/>
-          </ownedConfigurationItems>
-        </ownedConfigurationItemPkg>
-        <ownedPhysicalArchitectureRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArchitectureRealization"
-            id="aef50180-70fb-4ea9-9a38-58c2f0a11853" targetElement="#1ba7162b-18b4-4592-ad95-a641f8f2c744"
-            sourceElement="#867637b9-1cb7-4f65-8eee-8f2c36ffe4cf"/>
-      </ownedArchitectures>
-    </ownedModelRoots>
-  </org.polarsys.capella.core.data.capellamodeller:Library>
-</xmi:XMI>
+        </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="e664c49c-0430-46ae-8662-fec20329b5af" name="Operator" actor="true"
+            human="true">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="8e54a21c-82a6-46bd-9bc9-16ec07cb6e86" targetElement="#9b6bb5c9-c82d-4e0f-afa1-865d39e50373"
+              sourceElement="#e664c49c-0430-46ae-8662-fec20329b5af"/>
+        </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="5af96d98-13f5-47f5-8cef-a1e47893791d" name="Line Control" actor="true">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="9e8e85c2-38e5-4a4a-89b1-62cb15c35d8d" targetElement="#794c5d6f-6c44-4ac9-b12e-e1cb35a07aa7"
+              sourceElement="#5af96d98-13f5-47f5-8cef-a1e47893791d"/>
+        </ownedLogicalComponents>
+      </ownedLogicalComponentPkg>
+      <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
+          id="eee0d9e3-254a-46f1-a0f9-13981cd8fe75" targetElement="#a566a708-402a-4dca-8cf4-75a8e51cfd9d"
+          sourceElement="#9042e154-d5a6-41b5-aef8-ad5ddfb934aa"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.pa:PhysicalArchitecture"
+        id="1ba7162b-18b4-4592-ad95-a641f8f2c744" name="Physical Architecture">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunctionPkg"
+          id="19507910-e407-41c2-b7cc-753afaa72c1f" name="Physical Functions">
+        <ownedPhysicalFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+            id="da981d3f-a77f-4eac-9de9-f20fc4f432c7" name="Root Physical Function">
+          <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+              id="24c298ff-b0fe-45ab-8397-36530f2c4c32" targetElement="#f5098174-bb84-478d-a3cd-ba3b2ab1811a"
+              sourceElement="#da981d3f-a77f-4eac-9de9-f20fc4f432c7"/>
+        </ownedPhysicalFunctions>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
+          id="43268081-8288-4f03-9819-d267c6462aec" name="Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="e2bda00b-8bae-4c97-9a09-0471579bd87d" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="096547dc-f1ef-47ca-a2d5-4f2df047085a" name="Data"/>
+      <ownedPhysicalComponentPkg xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponentPkg"
+          id="24f1e19f-7550-4656-b52c-56da33295f13" name="Structure">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="8988c776-3b77-4004-a5b0-5242375ac62f"
+            name="Physical System" abstractType="#d88b318c-9faf-43d3-a371-6b7e0e5aa9ff"/>
+        <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+            id="d88b318c-9faf-43d3-a371-6b7e0e5aa9ff" name="Physical System">
+          <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
+              id="9ddbc412-8797-47f8-937b-f4b0b6a4ab5b" targetElement="#43f3ca86-31b0-4358-a2b3-88deab2da32f"
+              sourceElement="#d88b318c-9faf-43d3-a371-6b7e0e5aa9ff"/>
+        </ownedPhysicalComponents>
+      </ownedPhysicalComponentPkg>
+      <ownedLogicalArchitectureRealizations xsi:type="org.polarsys.capella.core.data.pa:LogicalArchitectureRealization"
+          id="dd25e164-31de-4be5-b7a5-972fe93e6817" targetElement="#9042e154-d5a6-41b5-aef8-ad5ddfb934aa"
+          sourceElement="#1ba7162b-18b4-4592-ad95-a641f8f2c744"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.epbs:EPBSArchitecture"
+        id="867637b9-1cb7-4f65-8eee-8f2c36ffe4cf" name="EPBS Architecture">
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
+          id="6c66f2c2-ed5b-4f6b-9b96-bd058828ea9c" name="Capabilities"/>
+      <ownedConfigurationItemPkg xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItemPkg"
+          id="8921ce1f-82e7-41fb-a4b5-e74e4bb09049" name="Structure">
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="7aa27359-b393-4813-b1b1-7f0c53c922af"
+            name="System" abstractType="#2b361d37-c230-435e-a54b-5d59f032c8f2"/>
+        <ownedConfigurationItems xsi:type="org.polarsys.capella.core.data.epbs:ConfigurationItem"
+            id="2b361d37-c230-435e-a54b-5d59f032c8f2" name="System" kind="SystemCI">
+          <ownedPhysicalArtifactRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArtifactRealization"
+              id="98c0cb10-698e-4300-aa85-1a1cc5470a83" targetElement="#d88b318c-9faf-43d3-a371-6b7e0e5aa9ff"
+              sourceElement="#2b361d37-c230-435e-a54b-5d59f032c8f2"/>
+        </ownedConfigurationItems>
+      </ownedConfigurationItemPkg>
+      <ownedPhysicalArchitectureRealizations xsi:type="org.polarsys.capella.core.data.epbs:PhysicalArchitectureRealization"
+          id="aef50180-70fb-4ea9-9a38-58c2f0a11853" targetElement="#1ba7162b-18b4-4592-ad95-a641f8f2c744"
+          sourceElement="#867637b9-1cb7-4f65-8eee-8f2c36ffe4cf"/>
+    </ownedArchitectures>
+  </ownedModelRoots>
+</org.polarsys.capella.core.data.capellamodeller:Library>
