@@ -470,14 +470,16 @@
               source="#f4856bc4-043a-460f-a518-9ac2b2afff92" exchangedItems="#bfaca94b-ca5e-423b-8367-61f6ba07ac9a #1c6e2719-a622-40e2-a5d6-81d7ca48d4de"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="5abd04cd-b5e3-4d13-a264-202b1cae0ffb" name="FillingStation.LineControl"
-              target="#c56ac10f-3e01-405e-b3cb-bdd2a1498b4d" source="#e3752f00-fed4-4c30-880f-09f6329a1054"/>
+              target="#c56ac10f-3e01-405e-b3cb-bdd2a1498b4d" source="#e3752f00-fed4-4c30-880f-09f6329a1054"
+              exchangedItems="#f556e1c5-79f0-475d-a4b4-08bac24e09ff #f7558b87-df00-4ca3-9a8c-ceb1510c8913"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="fccadcad-fb7e-4a4a-a605-f01c9251fa2d" name="FillingStation.MachineStatus"
-              target="#8b8251a5-90fc-4353-8bdb-574f19250bcc" source="#7b8003ae-2044-43ca-9044-19674ae2b167"/>
+              target="#8b8251a5-90fc-4353-8bdb-574f19250bcc" source="#7b8003ae-2044-43ca-9044-19674ae2b167"
+              exchangedItems="#96b7ac36-8a70-4b0b-a7d2-7761e65dd035 #9a4a5953-e8c3-4216-86fd-813498e514c5"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="b575dc55-891b-43ea-8809-91ff4a628138" name="FillingStation.OperatorControl"
               target="#a4d2a45c-537d-43d3-aa2b-5f308ec75926" source="#25156988-82c1-4e84-904f-58b3c38077f9"
-              exchangedItems="#d46776cf-56b9-49d7-9d21-6231988436ba"/>
+              exchangedItems="#d46776cf-56b9-49d7-9d21-6231988436ba #76f58de5-1e64-4382-a51e-5febbb7e6df7 #35670c09-5ebd-475e-8aee-a7b5ab84a5d8 #91e64d7e-1408-4572-9cb9-2b0d42874a6d #07be5c73-fc3f-4197-8616-5140954b2083 #67d201d6-7994-4db4-8460-f5e917462b10"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="c6c74cfc-5bea-472c-b81a-e72de82c8f77" name="Bottles" target="#8cc69f47-a3ce-40aa-81d1-188e2ab76223"
               source="#6d434089-5952-47c8-9ee1-fa01abff70c7"/>
