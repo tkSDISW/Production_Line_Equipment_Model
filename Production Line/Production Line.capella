@@ -220,6 +220,10 @@
             id="a6ac515d-3582-41ce-8633-da0e64980e72" name="unhold"/>
         <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
             id="c5776732-55bf-455d-8827-ec32b3d39140" name="Unsuspend"/>
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="83ec8804-b83f-4dc3-82ee-075b6dd1e2b5" name="Stop"/>
+        <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
+            id="9a0bf4c8-47ce-44fd-9478-3188e2d7b2d3" name="state complete"/>
       </ownedDataPkg>
       <ownedLogicalComponentPkg xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
           id="43d74527-681c-4e84-b6ac-e459527d878a" name="Structure">
@@ -285,7 +289,7 @@
                 <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                     id="5edcb522-cc21-44da-a49d-e870853f8b2f" name="Process Complete"
                     triggerDescription="" source="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77"
-                    target="#d03f2477-24d3-4585-b10f-c847928a340d"/>
+                    target="#d03f2477-24d3-4585-b10f-c847928a340d" triggers="#9a0bf4c8-47ce-44fd-9478-3188e2d7b2d3"/>
                 <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                     id="d78b6521-d050-4c9d-b9c4-86727a8a6b70" triggerDescription=""
                     source="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77" target="#5fef6834-a840-485f-a672-093cc2896514"
@@ -318,6 +322,10 @@
                     id="79a7abc3-2696-4207-aae5-e79180de943e" triggerDescription=""
                     source="#5fef6834-a840-485f-a672-093cc2896514" target="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77"
                     triggers="#c5776732-55bf-455d-8827-ec32b3d39140"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="22db8c22-fbe2-4d3e-a374-47cfecd5124a" triggerDescription=""
+                    source="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77" target="#c943619b-a930-4fbd-bf6f-cd510db794ce"
+                    triggers="#83ec8804-b83f-4dc3-82ee-075b6dd1e2b5"/>
               </ownedRegions>
             </ownedStateMachines>
           </ownedLogicalComponents>
