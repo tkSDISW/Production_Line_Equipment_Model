@@ -15,7 +15,8 @@
     xmlns:org.polarsys.capella.core.data.information.datavalue="http://www.polarsys.org/capella/core/information/datavalue/7.0.0"
     xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/7.0.0"
     xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/7.0.0"
-    xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/7.0.0" id="4a04b40f-d94d-4ec1-99b0-d292ca382225"
+    xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/7.0.0"
+    id="4a04b40f-d94d-4ec1-99b0-d292ca382225"
     name="Production Line">
   <ownedExtensions xsi:type="libraries:ModelInformation" href="#945d3e01-9d36-4dff-818f-d6ee769dd3ba"/>
   <ownedEnumerationPropertyTypes xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyType"
@@ -225,26 +226,35 @@
       <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
           id="3a648e92-bca8-4adf-9f16-bd43161a2a3c" name="Data">
         <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-            id="a9556d07-c77a-4c92-bced-269417bbe4a9" name="stop" exchangeMechanism="EVENT"/>
+            id="a9556d07-c77a-4c92-bced-269417bbe4a9" name="stop" exchangeMechanism="EVENT"
+            description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'stop' command. Carries the operator/supervisory command for a planned shutdown, moving the machine from Execute to Stopped. Allocated on the Operator Control exchange.&lt;/p>"/>
         <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-            id="88ebd2bd-ae30-43b4-af7b-fd074e7e75f6" name="reset" exchangeMechanism="EVENT"/>
+            id="88ebd2bd-ae30-43b4-af7b-fd074e7e75f6" name="reset" exchangeMechanism="EVENT"
+            description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'reset' command. Carries the command preparing the machine for its next run, from either Complete or Stopped, back to Idle. Allocated on the Operator Control exchange.&lt;/p>"/>
         <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-            id="dffb0f1a-9a3b-4f4a-9313-2378c2570bcd" name="suspend" exchangeMechanism="EVENT"/>
+            id="dffb0f1a-9a3b-4f4a-9313-2378c2570bcd" name="suspend" exchangeMechanism="EVENT"
+            description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'suspend' signal. Carries an external/line-level condition (e.g. downstream full, upstream empty) pausing the machine from Execute to Suspended. Allocated on the Line Control exchange, distinct from operator-issued commands since the cause is external to the machine.&lt;/p>"/>
         <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-            id="2d72bf14-dac4-47e6-90a2-8e6a6946c1c2" name="abort" exchangeMechanism="EVENT"/>
+            id="2d72bf14-dac4-47e6-90a2-8e6a6946c1c2" name="abort" exchangeMechanism="EVENT"
+            description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'abort' event. Represents the internally-generated fault condition moving the machine from Execute to Aborted. Not commanded externally — allocated on the Machine Status exchange as an outbound notification of the fault to the line.&lt;/p>"/>
         <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-            id="2091100a-571d-402d-b4e7-269c01ec26ee" name="hold" exchangeMechanism="EVENT"/>
+            id="2091100a-571d-402d-b4e7-269c01ec26ee" name="hold" exchangeMechanism="EVENT"
+            description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'hold' command. Carries the command pausing the machine for an internal condition (low material, minor sensor flag, operator intervention). Allocated on the Operator Control exchange.&lt;/p>"/>
         <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-            id="73fcf1dd-1f92-4c88-b25a-8263f10465e1" name="clear" exchangeMechanism="EVENT"/>
+            id="73fcf1dd-1f92-4c88-b25a-8263f10465e1" name="clear" exchangeMechanism="EVENT"
+            description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'clear' command. Carries the command acknowledging a diagnosed/corrected fault — the only way to leave Aborted and return to Idle. Allocated on the Operator Control exchange.&lt;/p>"/>
         <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-            id="cd6016d8-0fe9-45b4-a70b-e18c1ff4add2" name="start" exchangeMechanism="EVENT"/>
+            id="cd6016d8-0fe9-45b4-a70b-e18c1ff4add2" name="start" exchangeMechanism="EVENT"
+            description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'start' command. Carries the operator/supervisory command to begin production from Idle. Allocated on the Operator Control exchange.&lt;/p>"/>
         <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-            id="26c2b103-9c6d-4594-8a45-23bc74d3715d" name="unsuspend" exchangeMechanism="EVENT"/>
+            id="26c2b103-9c6d-4594-8a45-23bc74d3715d" name="unsuspend" exchangeMechanism="EVENT"
+            description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'unsuspend' signal. Carries the external/line-level signal resuming the machine from Suspended directly back to Execute once the line condition clears. Allocated on the Line Control exchange.&lt;/p>"/>
         <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
             id="3d1f2b89-09d5-4aa7-9f2d-0a469609ac20" name="machine state complete"
-            exchangeMechanism="EVENT"/>
+            exchangeMechanism="EVENT" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'machine state complete' event (SC in TR88 notation). Represents the internally-generated condition marking normal completion of production, moving Execute to Complete. Not commanded externally — allocated on the Machine Status exchange as an outbound notification to the line.&lt;/p>"/>
         <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
-            id="458458d8-39c7-4a29-a2d5-dbe847bbc7db" name="unhold" exchangeMechanism="EVENT"/>
+            id="458458d8-39c7-4a29-a2d5-dbe847bbc7db" name="unhold" exchangeMechanism="EVENT"
+            description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'unhold' command. Carries the command resuming the machine from Held directly back to Execute once the internal condition is resolved. Allocated on the Operator Control exchange.&lt;/p>"/>
       </ownedDataPkg>
       <ownedLogicalComponentPkg xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
           id="43d74527-681c-4e84-b6ac-e459527d878a" name="Structure">
