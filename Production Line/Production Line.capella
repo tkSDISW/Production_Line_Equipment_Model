@@ -354,6 +354,109 @@
                 id="7b8003ae-2044-43ca-9044-19674ae2b167" name="Machine Status Out"
                 outgoingExchangeItems="#96b7ac36-8a70-4b0b-a7d2-7761e65dd035 #9a4a5953-e8c3-4216-86fd-813498e514c5"/>
           </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="59408a75-44e4-40ec-b052-9b8fa52efbb0" name="Load">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="8cc69f47-a3ce-40aa-81d1-188e2ab76223" name="FIP 1"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="ba61d465-653d-4897-b8ff-16a1005edd50" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="d7b04328-df47-41bc-be4f-169076179b33" name="Supply Bottle">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="6d434089-5952-47c8-9ee1-fa01abff70c7" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="e278de7f-9544-427e-b8ee-53b0ac0b2ac7" name="File Bottle">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="d642a476-a6e4-4fe4-abc3-be29df13150e" name="FIP 1"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="c4e86a14-f74b-40e9-8088-ccc32ed4dce5" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="aedbf5a2-a315-43c7-8066-bdeae7d4bdf5" name="Manage States">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="b4e0aa7c-59ba-43ec-9612-c980da7b692f" name="Operator Commands In"
+                incomingExchangeItems="#8aafd4f7-6b54-414e-9c73-ee3ff33df8f1 #4934c753-6bd4-49f8-a7bf-0df4bf756d18 #1d9c9b5b-a771-4b2f-abf6-41394be5c911 #1bbdeea0-5dd6-40f5-a1bb-ca86aeeb028a #67ac4d7b-3c5c-40ab-b84f-f4f6ff395b97 #533dadd6-4243-4832-bfd6-2e8519161730"/>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="03517222-77af-48b5-a70e-90ca274d50fb" name="Line Control In" incomingExchangeItems="#c1bf78f8-7d01-4e10-8026-21991cefd8cd #30aeeee6-4365-43c6-b21e-093e499c1ba8"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="ec08f94f-ee71-44ac-ae9d-37fb225e3558" name="Machine Status Out"
+                outgoingExchangeItems="#bb3c0e02-54dd-4717-8d6d-2e38254dfb34 #07b618d3-86ea-487a-8368-76ff24b4a871"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="a2f12199-7d28-4f13-b4e3-6337689486d9" name="Manage States">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="f3cefc53-f55c-42d4-a24c-a77712b37a4f" name="Operator Commands In"
+                incomingExchangeItems="#961de12a-045b-4c39-90f9-8b719a1e8721 #fec434ea-631c-44c2-8769-0d222d34129f #313cdc75-40e0-4152-a47e-ee949e0091b7 #1642bbb7-e17c-4243-a572-8b0c8f214a99 #25911dca-b08d-48de-9889-fc0ca80d6914 #1a03cb00-8a13-494c-8e40-b327a4aab9bc"/>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="ac4456c3-be9c-453f-b0e6-9c413a26954a" name="Line Control In" incomingExchangeItems="#27c9bd5f-acde-4765-b537-67070e38bdad #a88149e4-8161-4461-88c0-06d89a092d6a"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="b61fdfef-d013-4eac-a9b3-300292f7f9bd" name="Machine Status Out"
+                outgoingExchangeItems="#eec24a18-9703-4118-af9d-bff1d689c20a #0722f880-fa21-437b-bfed-2618ab18b34f"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="90232d60-e87e-4ec9-92c4-564d9c2763d8" name="Manage States">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="f8a77011-b57f-4120-b3a9-8e1e606ce403" name="Operator Commands In"
+                incomingExchangeItems="#a417654a-f7c5-48a4-a33a-58697f1bd246 #f1d7d2f4-7624-439e-92ec-3794e025b36c #e50eda49-8b6d-4ed8-b035-72b820dd8008 #609bf3a8-00ff-45c4-afed-8ce857c9e0a5 #3ae31cca-ff85-4a0e-9607-e9aca3d735b1 #838c535f-50db-4917-8c3b-5b4e3bb891ba"/>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="a0629f7e-d1ef-4fde-8ab7-b8354a6d3b09" name="Line Control In" incomingExchangeItems="#a1bd63ea-0687-4b4e-ab91-163c16f2aa9b #0fa2be4b-e1d4-4679-8358-c302b88c38d4"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="75eabd46-0d03-4acf-b5cc-bc3ffdbd90f4" name="Machine Status Out"
+                outgoingExchangeItems="#f877463b-45a0-4311-8bb8-fa7703518ecf #594f223c-4a68-47c0-91db-72839b8792f1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="9df705cb-c6e9-42b5-8a9e-1620d89c59cc" name="Manage States">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="4d10ba3b-8d12-45bc-90ba-f5792002e71c" name="Operator Commands In"
+                incomingExchangeItems="#e41a6f26-eb57-40de-ab8c-e77f6e789517 #b70a1877-088f-4b80-8741-046b9379c930 #e665e481-81f4-4fc9-aa1c-619577cc07a4 #8dc83f1f-f380-40a8-8c9e-49199224e48c #f5b55c49-7bdc-443b-818a-19bb4a7d303c #3f3b8b7a-a883-4138-8c82-ada0f1da8673"/>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="a8e49607-6684-4dda-bf6a-a67dd3c39876" name="Line Control In" incomingExchangeItems="#d4ad2e63-cc82-4485-a160-4a01eb631fd0 #b00d0cf0-a805-4664-8f27-8a71f25b8528"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="fab73cd4-50ed-426a-a142-9eb6504d3b45" name="Machine Status Out"
+                outgoingExchangeItems="#ea319aec-8532-43b0-bec3-dfedb4e1c502 #5d62c84e-e2e1-4eda-947b-af5b091a1fed"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="9c3d656a-dfc1-4911-99ac-a03420e3ccb6" name="Cap Bottle">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="a0226453-d264-431c-aebf-387bbfcb8e00" name="FIP 1"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="b4e9b9d4-a099-45f5-804f-d7f930f1384c" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="7ce05600-548d-4613-b54c-656436c463c3" name="Label Bottle">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="b0457ae7-e606-4a4e-b6d9-85b46c35749e" name="FIP 1"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="7894170f-9977-4eb1-a613-b183944b9b42" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="7fc3e7c8-a431-429a-a4e1-09d333005b0b" name="Inspect Bottle">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="e3270a89-d081-4dbe-bc23-feecda4a229e" name="FIP 1"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="4571f59c-8c76-4454-a2ca-d2f3a9f89fcf" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="72c4a9ea-02f0-4ffd-b54a-3f62c10ab90b" name="Case Pack">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="e0a61311-73db-4e36-ba05-ff81b15598e1" name="FIP 1"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="8a71a813-6810-4406-bd09-83da8272d729" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="4e6e61c2-08d2-404f-956d-17716592e96c" name="Case Label">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="7ece6165-cb26-4e65-8a17-5b65d15991fd" name="FIP 1"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="8ebaee97-96ed-4d09-a13b-d8a40274acb9" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="0eb45c39-e095-4d56-a74c-ab000fe42a1d" name="Receive Case">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="2a4ab263-2774-4a4f-8281-df1b26893dc2" name="FIP 1"/>
+          </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="d26da4ef-3f77-48f4-b9d0-252424679ee7" sourceElement="#f5098174-bb84-478d-a3cd-ba3b2ab1811a"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
@@ -375,6 +478,30 @@
               id="b575dc55-891b-43ea-8809-91ff4a628138" name="FillingStation.OperatorControl"
               target="#a4d2a45c-537d-43d3-aa2b-5f308ec75926" source="#25156988-82c1-4e84-904f-58b3c38077f9"
               exchangedItems="#d46776cf-56b9-49d7-9d21-6231988436ba"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="c6c74cfc-5bea-472c-b81a-e72de82c8f77" name="Bottles" target="#8cc69f47-a3ce-40aa-81d1-188e2ab76223"
+              source="#6d434089-5952-47c8-9ee1-fa01abff70c7"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="28875f8c-3e6e-4271-86e3-16f7b2640b0a" name="FunctionalExchange 8"
+              target="#d642a476-a6e4-4fe4-abc3-be29df13150e" source="#ba61d465-653d-4897-b8ff-16a1005edd50"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="3f4f7a44-8ff0-4428-b457-75e7b55beb19" name="FunctionalExchange 9"
+              target="#a0226453-d264-431c-aebf-387bbfcb8e00" source="#c4e86a14-f74b-40e9-8088-ccc32ed4dce5"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="6340dcc1-92d4-4d5f-8058-624f2c3bfb37" name="FunctionalExchange 10"
+              target="#b0457ae7-e606-4a4e-b6d9-85b46c35749e" source="#b4e9b9d4-a099-45f5-804f-d7f930f1384c"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="77e7ff72-4c43-484c-a827-c3e2c0f91f48" name="FunctionalExchange 11"
+              target="#e3270a89-d081-4dbe-bc23-feecda4a229e" source="#7894170f-9977-4eb1-a613-b183944b9b42"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="25238ecf-159d-4944-a920-54251ea78a1f" name="FunctionalExchange 12"
+              target="#e0a61311-73db-4e36-ba05-ff81b15598e1" source="#4571f59c-8c76-4454-a2ca-d2f3a9f89fcf"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="059adc32-279f-46ec-97f7-ce6e783fd4f1" name="FunctionalExchange 13"
+              target="#7ece6165-cb26-4e65-8a17-5b65d15991fd" source="#8a71a813-6810-4406-bd09-83da8272d729"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="674f3bbc-a09b-4ab1-b380-5c61d04ec8d1" name="FunctionalExchange 14"
+              target="#2a4ab263-2774-4a4f-8281-df1b26893dc2" source="#8ebaee97-96ed-4d09-a13b-d8a40274acb9"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
@@ -484,6 +611,130 @@
             id="91e64d7e-1408-4572-9cb9-2b0d42874a6d" name="FillingStation.unhold"
             description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'unhold' command. Carries the command resuming the machine from Held directly back to Execute once the internal condition is resolved. Allocated on the Operator Control exchange.&lt;/p>"
             exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="07b618d3-86ea-487a-8368-76ff24b4a871" name="Master.machineStateComplete"
+            description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'machine state complete' event (SC in TR88 notation). Represents the internally-generated condition marking normal completion of production, moving Execute to Complete. Not commanded externally — allocated on the Machine Status exchange as an outbound notification to the line.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="c1bf78f8-7d01-4e10-8026-21991cefd8cd" name="Master.suspend" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'suspend' signal. Carries an external/line-level condition (e.g. downstream full, upstream empty) pausing the machine from Execute to Suspended. Allocated on the Line Control exchange, distinct from operator-issued commands since the cause is external to the machine.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="8aafd4f7-6b54-414e-9c73-ee3ff33df8f1" name="Master.stop" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'stop' command. Carries the operator/supervisory command for a planned shutdown, moving the machine from Execute to Stopped. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="4934c753-6bd4-49f8-a7bf-0df4bf756d18" name="Master.start" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'start' command. Carries the operator/supervisory command to begin production from Idle. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="30aeeee6-4365-43c6-b21e-093e499c1ba8" name="Master.unsuspend" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'unsuspend' signal. Carries the external/line-level signal resuming the machine from Suspended directly back to Execute once the line condition clears. Allocated on the Line Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="67ac4d7b-3c5c-40ab-b84f-f4f6ff395b97" name="Master.reset" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'reset' command. Carries the command preparing the machine for its next run, from either Complete or Stopped, back to Idle. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="1bbdeea0-5dd6-40f5-a1bb-ca86aeeb028a" name="Master.unhold" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'unhold' command. Carries the command resuming the machine from Held directly back to Execute once the internal condition is resolved. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="bb3c0e02-54dd-4717-8d6d-2e38254dfb34" name="Master.abort" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'abort' event. Represents the internally-generated fault condition moving the machine from Execute to Aborted. Not commanded externally — allocated on the Machine Status exchange as an outbound notification of the fault to the line.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="1d9c9b5b-a771-4b2f-abf6-41394be5c911" name="Master.hold" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'hold' command. Carries the command pausing the machine for an internal condition (low material, minor sensor flag, operator intervention). Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="533dadd6-4243-4832-bfd6-2e8519161730" name="Master.clear" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'clear' command. Carries the command acknowledging a diagnosed/corrected fault — the only way to leave Aborted and return to Idle. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="27c9bd5f-acde-4765-b537-67070e38bdad" name="Master.suspend" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'suspend' signal. Carries an external/line-level condition (e.g. downstream full, upstream empty) pausing the machine from Execute to Suspended. Allocated on the Line Control exchange, distinct from operator-issued commands since the cause is external to the machine.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="313cdc75-40e0-4152-a47e-ee949e0091b7" name="Master.hold" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'hold' command. Carries the command pausing the machine for an internal condition (low material, minor sensor flag, operator intervention). Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="25911dca-b08d-48de-9889-fc0ca80d6914" name="Master.reset" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'reset' command. Carries the command preparing the machine for its next run, from either Complete or Stopped, back to Idle. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="fec434ea-631c-44c2-8769-0d222d34129f" name="Master.start" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'start' command. Carries the operator/supervisory command to begin production from Idle. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="0722f880-fa21-437b-bfed-2618ab18b34f" name="Master.machineStateComplete"
+            description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'machine state complete' event (SC in TR88 notation). Represents the internally-generated condition marking normal completion of production, moving Execute to Complete. Not commanded externally — allocated on the Machine Status exchange as an outbound notification to the line.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="a88149e4-8161-4461-88c0-06d89a092d6a" name="Master.unsuspend" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'unsuspend' signal. Carries the external/line-level signal resuming the machine from Suspended directly back to Execute once the line condition clears. Allocated on the Line Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="961de12a-045b-4c39-90f9-8b719a1e8721" name="Master.stop" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'stop' command. Carries the operator/supervisory command for a planned shutdown, moving the machine from Execute to Stopped. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="1a03cb00-8a13-494c-8e40-b327a4aab9bc" name="Master.clear" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'clear' command. Carries the command acknowledging a diagnosed/corrected fault — the only way to leave Aborted and return to Idle. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="eec24a18-9703-4118-af9d-bff1d689c20a" name="Master.abort" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'abort' event. Represents the internally-generated fault condition moving the machine from Execute to Aborted. Not commanded externally — allocated on the Machine Status exchange as an outbound notification of the fault to the line.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="1642bbb7-e17c-4243-a572-8b0c8f214a99" name="Master.unhold" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'unhold' command. Carries the command resuming the machine from Held directly back to Execute once the internal condition is resolved. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="609bf3a8-00ff-45c4-afed-8ce857c9e0a5" name="Master.unhold" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'unhold' command. Carries the command resuming the machine from Held directly back to Execute once the internal condition is resolved. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="3ae31cca-ff85-4a0e-9607-e9aca3d735b1" name="Master.reset" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'reset' command. Carries the command preparing the machine for its next run, from either Complete or Stopped, back to Idle. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="838c535f-50db-4917-8c3b-5b4e3bb891ba" name="Master.clear" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'clear' command. Carries the command acknowledging a diagnosed/corrected fault — the only way to leave Aborted and return to Idle. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="0fa2be4b-e1d4-4679-8358-c302b88c38d4" name="Master.unsuspend" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'unsuspend' signal. Carries the external/line-level signal resuming the machine from Suspended directly back to Execute once the line condition clears. Allocated on the Line Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="594f223c-4a68-47c0-91db-72839b8792f1" name="Master.machineStateComplete"
+            description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'machine state complete' event (SC in TR88 notation). Represents the internally-generated condition marking normal completion of production, moving Execute to Complete. Not commanded externally — allocated on the Machine Status exchange as an outbound notification to the line.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="f1d7d2f4-7624-439e-92ec-3794e025b36c" name="Master.start" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'start' command. Carries the operator/supervisory command to begin production from Idle. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="f877463b-45a0-4311-8bb8-fa7703518ecf" name="Master.abort" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'abort' event. Represents the internally-generated fault condition moving the machine from Execute to Aborted. Not commanded externally — allocated on the Machine Status exchange as an outbound notification of the fault to the line.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="a1bd63ea-0687-4b4e-ab91-163c16f2aa9b" name="Master.suspend" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'suspend' signal. Carries an external/line-level condition (e.g. downstream full, upstream empty) pausing the machine from Execute to Suspended. Allocated on the Line Control exchange, distinct from operator-issued commands since the cause is external to the machine.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="a417654a-f7c5-48a4-a33a-58697f1bd246" name="Master.stop" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'stop' command. Carries the operator/supervisory command for a planned shutdown, moving the machine from Execute to Stopped. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="e50eda49-8b6d-4ed8-b035-72b820dd8008" name="Master.hold" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'hold' command. Carries the command pausing the machine for an internal condition (low material, minor sensor flag, operator intervention). Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="f5b55c49-7bdc-443b-818a-19bb4a7d303c" name="Master.reset" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'reset' command. Carries the command preparing the machine for its next run, from either Complete or Stopped, back to Idle. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="3f3b8b7a-a883-4138-8c82-ada0f1da8673" name="Master.clear" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'clear' command. Carries the command acknowledging a diagnosed/corrected fault — the only way to leave Aborted and return to Idle. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="5d62c84e-e2e1-4eda-947b-af5b091a1fed" name="Master.machineStateComplete"
+            description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'machine state complete' event (SC in TR88 notation). Represents the internally-generated condition marking normal completion of production, moving Execute to Complete. Not commanded externally — allocated on the Machine Status exchange as an outbound notification to the line.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="e665e481-81f4-4fc9-aa1c-619577cc07a4" name="Master.hold" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'hold' command. Carries the command pausing the machine for an internal condition (low material, minor sensor flag, operator intervention). Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="8dc83f1f-f380-40a8-8c9e-49199224e48c" name="Master.unhold" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'unhold' command. Carries the command resuming the machine from Held directly back to Execute once the internal condition is resolved. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="b70a1877-088f-4b80-8741-046b9379c930" name="Master.start" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'start' command. Carries the operator/supervisory command to begin production from Idle. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="e41a6f26-eb57-40de-ab8c-e77f6e789517" name="Master.stop" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'stop' command. Carries the operator/supervisory command for a planned shutdown, moving the machine from Execute to Stopped. Allocated on the Operator Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="d4ad2e63-cc82-4485-a160-4a01eb631fd0" name="Master.suspend" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'suspend' signal. Carries an external/line-level condition (e.g. downstream full, upstream empty) pausing the machine from Execute to Suspended. Allocated on the Line Control exchange, distinct from operator-issued commands since the cause is external to the machine.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="b00d0cf0-a805-4664-8f27-8a71f25b8528" name="Master.unsuspend" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'unsuspend' signal. Carries the external/line-level signal resuming the machine from Suspended directly back to Execute once the line condition clears. Allocated on the Line Control exchange.&lt;/p>"
+            exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="ea319aec-8532-43b0-bec3-dfedb4e1c502" name="Master.abort" description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'abort' event. Represents the internally-generated fault condition moving the machine from Execute to Aborted. Not commanded externally — allocated on the Machine Status exchange as an outbound notification of the fault to the line.&lt;/p>"
+            exchangeMechanism="EVENT"/>
       </ownedDataPkg>
       <ownedLogicalComponentPkg xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
           id="43d74527-681c-4e84-b6ac-e459527d878a" name="Structure">
@@ -493,6 +744,10 @@
             name="Operator" abstractType="#e664c49c-0430-46ae-8662-fec20329b5af"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="2590c413-0bf7-4ad5-843d-4a57e3ab27b1"
             name="Line Control" abstractType="#5af96d98-13f5-47f5-8cef-a1e47893791d"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="73b8c126-e40f-4dea-a720-d1cf116de1cd"
+            name="Bottle Pallette" abstractType="#02c76ae5-444e-488e-b21e-9f1891068eaa"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="db428a0a-13bd-4521-8926-dca2b65886c0"
+            name="Case Receiver" abstractType="#9360338b-4578-4866-b10f-a937bbfb545c"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
             id="db99ec33-deb2-44ea-8f93-02cbe12dba69" name="Line Control Interface"
             source="#bb1bed90-f75a-424e-8aff-292cb1826d2b" target="#76660931-fa0f-4e84-a7dd-889f9740d9cf"
@@ -530,14 +785,64 @@
               id="99e2854e-7c6a-432b-bf1c-0852f3fcb23f" targetElement="#fccadcad-fb7e-4a4a-a605-f01c9251fa2d"
               sourceElement="#20302825-d22f-42fa-b143-ed845fe4c229"/>
         </ownedComponentExchanges>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="70eb3755-36ec-459e-98fc-ed364a211780" name="C 5" source="#87a80bef-98d8-4500-a136-f3ae8bf54a4b"
+            target="#926d8411-720c-4e84-878d-5bfe3c576ed8" kind="FLOW">
+          <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
+              id="ae6448ab-51e0-4e20-a575-9e741a4c7299" targetElement="#c6c74cfc-5bea-472c-b81a-e72de82c8f77"
+              sourceElement="#70eb3755-36ec-459e-98fc-ed364a211780"/>
+        </ownedComponentExchanges>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="28d7212f-850e-4fbf-80f5-2db09c3607da" name="C 6" source="#59ac3048-43d0-471f-8d25-8f826bc0b8e0"
+            target="#1dadef5a-b9bd-4baf-b2aa-65213e12f80e" kind="ASSEMBLY"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="cdfe2273-d70a-4f50-b143-e427338f3ed1" name="C 7" source="#666fd379-962c-44a5-b49b-8b6396fa9844"
+            target="#c4b929c2-3171-497d-afd1-106d2e0d2a79" kind="ASSEMBLY"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="36d6d08c-538d-4b59-8120-bb18cfa16795" name="C 8" source="#63a041d6-4eab-41b1-87a3-9c83fea11d92"
+            target="#1be30987-ef89-407e-b413-c441082635c5" kind="ASSEMBLY"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="825cc6c2-42fa-4920-93c6-8a465cc87120" name="C 9" source="#f1e3210e-056a-48fb-9a19-7c3335c7a173"
+            target="#ddc49336-c22a-4852-9ef9-64f15f2bd271" kind="ASSEMBLY"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="fba47a19-e587-45de-bb78-cb4fec4930e9" name="C 10" source="#677848c7-9d9e-429f-93fc-8f60d725f5b8"
+            target="#04d16a99-a7a1-4d05-b1ab-960a43cf6238" kind="ASSEMBLY"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="3d9f7418-cd9a-4ef9-a85a-4dd1d1804199" name="C 11" source="#9bf36648-5599-4847-86d0-1a50bb3c4688"
+            target="#03919598-6ba2-4a88-bbed-805cadd7786d" kind="ASSEMBLY"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="284cf211-4f82-4738-82ee-9aadc24b2abd" name="C 12" source="#628de27a-3fbb-4fd4-9209-fc93726fe211"
+            target="#3cbf0b3b-ffbc-4914-a533-4bdec56eb2d7" kind="FLOW"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="43f3ca86-31b0-4358-a2b3-88deab2da32f" name="Logical System">
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="73acbc1a-a11b-4f67-8fde-c6af02dc6d15" name="C 1" source="#4e144a93-ca6c-42bb-aa84-85e3bfa5c6b3"
+              target="#acb05471-5738-4fc7-aa95-e3aebabaf258" kind="FLOW">
+            <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
+                id="f7615d75-f5de-4501-a6d5-79cb0f620c36" targetElement="#28875f8c-3e6e-4271-86e3-16f7b2640b0a"
+                sourceElement="#73acbc1a-a11b-4f67-8fde-c6af02dc6d15"/>
+          </ownedComponentExchanges>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="ee38a828-6bbc-4d70-9b80-16a48a2ddb8e" name="C 2" source="#a6e65a2e-545d-487b-9a4a-b73225572e99"
+              target="#8742f2f2-1597-461e-9ef8-c2d1eb4ae7f0" kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="348ace87-eb78-497b-b1a6-8271ae9bf69c" name="C 3" source="#ce59dba4-ab4a-441c-9201-7ec86d4fe2e3"
+              target="#219b61a5-9c3f-4126-b0bc-152d920b841b" kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="2b6e8a07-eccf-4871-9e4f-7c959face0c1" name="C 4" source="#829d3655-3db4-4f5c-a294-0f419508d228"
+              target="#c32f09fd-8b6d-436f-a6bf-2ca099f4683d" kind="FLOW"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="32580e7f-3f92-4887-a267-a358907af827"
               name="Master TR88 Seven State " abstractType="#5c74d990-9098-48cf-a445-59182d69fa9a"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="0fa1be0c-ae2a-4f4d-96d5-6a7eb6455e73"
               name="Infeed Load" abstractType="#529c290e-f4b1-474f-9000-4fd0e04f1252"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="aa5ec7ba-a377-4284-9358-d6cb20be47c1"
               name="Filling Station" abstractType="#bcd6599d-8ba8-43bf-920f-13d1b810ae97"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5b2ca0ca-0f4a-4d4f-a5e6-9ad772ddd7ea"
+              name="Capping Station" abstractType="#6660aa50-05ae-4b51-bdbc-9606e420dec2"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="80fa77aa-c5af-4d63-b02f-052cbd4e060c"
+              name="Labeling and Inspections Station" abstractType="#c0532f43-dda5-4644-b7cd-0231cba4507b"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f0655f1c-b71c-457e-ae9a-b2c88b7db393"
+              name="Case Packing and Labeling" abstractType="#5bf724d8-5d99-4a0b-a865-3709942ba008"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="73df2e7d-ed81-44e0-91d9-9cbd34c031fe" targetElement="#d9113f53-bd75-4226-98fd-0b2f8a238657"
               sourceElement="#43f3ca86-31b0-4358-a2b3-88deab2da32f"/>
@@ -654,6 +959,9 @@
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="819c3595-2529-40d5-a4c1-80dc87a62c3c" targetElement="#445fe798-4d9a-48ca-ad32-085f0630d90c"
                 sourceElement="#529c290e-f4b1-474f-9000-4fd0e04f1252"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="ce8d7c44-31ae-4faf-b0f3-615a0ca8ee71" targetElement="#59408a75-44e4-40ec-b052-9b8fa52efbb0"
+                sourceElement="#529c290e-f4b1-474f-9000-4fd0e04f1252"/>
             <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
                 id="7c3aa67d-1e07-465d-b848-73767cbc6aa6" name="StateMachine 1">
               <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
@@ -756,11 +1064,28 @@
                   id="cb11b023-bf86-435f-842e-c55a91c76a55" targetElement="#eb0f0b73-8a63-4a1d-9028-2d9e9effaa38"
                   sourceElement="#3271e34f-f7a3-4901-ac09-3a24c20d936b"/>
             </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="926d8411-720c-4e84-878d-5bfe3c576ed8" name="CP 3" orientation="IN"
+                kind="FLOW">
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="fc05b52a-2184-4594-b070-847baf2a675d" targetElement="#8cc69f47-a3ce-40aa-81d1-188e2ab76223"
+                  sourceElement="#926d8411-720c-4e84-878d-5bfe3c576ed8"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="4e144a93-ca6c-42bb-aa84-85e3bfa5c6b3" name="CP 4" orientation="OUT"
+                kind="FLOW">
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="330c79e6-4636-4a14-a0e1-e67b3c9852b8" targetElement="#ba61d465-653d-4897-b8ff-16a1005edd50"
+                  sourceElement="#4e144a93-ca6c-42bb-aa84-85e3bfa5c6b3"/>
+            </ownedFeatures>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="bcd6599d-8ba8-43bf-920f-13d1b810ae97" name="Filling Station">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="7dcfabfd-0943-4837-b429-8f748d53d90a" targetElement="#010155c8-c2fa-472c-a229-895b204d1a02"
+                sourceElement="#bcd6599d-8ba8-43bf-920f-13d1b810ae97"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="a349a065-202c-42f1-a9b7-59a58c9a4ead" targetElement="#e278de7f-9544-427e-b8ee-53b0ac0b2ac7"
                 sourceElement="#bcd6599d-8ba8-43bf-920f-13d1b810ae97"/>
             <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
                 id="e424613b-509d-4b93-ae79-6b8639878be2" name="StateMachine 1">
@@ -864,6 +1189,373 @@
                   id="27b04f4a-4808-40e7-aec6-13185227c49e" targetElement="#a4d2a45c-537d-43d3-aa2b-5f308ec75926"
                   sourceElement="#1cdd2527-2bec-40cb-8bf3-f36fd76f0f9d"/>
             </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="acb05471-5738-4fc7-aa95-e3aebabaf258" name="CP 3" orientation="IN"
+                kind="FLOW">
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="6ffe1d35-391a-4102-a99a-03ce25653e9b" targetElement="#d642a476-a6e4-4fe4-abc3-be29df13150e"
+                  sourceElement="#acb05471-5738-4fc7-aa95-e3aebabaf258"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="a6e65a2e-545d-487b-9a4a-b73225572e99" name="CP 4" orientation="OUT"
+                kind="FLOW"/>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="6660aa50-05ae-4b51-bdbc-9606e420dec2" name="Capping Station">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="b1f719ec-fe46-40c5-a2c4-06301748833c" targetElement="#aedbf5a2-a315-43c7-8066-bdeae7d4bdf5"
+                sourceElement="#6660aa50-05ae-4b51-bdbc-9606e420dec2"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="470972d7-7ed2-4b37-b7b7-515c09cfece0" targetElement="#9c3d656a-dfc1-4911-99ac-a03420e3ccb6"
+                sourceElement="#6660aa50-05ae-4b51-bdbc-9606e420dec2"/>
+            <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
+                id="c366e27b-5e42-4741-9b53-824afab79a8b" name="StateMachine 1">
+              <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                  id="7e5b2760-5544-48da-9453-a726d1dbcb4e" name="Default Region"
+                  involvedStates="#f563c76c-771e-49d1-99da-95e86231f0e1 #004b48d7-527e-4932-82fd-8a1a0a666741 #42f7f969-ed41-4569-b6fa-bc0469c24826 #ba3e2a9b-ac0e-41b8-9460-788191171806 #7eede7ec-9cdd-445e-9fc1-51ff91141a5f #056b59f0-ab5d-4c1a-9f25-49970ca8ea58 #6067353b-fd33-4bd6-9a4f-958e3ed7789e">
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="f563c76c-771e-49d1-99da-95e86231f0e1" name="Stopped" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine is halted and not ready to produce. This is the default state after power-up or a full Stop, before any Reset has been issued. No PackTags/recipe data are being processed.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="a7f583d7-c114-4e2c-9978-12d5f24d2ff8" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="004b48d7-527e-4932-82fd-8a1a0a666741" name="Idle" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has been reset and is clean/ready to run, waiting for a Start command. This is the common entry point reached from Stopped, Complete, or Aborted after their respective Reset/Clear events.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="768a9546-4ea5-4abe-a8d6-db4c4f32358d" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="42f7f969-ed41-4569-b6fa-bc0469c24826" name="Execute" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine is actively producing/processing product. This is the sole 'productive' wait state in the model and the source of all exception paths (Hold, Suspend, Abort) as well as the normal completion path (state complete).&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="82d604ed-e7a6-42ef-bda3-a629e631ccc8" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="ba3e2a9b-ac0e-41b8-9460-788191171806" name="Complete" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has finished its programmed run (batch/job/cycle) without exception and is holding in this state until a Reset command returns it to Idle for the next run.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="1f2cb872-5489-4cfc-aabe-8f53949d5fc9" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="7eede7ec-9cdd-445e-9fc1-51ff91141a5f" name="Held" description="&lt;p>Per ANSI/ISA-TR88.00.02: a lighter-weight pause triggered by a condition internal to the machine itself — low material, a minor sensor flag, or an operator intervention need. Distinct from Aborted in that no fault is logged and no Clear/root-cause step is required; Unhold returns directly to Execute.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="3a1e8b6a-e10a-41d2-aff7-d5f8ff47fd51" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="056b59f0-ab5d-4c1a-9f25-49970ca8ea58" name="Suspended" description="&lt;p>Per ANSI/ISA-TR88.00.02: a lighter-weight pause triggered by a condition external to the machine — typically a line-level signal such as the downstream station being full (blocked) or the upstream station not yet delivering material (starved). As with Held, no fault is logged; Unsuspend returns directly to Execute once the line condition clears.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="6f323947-f83c-4498-8920-f0cdc00c906f" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="6067353b-fd33-4bd6-9a4f-958e3ed7789e" name="Aborted" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has faulted during Execute in a way that cannot be resolved by Hold or Suspend. The machine cannot leave this state except via an explicit Clear command, by design — this prevents the machine from resuming with an unaddressed fault. Recovery requires diagnosis/repair before Clear returns it to Idle.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="2bf292f7-d88c-4647-b194-0fb287bb8882" name="region"/>
+                </ownedStates>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="a59f80eb-71c6-4dad-80dc-4a9281f82399" description="&lt;p>The &amp;#39;start&amp;#39; command. Issued from Idle once the machine is ready to begin production; moves the machine into Execute.&lt;/p>&#xA;"
+                    triggerDescription="" source="#004b48d7-527e-4932-82fd-8a1a0a666741"
+                    target="#42f7f969-ed41-4569-b6fa-bc0469c24826" triggers="#4934c753-6bd4-49f8-a7bf-0df4bf756d18"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="3428b1bc-c51a-4a7e-b4a3-fb3cec2789ce" name="Process Complete"
+                    description="&lt;p>The 'state complete' event (SC in TR88 notation), not an operator command but an internal condition raised automatically when the current production run finishes normally. Moves the machine from Execute to Complete without passing through Held, Suspended, or Aborted.&lt;/p>"
+                    triggerDescription="" source="#42f7f969-ed41-4569-b6fa-bc0469c24826"
+                    target="#ba3e2a9b-ac0e-41b8-9460-788191171806" triggers="#07b618d3-86ea-487a-8368-76ff24b4a871"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="11118e9b-1155-4122-9f99-eddf3497e82d" description="&lt;p>The 'suspend' command, raised when an external/line-level condition (e.g. downstream full, upstream empty) requires the machine to pause. Moves Execute to Suspended.&lt;/p>"
+                    triggerDescription="" source="#42f7f969-ed41-4569-b6fa-bc0469c24826"
+                    target="#056b59f0-ab5d-4c1a-9f25-49970ca8ea58" triggers="#c1bf78f8-7d01-4e10-8026-21991cefd8cd"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="74ef6c5a-415b-4600-9c2e-0783e59a36eb" description="&lt;p>The 'hold' command, raised when an internal condition (e.g. low material, minor sensor flag, operator intervention) requires the machine to pause. Moves Execute to Held.&lt;/p>"
+                    triggerDescription="" source="#42f7f969-ed41-4569-b6fa-bc0469c24826"
+                    target="#7eede7ec-9cdd-445e-9fc1-51ff91141a5f" triggers="#1d9c9b5b-a771-4b2f-abf6-41394be5c911"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="021ccc15-dab7-4ece-8c09-ba7e52fab96a" description="&lt;p>The &amp;#39;abort&amp;#39; event/command, raised when a fault occurs during Execute that cannot be handled by Hold or Suspend. Moves Execute to Aborted; per TR88, this transition can occur from most/any state, though this model currently only wires it from Execute.&lt;/p>&#xA;"
+                    triggerDescription="" source="#42f7f969-ed41-4569-b6fa-bc0469c24826"
+                    target="#6067353b-fd33-4bd6-9a4f-958e3ed7789e" triggers="#bb3c0e02-54dd-4717-8d6d-2e38254dfb34"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="3ab45e03-78a1-41a4-ac77-44e664c8b41a" description="&lt;p>The &amp;#39;clear&amp;#39; command, issued once the fault causing Abort has been diagnosed and corrected. This is the only way out of Aborted, by design, ensuring no fault goes unacknowledged. Moves Aborted to Idle.&lt;/p>&#xA;"
+                    triggerDescription="" source="#6067353b-fd33-4bd6-9a4f-958e3ed7789e"
+                    target="#004b48d7-527e-4932-82fd-8a1a0a666741" triggers="#533dadd6-4243-4832-bfd6-2e8519161730"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="460ef6e6-44b9-4b38-ad54-eb330d442d59" description="&lt;p>The 'reset' command, issued from Complete once a finished run has been acknowledged, preparing the machine for its next run. Moves Complete to Idle.&lt;/p>"
+                    triggerDescription="" source="#ba3e2a9b-ac0e-41b8-9460-788191171806"
+                    target="#004b48d7-527e-4932-82fd-8a1a0a666741" triggers="#67ac4d7b-3c5c-40ab-b84f-f4f6ff395b97"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="76443bde-777f-4278-8468-eb1d77e9ed04" description="&lt;p>The &amp;#39;reset&amp;#39; command, issued from Stopped to prepare the machine to run again after a full stop. Moves Stopped to Idle.&lt;/p>&#xA;"
+                    triggerDescription="" source="#f563c76c-771e-49d1-99da-95e86231f0e1"
+                    target="#004b48d7-527e-4932-82fd-8a1a0a666741" triggers="#67ac4d7b-3c5c-40ab-b84f-f4f6ff395b97"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="dd0b70eb-e176-452a-8896-68d9b5e39ec7" description="&lt;p>The 'unhold' command, issued once the internal condition causing Hold has been resolved. Moves Held directly back to Execute — no Clear or diagnostic step required, since Held is not a logged fault.&lt;/p>"
+                    triggerDescription="" source="#7eede7ec-9cdd-445e-9fc1-51ff91141a5f"
+                    target="#42f7f969-ed41-4569-b6fa-bc0469c24826" triggers="#1bbdeea0-5dd6-40f5-a1bb-ca86aeeb028a"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="4334bbd6-6b77-477b-8a20-444b501d18d1" description="&lt;p>The 'unsuspend' command, issued once the external/line-level condition causing Suspend has resolved. Moves Suspended directly back to Execute — no Clear or diagnostic step required, since Suspended is not a logged fault.&lt;/p>"
+                    triggerDescription="" source="#056b59f0-ab5d-4c1a-9f25-49970ca8ea58"
+                    target="#42f7f969-ed41-4569-b6fa-bc0469c24826" triggers="#30aeeee6-4365-43c6-b21e-093e499c1ba8"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="a1387214-62b6-451f-840d-ea1ef2021879" description="&lt;p>The &amp;#39;stop&amp;#39; command, typically issued for a planned shutdown of the machine. Moves Execute to Stopped; a subsequent Reset is required before the machine can run again.&lt;/p>&#xA;"
+                    triggerDescription="" source="#42f7f969-ed41-4569-b6fa-bc0469c24826"
+                    target="#f563c76c-771e-49d1-99da-95e86231f0e1" triggers="#8aafd4f7-6b54-414e-9c73-ee3ff33df8f1"/>
+              </ownedRegions>
+            </ownedStateMachines>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="f1e3210e-056a-48fb-9a19-7c3335c7a173" name="Line Control I/F">
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="51c50276-9ad1-45ad-a925-8ceaeac6e818" targetElement="#03517222-77af-48b5-a70e-90ca274d50fb"
+                  sourceElement="#f1e3210e-056a-48fb-9a19-7c3335c7a173"/>
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="822bb44e-3bcb-4725-87ae-1b8f956eff2e" targetElement="#ec08f94f-ee71-44ac-ae9d-37fb225e3558"
+                  sourceElement="#f1e3210e-056a-48fb-9a19-7c3335c7a173"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="1dadef5a-b9bd-4baf-b2aa-65213e12f80e" name="Operator I/F" orientation="INOUT">
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="5226e970-3682-4682-a142-f9e5b4fd782f" targetElement="#b4e0aa7c-59ba-43ec-9612-c980da7b692f"
+                  sourceElement="#1dadef5a-b9bd-4baf-b2aa-65213e12f80e"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="8742f2f2-1597-461e-9ef8-c2d1eb4ae7f0" name="CP 3" orientation="IN"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="ce59dba4-ab4a-441c-9201-7ec86d4fe2e3" name="CP 4" orientation="OUT"
+                kind="FLOW"/>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="c0532f43-dda5-4644-b7cd-0231cba4507b" name="Labeling and Inspections Station">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="a7393135-e9b7-42d4-a8e4-514552686814" targetElement="#a2f12199-7d28-4f13-b4e3-6337689486d9"
+                sourceElement="#c0532f43-dda5-4644-b7cd-0231cba4507b"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="a7520dc4-e090-4e3b-866e-bf6f36cf807b" targetElement="#7ce05600-548d-4613-b54c-656436c463c3"
+                sourceElement="#c0532f43-dda5-4644-b7cd-0231cba4507b"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="d3b72f15-7bf9-41de-b72f-a52863d4c20d" targetElement="#7fc3e7c8-a431-429a-a4e1-09d333005b0b"
+                sourceElement="#c0532f43-dda5-4644-b7cd-0231cba4507b"/>
+            <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
+                id="c1148eae-4414-4e9c-a579-f6e3b726fec1" name="StateMachine 1">
+              <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                  id="f975f16d-1865-4848-b7eb-9c3f8035313a" name="Default Region"
+                  involvedStates="#aa89e7fd-9788-4c07-b831-13a4cf3a8e31 #dcbb7f38-1401-4081-bd4c-5412f8b26799 #390102a8-99a7-4053-8cb4-0ffa345ac865 #5fe3cb86-1916-4111-b30d-f1805c1c7f11 #9c44267e-8468-4745-bd8d-55bc631ab1f2 #0f61da05-c45d-41fd-b37d-7def65cbfe45 #dab20494-d035-4c40-a8a7-6642a85661d7">
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="aa89e7fd-9788-4c07-b831-13a4cf3a8e31" name="Stopped" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine is halted and not ready to produce. This is the default state after power-up or a full Stop, before any Reset has been issued. No PackTags/recipe data are being processed.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="39d1056a-a4ab-47ee-8bfe-51999313d054" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="dcbb7f38-1401-4081-bd4c-5412f8b26799" name="Idle" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has been reset and is clean/ready to run, waiting for a Start command. This is the common entry point reached from Stopped, Complete, or Aborted after their respective Reset/Clear events.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="8fe2dbb1-f32d-43e4-ba64-afda4bae8e44" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="390102a8-99a7-4053-8cb4-0ffa345ac865" name="Execute" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine is actively producing/processing product. This is the sole 'productive' wait state in the model and the source of all exception paths (Hold, Suspend, Abort) as well as the normal completion path (state complete).&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="d350e673-e7b7-4306-b6fa-3bd38e566509" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="5fe3cb86-1916-4111-b30d-f1805c1c7f11" name="Complete" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has finished its programmed run (batch/job/cycle) without exception and is holding in this state until a Reset command returns it to Idle for the next run.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="fbd761a7-e265-482b-a19f-f4b4a275509c" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="9c44267e-8468-4745-bd8d-55bc631ab1f2" name="Held" description="&lt;p>Per ANSI/ISA-TR88.00.02: a lighter-weight pause triggered by a condition internal to the machine itself — low material, a minor sensor flag, or an operator intervention need. Distinct from Aborted in that no fault is logged and no Clear/root-cause step is required; Unhold returns directly to Execute.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="2b623a1f-d5e6-4dc1-b8c6-90622fb8e93e" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="0f61da05-c45d-41fd-b37d-7def65cbfe45" name="Suspended" description="&lt;p>Per ANSI/ISA-TR88.00.02: a lighter-weight pause triggered by a condition external to the machine — typically a line-level signal such as the downstream station being full (blocked) or the upstream station not yet delivering material (starved). As with Held, no fault is logged; Unsuspend returns directly to Execute once the line condition clears.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="f0cc53a5-8221-41b4-880b-9ebdb3b5d37e" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="dab20494-d035-4c40-a8a7-6642a85661d7" name="Aborted" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has faulted during Execute in a way that cannot be resolved by Hold or Suspend. The machine cannot leave this state except via an explicit Clear command, by design — this prevents the machine from resuming with an unaddressed fault. Recovery requires diagnosis/repair before Clear returns it to Idle.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="bfe27878-5d42-41b9-8934-bd37a15b3015" name="region"/>
+                </ownedStates>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="646a8549-c994-476a-85ed-b34a864bd393" description="&lt;p>The &amp;#39;start&amp;#39; command. Issued from Idle once the machine is ready to begin production; moves the machine into Execute.&lt;/p>&#xA;"
+                    triggerDescription="" source="#dcbb7f38-1401-4081-bd4c-5412f8b26799"
+                    target="#390102a8-99a7-4053-8cb4-0ffa345ac865" triggers="#fec434ea-631c-44c2-8769-0d222d34129f"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="f058dc4e-5e0f-47e2-aedf-81559beeba48" name="Process Complete"
+                    description="&lt;p>The 'state complete' event (SC in TR88 notation), not an operator command but an internal condition raised automatically when the current production run finishes normally. Moves the machine from Execute to Complete without passing through Held, Suspended, or Aborted.&lt;/p>"
+                    triggerDescription="" source="#390102a8-99a7-4053-8cb4-0ffa345ac865"
+                    target="#5fe3cb86-1916-4111-b30d-f1805c1c7f11" triggers="#0722f880-fa21-437b-bfed-2618ab18b34f"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="7ebca0a8-f585-4f69-affd-96848b75f37d" description="&lt;p>The 'suspend' command, raised when an external/line-level condition (e.g. downstream full, upstream empty) requires the machine to pause. Moves Execute to Suspended.&lt;/p>"
+                    triggerDescription="" source="#390102a8-99a7-4053-8cb4-0ffa345ac865"
+                    target="#0f61da05-c45d-41fd-b37d-7def65cbfe45" triggers="#27c9bd5f-acde-4765-b537-67070e38bdad"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="b7be79ef-82f9-4d4f-82a5-04c3b39c7e0a" description="&lt;p>The 'hold' command, raised when an internal condition (e.g. low material, minor sensor flag, operator intervention) requires the machine to pause. Moves Execute to Held.&lt;/p>"
+                    triggerDescription="" source="#390102a8-99a7-4053-8cb4-0ffa345ac865"
+                    target="#9c44267e-8468-4745-bd8d-55bc631ab1f2" triggers="#313cdc75-40e0-4152-a47e-ee949e0091b7"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="cf363fbe-9db2-45c3-81d6-85a156fdfe1a" description="&lt;p>The &amp;#39;abort&amp;#39; event/command, raised when a fault occurs during Execute that cannot be handled by Hold or Suspend. Moves Execute to Aborted; per TR88, this transition can occur from most/any state, though this model currently only wires it from Execute.&lt;/p>&#xA;"
+                    triggerDescription="" source="#390102a8-99a7-4053-8cb4-0ffa345ac865"
+                    target="#dab20494-d035-4c40-a8a7-6642a85661d7" triggers="#eec24a18-9703-4118-af9d-bff1d689c20a"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="b17a8a4c-9761-494d-a84a-9694748a6432" description="&lt;p>The &amp;#39;clear&amp;#39; command, issued once the fault causing Abort has been diagnosed and corrected. This is the only way out of Aborted, by design, ensuring no fault goes unacknowledged. Moves Aborted to Idle.&lt;/p>&#xA;"
+                    triggerDescription="" source="#dab20494-d035-4c40-a8a7-6642a85661d7"
+                    target="#dcbb7f38-1401-4081-bd4c-5412f8b26799" triggers="#1a03cb00-8a13-494c-8e40-b327a4aab9bc"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="2feeb35d-41be-4c84-b7d2-983190e9f6e3" description="&lt;p>The 'reset' command, issued from Complete once a finished run has been acknowledged, preparing the machine for its next run. Moves Complete to Idle.&lt;/p>"
+                    triggerDescription="" source="#5fe3cb86-1916-4111-b30d-f1805c1c7f11"
+                    target="#dcbb7f38-1401-4081-bd4c-5412f8b26799" triggers="#25911dca-b08d-48de-9889-fc0ca80d6914"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="0dc81566-2c63-49a0-9396-26b09be692eb" description="&lt;p>The &amp;#39;reset&amp;#39; command, issued from Stopped to prepare the machine to run again after a full stop. Moves Stopped to Idle.&lt;/p>&#xA;"
+                    triggerDescription="" source="#aa89e7fd-9788-4c07-b831-13a4cf3a8e31"
+                    target="#dcbb7f38-1401-4081-bd4c-5412f8b26799" triggers="#25911dca-b08d-48de-9889-fc0ca80d6914"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="2de4e92b-7246-4e90-a819-57f83481b1a6" description="&lt;p>The 'unhold' command, issued once the internal condition causing Hold has been resolved. Moves Held directly back to Execute — no Clear or diagnostic step required, since Held is not a logged fault.&lt;/p>"
+                    triggerDescription="" source="#9c44267e-8468-4745-bd8d-55bc631ab1f2"
+                    target="#390102a8-99a7-4053-8cb4-0ffa345ac865" triggers="#1642bbb7-e17c-4243-a572-8b0c8f214a99"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="33e3defe-9fbd-4d23-b7a1-756edffae5dd" description="&lt;p>The 'unsuspend' command, issued once the external/line-level condition causing Suspend has resolved. Moves Suspended directly back to Execute — no Clear or diagnostic step required, since Suspended is not a logged fault.&lt;/p>"
+                    triggerDescription="" source="#0f61da05-c45d-41fd-b37d-7def65cbfe45"
+                    target="#390102a8-99a7-4053-8cb4-0ffa345ac865" triggers="#a88149e4-8161-4461-88c0-06d89a092d6a"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="992befa8-5828-477c-b02e-fa65e1b6186b" description="&lt;p>The &amp;#39;stop&amp;#39; command, typically issued for a planned shutdown of the machine. Moves Execute to Stopped; a subsequent Reset is required before the machine can run again.&lt;/p>&#xA;"
+                    triggerDescription="" source="#390102a8-99a7-4053-8cb4-0ffa345ac865"
+                    target="#aa89e7fd-9788-4c07-b831-13a4cf3a8e31" triggers="#961de12a-045b-4c39-90f9-8b719a1e8721"/>
+              </ownedRegions>
+            </ownedStateMachines>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="677848c7-9d9e-429f-93fc-8f60d725f5b8" name="Line Control I/F">
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="6316125c-8610-4399-9d5d-c862843e330e" targetElement="#ac4456c3-be9c-453f-b0e6-9c413a26954a"
+                  sourceElement="#677848c7-9d9e-429f-93fc-8f60d725f5b8"/>
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="8f2bb745-abef-4eeb-8b24-383fb412441b" targetElement="#b61fdfef-d013-4eac-a9b3-300292f7f9bd"
+                  sourceElement="#677848c7-9d9e-429f-93fc-8f60d725f5b8"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="c4b929c2-3171-497d-afd1-106d2e0d2a79" name="Operator I/F" orientation="INOUT">
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="702bcbcb-cd61-460a-b08a-d075cc03b21c" targetElement="#f3cefc53-f55c-42d4-a24c-a77712b37a4f"
+                  sourceElement="#c4b929c2-3171-497d-afd1-106d2e0d2a79"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="219b61a5-9c3f-4126-b0bc-152d920b841b" name="CP 3" orientation="IN"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="829d3655-3db4-4f5c-a294-0f419508d228" name="CP 4" orientation="OUT"
+                kind="FLOW"/>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="5bf724d8-5d99-4a0b-a865-3709942ba008" name="Case Packing and Labeling">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="3048ef6e-cf51-4b8f-a7ce-c211875d3949" targetElement="#90232d60-e87e-4ec9-92c4-564d9c2763d8"
+                sourceElement="#5bf724d8-5d99-4a0b-a865-3709942ba008"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="9e2e835e-1d27-4212-8d5f-48972cb6301d" targetElement="#72c4a9ea-02f0-4ffd-b54a-3f62c10ab90b"
+                sourceElement="#5bf724d8-5d99-4a0b-a865-3709942ba008"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="b42c4204-99d0-4529-b0c1-8b9ee210de63" targetElement="#4e6e61c2-08d2-404f-956d-17716592e96c"
+                sourceElement="#5bf724d8-5d99-4a0b-a865-3709942ba008"/>
+            <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
+                id="70607002-09fe-45d9-ac28-f0753515378c" name="StateMachine 1">
+              <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                  id="70c11fa9-1f02-4aea-9b90-333e67d4b996" name="Default Region"
+                  involvedStates="#79c264a0-6ad0-43f5-a768-888ce83f61ff #630a3282-acec-49b5-9387-1bd5a787faf9 #fded8f64-843f-4a5f-8e8f-e5f179a36e5c #c670e189-6911-4685-a5f7-6b5f5f130838 #3ca7236e-2528-4886-b377-8824e8819681 #bf98261e-1b8d-4aaf-99a7-7680c850b422 #2ef327bd-e27f-4401-9245-de15a4d5b647">
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="79c264a0-6ad0-43f5-a768-888ce83f61ff" name="Stopped" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine is halted and not ready to produce. This is the default state after power-up or a full Stop, before any Reset has been issued. No PackTags/recipe data are being processed.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="daacbb76-630b-49e2-8934-eb50188f79dd" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="630a3282-acec-49b5-9387-1bd5a787faf9" name="Idle" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has been reset and is clean/ready to run, waiting for a Start command. This is the common entry point reached from Stopped, Complete, or Aborted after their respective Reset/Clear events.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="8452e561-da9d-44ba-a41b-c59ad1df105d" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="fded8f64-843f-4a5f-8e8f-e5f179a36e5c" name="Execute" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine is actively producing/processing product. This is the sole 'productive' wait state in the model and the source of all exception paths (Hold, Suspend, Abort) as well as the normal completion path (state complete).&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="444411f2-dba2-41ff-9a5d-43b2ed6b7666" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="c670e189-6911-4685-a5f7-6b5f5f130838" name="Complete" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has finished its programmed run (batch/job/cycle) without exception and is holding in this state until a Reset command returns it to Idle for the next run.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="2805ee2f-3031-485b-80b5-421a35289ea5" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="3ca7236e-2528-4886-b377-8824e8819681" name="Held" description="&lt;p>Per ANSI/ISA-TR88.00.02: a lighter-weight pause triggered by a condition internal to the machine itself — low material, a minor sensor flag, or an operator intervention need. Distinct from Aborted in that no fault is logged and no Clear/root-cause step is required; Unhold returns directly to Execute.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="5a8a50cd-2874-40b6-8f2f-e5f39c5637fa" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="bf98261e-1b8d-4aaf-99a7-7680c850b422" name="Suspended" description="&lt;p>Per ANSI/ISA-TR88.00.02: a lighter-weight pause triggered by a condition external to the machine — typically a line-level signal such as the downstream station being full (blocked) or the upstream station not yet delivering material (starved). As with Held, no fault is logged; Unsuspend returns directly to Execute once the line condition clears.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="11ed4843-0b9e-4fb2-b285-19b364f10fd3" name="region"/>
+                </ownedStates>
+                <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                    id="2ef327bd-e27f-4401-9245-de15a4d5b647" name="Aborted" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine has faulted during Execute in a way that cannot be resolved by Hold or Suspend. The machine cannot leave this state except via an explicit Clear command, by design — this prevents the machine from resuming with an unaddressed fault. Recovery requires diagnosis/repair before Clear returns it to Idle.&lt;/p>">
+                  <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                      id="891aba8d-ebee-4a58-b9a8-29934ff43939" name="region"/>
+                </ownedStates>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="cd06b7b5-5db1-4a93-8457-efc65051cf39" description="&lt;p>The &amp;#39;start&amp;#39; command. Issued from Idle once the machine is ready to begin production; moves the machine into Execute.&lt;/p>&#xA;"
+                    triggerDescription="" source="#630a3282-acec-49b5-9387-1bd5a787faf9"
+                    target="#fded8f64-843f-4a5f-8e8f-e5f179a36e5c" triggers="#f1d7d2f4-7624-439e-92ec-3794e025b36c"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="9c59ceaa-10be-4950-bd46-2295a0e156d0" name="Process Complete"
+                    description="&lt;p>The 'state complete' event (SC in TR88 notation), not an operator command but an internal condition raised automatically when the current production run finishes normally. Moves the machine from Execute to Complete without passing through Held, Suspended, or Aborted.&lt;/p>"
+                    triggerDescription="" source="#fded8f64-843f-4a5f-8e8f-e5f179a36e5c"
+                    target="#c670e189-6911-4685-a5f7-6b5f5f130838" triggers="#594f223c-4a68-47c0-91db-72839b8792f1"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="e1fa8660-789c-409f-923c-510a28867bcd" description="&lt;p>The 'suspend' command, raised when an external/line-level condition (e.g. downstream full, upstream empty) requires the machine to pause. Moves Execute to Suspended.&lt;/p>"
+                    triggerDescription="" source="#fded8f64-843f-4a5f-8e8f-e5f179a36e5c"
+                    target="#bf98261e-1b8d-4aaf-99a7-7680c850b422" triggers="#a1bd63ea-0687-4b4e-ab91-163c16f2aa9b"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="ce47f423-27b6-4e22-8bea-bdc0cf618d7c" description="&lt;p>The 'hold' command, raised when an internal condition (e.g. low material, minor sensor flag, operator intervention) requires the machine to pause. Moves Execute to Held.&lt;/p>"
+                    triggerDescription="" source="#fded8f64-843f-4a5f-8e8f-e5f179a36e5c"
+                    target="#3ca7236e-2528-4886-b377-8824e8819681" triggers="#e50eda49-8b6d-4ed8-b035-72b820dd8008"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="e63b852d-fdaf-4b36-961d-93345d1ecee5" description="&lt;p>The &amp;#39;abort&amp;#39; event/command, raised when a fault occurs during Execute that cannot be handled by Hold or Suspend. Moves Execute to Aborted; per TR88, this transition can occur from most/any state, though this model currently only wires it from Execute.&lt;/p>&#xA;"
+                    triggerDescription="" source="#fded8f64-843f-4a5f-8e8f-e5f179a36e5c"
+                    target="#2ef327bd-e27f-4401-9245-de15a4d5b647" triggers="#f877463b-45a0-4311-8bb8-fa7703518ecf"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="b05a5e64-3237-4606-8881-72fc74bb7028" description="&lt;p>The &amp;#39;clear&amp;#39; command, issued once the fault causing Abort has been diagnosed and corrected. This is the only way out of Aborted, by design, ensuring no fault goes unacknowledged. Moves Aborted to Idle.&lt;/p>&#xA;"
+                    triggerDescription="" source="#2ef327bd-e27f-4401-9245-de15a4d5b647"
+                    target="#630a3282-acec-49b5-9387-1bd5a787faf9" triggers="#838c535f-50db-4917-8c3b-5b4e3bb891ba"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="b063dd6a-5291-4498-a754-4eda6f8933a8" description="&lt;p>The 'reset' command, issued from Complete once a finished run has been acknowledged, preparing the machine for its next run. Moves Complete to Idle.&lt;/p>"
+                    triggerDescription="" source="#c670e189-6911-4685-a5f7-6b5f5f130838"
+                    target="#630a3282-acec-49b5-9387-1bd5a787faf9" triggers="#3ae31cca-ff85-4a0e-9607-e9aca3d735b1"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="e9c67b42-400e-47b5-9fb5-84bf3db4f379" description="&lt;p>The &amp;#39;reset&amp;#39; command, issued from Stopped to prepare the machine to run again after a full stop. Moves Stopped to Idle.&lt;/p>&#xA;"
+                    triggerDescription="" source="#79c264a0-6ad0-43f5-a768-888ce83f61ff"
+                    target="#630a3282-acec-49b5-9387-1bd5a787faf9" triggers="#3ae31cca-ff85-4a0e-9607-e9aca3d735b1"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="c096f5cd-7b84-47ea-b5fb-dade6139a016" description="&lt;p>The 'unhold' command, issued once the internal condition causing Hold has been resolved. Moves Held directly back to Execute — no Clear or diagnostic step required, since Held is not a logged fault.&lt;/p>"
+                    triggerDescription="" source="#3ca7236e-2528-4886-b377-8824e8819681"
+                    target="#fded8f64-843f-4a5f-8e8f-e5f179a36e5c" triggers="#609bf3a8-00ff-45c4-afed-8ce857c9e0a5"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="9d381d70-4485-4940-bf90-56e9e2ef8db0" description="&lt;p>The 'unsuspend' command, issued once the external/line-level condition causing Suspend has resolved. Moves Suspended directly back to Execute — no Clear or diagnostic step required, since Suspended is not a logged fault.&lt;/p>"
+                    triggerDescription="" source="#bf98261e-1b8d-4aaf-99a7-7680c850b422"
+                    target="#fded8f64-843f-4a5f-8e8f-e5f179a36e5c" triggers="#0fa2be4b-e1d4-4679-8358-c302b88c38d4"/>
+                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                    id="92aa873d-9ccd-48c2-8e67-592ba238b5e2" description="&lt;p>The &amp;#39;stop&amp;#39; command, typically issued for a planned shutdown of the machine. Moves Execute to Stopped; a subsequent Reset is required before the machine can run again.&lt;/p>&#xA;"
+                    triggerDescription="" source="#fded8f64-843f-4a5f-8e8f-e5f179a36e5c"
+                    target="#79c264a0-6ad0-43f5-a768-888ce83f61ff" triggers="#a417654a-f7c5-48a4-a33a-58697f1bd246"/>
+              </ownedRegions>
+            </ownedStateMachines>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="9bf36648-5599-4847-86d0-1a50bb3c4688" name="Line Control I/F">
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="ca117fb5-95ef-442f-9332-a9409707111e" targetElement="#a0629f7e-d1ef-4fde-8ab7-b8354a6d3b09"
+                  sourceElement="#9bf36648-5599-4847-86d0-1a50bb3c4688"/>
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="f7640649-96f8-4a74-b0e3-c3f384082f24" targetElement="#75eabd46-0d03-4acf-b5cc-bc3ffdbd90f4"
+                  sourceElement="#9bf36648-5599-4847-86d0-1a50bb3c4688"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="1be30987-ef89-407e-b413-c441082635c5" name="Operator I/F" orientation="INOUT">
+              <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                  id="23af6921-40a0-4f9b-bd95-17dbdde52fb4" targetElement="#f8a77011-b57f-4120-b3a9-8e1e606ce403"
+                  sourceElement="#1be30987-ef89-407e-b413-c441082635c5"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="c32f09fd-8b6d-436f-a6bf-2ca099f4683d" name="CP 3" orientation="IN"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="628de27a-3fbb-4fd4-9209-fc93726fe211" name="CP 4" orientation="OUT"
+                kind="FLOW"/>
           </ownedLogicalComponents>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
@@ -884,6 +1576,12 @@
                 id="97ec097f-a3c9-4261-8253-6c7974460f6e" targetElement="#25156988-82c1-4e84-904f-58b3c38077f9"
                 sourceElement="#fb49ce97-f01d-4d64-9b75-d60f5f5fae7f"/>
           </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="59ac3048-43d0-471f-8d25-8f826bc0b8e0" name="CP 3"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="666fd379-962c-44a5-b49b-8b6396fa9844" name="CP 4"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="63a041d6-4eab-41b1-87a3-9c83fea11d92" name="CP 5"/>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="5af96d98-13f5-47f5-8cef-a1e47893791d" name="Line Control" actor="true">
@@ -909,6 +1607,34 @@
                 id="59572760-ff18-4a33-b178-21e8ddca5ac7" targetElement="#8b8251a5-90fc-4353-8bdb-574f19250bcc"
                 sourceElement="#733eb75d-b9fc-4302-83ef-d31f8c18766f"/>
           </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="ddc49336-c22a-4852-9ef9-64f15f2bd271" name="CP 3"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="04d16a99-a7a1-4d05-b1ab-960a43cf6238" name="CP 4"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="03919598-6ba2-4a88-bbed-805cadd7786d" name="CP 5"/>
+        </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="02c76ae5-444e-488e-b21e-9f1891068eaa" name="Bottle Pallette" actor="true">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="acdbf2b6-cd1b-4ac8-bee7-13cd360d6319" targetElement="#d7b04328-df47-41bc-be4f-169076179b33"
+              sourceElement="#02c76ae5-444e-488e-b21e-9f1891068eaa"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="87a80bef-98d8-4500-a136-f3ae8bf54a4b" name="CP 1" orientation="OUT"
+              kind="FLOW">
+            <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                id="067e39ef-6da5-4046-acba-97ad7f47c2a4" targetElement="#6d434089-5952-47c8-9ee1-fa01abff70c7"
+                sourceElement="#87a80bef-98d8-4500-a136-f3ae8bf54a4b"/>
+          </ownedFeatures>
+        </ownedLogicalComponents>
+        <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+            id="9360338b-4578-4866-b10f-a937bbfb545c" name="Case Receiver" actor="true">
+          <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+              id="8764526d-6a48-474e-84a8-0f6faf64ea3d" targetElement="#0eb45c39-e095-4d56-a74c-ab000fe42a1d"
+              sourceElement="#9360338b-4578-4866-b10f-a937bbfb545c"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+              id="3cbf0b3b-ffbc-4914-a533-4bdec56eb2d7" name="CP 1" orientation="IN"
+              kind="FLOW"/>
         </ownedLogicalComponents>
       </ownedLogicalComponentPkg>
       <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
