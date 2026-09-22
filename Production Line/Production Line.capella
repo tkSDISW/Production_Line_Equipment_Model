@@ -265,8 +265,9 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="2590c413-0bf7-4ad5-843d-4a57e3ab27b1"
             name="Line Control" abstractType="#5af96d98-13f5-47f5-8cef-a1e47893791d"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-            id="db99ec33-deb2-44ea-8f93-02cbe12dba69" name="C 1" source="#bb1bed90-f75a-424e-8aff-292cb1826d2b"
-            target="#312dd33f-39ed-4fd2-a322-8c97d3dca183" kind="FLOW">
+            id="db99ec33-deb2-44ea-8f93-02cbe12dba69" name="Line Control Interface"
+            source="#bb1bed90-f75a-424e-8aff-292cb1826d2b" target="#312dd33f-39ed-4fd2-a322-8c97d3dca183"
+            kind="FLOW">
           <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
               id="c7844e58-4a40-458b-95e1-f35c53964257" targetElement="#ff92d6d7-db65-4e44-a891-619f3cdf8cac"
               sourceElement="#db99ec33-deb2-44ea-8f93-02cbe12dba69"/>
@@ -275,7 +276,7 @@
               sourceElement="#db99ec33-deb2-44ea-8f93-02cbe12dba69"/>
         </ownedComponentExchanges>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-            id="7c7350b5-c17c-4f3f-b7c0-e06400dd6ed1" name="C 2" source="#f178c7ce-453d-4b66-9eab-3d162bfab8bc"
+            id="7c7350b5-c17c-4f3f-b7c0-e06400dd6ed1" name="Operator Interface" source="#f178c7ce-453d-4b66-9eab-3d162bfab8bc"
             target="#9f48f188-183d-4fbb-a166-17f7feb6ba1e" kind="FLOW">
           <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
               id="d0637126-7b7d-45a6-8341-4540f80b4e5f" targetElement="#6aa5f41b-062f-4170-8d33-29074330f1c1"
@@ -381,7 +382,7 @@
               </ownedRegions>
             </ownedStateMachines>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                id="312dd33f-39ed-4fd2-a322-8c97d3dca183" name="CP 1">
+                id="312dd33f-39ed-4fd2-a322-8c97d3dca183" name="Line Control I/F">
               <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                   id="236b66ad-4081-4775-a01a-c82329b5fc09" targetElement="#37d8bb13-b1bd-4457-b15a-d3a119516d54"
                   sourceElement="#312dd33f-39ed-4fd2-a322-8c97d3dca183"/>
@@ -390,7 +391,7 @@
                   sourceElement="#312dd33f-39ed-4fd2-a322-8c97d3dca183"/>
             </ownedFeatures>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                id="9f48f188-183d-4fbb-a166-17f7feb6ba1e" name="CP 2" orientation="INOUT">
+                id="9f48f188-183d-4fbb-a166-17f7feb6ba1e" name="Operator I/F" orientation="INOUT">
               <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                   id="f0311e12-ac46-47c8-9ca9-750f2f4d864d" targetElement="#c6b9a1e5-5fe0-4cfc-b09e-47aa9b73ae13"
                   sourceElement="#9f48f188-183d-4fbb-a166-17f7feb6ba1e"/>
@@ -404,7 +405,7 @@
               id="8e54a21c-82a6-46bd-9bc9-16ec07cb6e86" targetElement="#9b6bb5c9-c82d-4e0f-afa1-865d39e50373"
               sourceElement="#e664c49c-0430-46ae-8662-fec20329b5af"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-              id="f178c7ce-453d-4b66-9eab-3d162bfab8bc" name="CP 1" orientation="INOUT">
+              id="f178c7ce-453d-4b66-9eab-3d162bfab8bc" name="Machine I/F" orientation="INOUT">
             <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                 id="f7077cf0-e800-447a-9134-2dd7c762285f" targetElement="#18042899-3598-4c74-9a49-f43c0c18fd3b"
                 sourceElement="#f178c7ce-453d-4b66-9eab-3d162bfab8bc"/>
@@ -416,7 +417,7 @@
               id="9e8e85c2-38e5-4a4a-89b1-62cb15c35d8d" targetElement="#794c5d6f-6c44-4ac9-b12e-e1cb35a07aa7"
               sourceElement="#5af96d98-13f5-47f5-8cef-a1e47893791d"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-              id="bb1bed90-f75a-424e-8aff-292cb1826d2b" name="CP 1" orientation="INOUT">
+              id="bb1bed90-f75a-424e-8aff-292cb1826d2b" name="Machine I/F" orientation="INOUT">
             <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                 id="1ce2f8e2-2167-4cff-a91c-be8d47b5c20e" targetElement="#6f82835b-497c-4abb-927f-f8b725cadc5f"
                 sourceElement="#bb1bed90-f75a-424e-8aff-292cb1826d2b"/>
