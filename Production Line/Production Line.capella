@@ -205,11 +205,11 @@
         <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
             id="24896ad2-5b60-4790-a54f-f01d303628a0" name="Clear"/>
         <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
-            id="834c369c-a492-48d6-9a93-71878d9c97d1" name="Start"/>
+            id="834c369c-a492-48d6-9a93-71878d9c97d1" name="start"/>
         <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
-            id="ad4b4ac9-fb00-4a6e-9052-5ba7799abb93" name="Suspend"/>
+            id="ad4b4ac9-fb00-4a6e-9052-5ba7799abb93" name="suspend"/>
         <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
-            id="4f3ec040-3108-442f-82b8-e24d3deaf421" name="Hold"/>
+            id="4f3ec040-3108-442f-82b8-e24d3deaf421" name="hold"/>
         <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
             id="76417c4d-537c-4354-aed3-11782aed438b" name="abort"/>
         <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
@@ -219,9 +219,9 @@
         <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
             id="a6ac515d-3582-41ce-8633-da0e64980e72" name="unhold"/>
         <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
-            id="c5776732-55bf-455d-8827-ec32b3d39140" name="Unsuspend"/>
+            id="c5776732-55bf-455d-8827-ec32b3d39140" name="unsuspend"/>
         <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
-            id="83ec8804-b83f-4dc3-82ee-075b6dd1e2b5" name="Stop"/>
+            id="83ec8804-b83f-4dc3-82ee-075b6dd1e2b5" name="stop"/>
         <ownedStateEvents xsi:type="org.polarsys.capella.core.data.capellacommon:ChangeEvent"
             id="9a0bf4c8-47ce-44fd-9478-3188e2d7b2d3" name="state complete"/>
       </ownedDataPkg>
