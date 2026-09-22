@@ -366,13 +366,13 @@
               id="88e47106-6766-4687-bd80-bc15d7c4f17f" name="Machine Status" target="#1af68d62-5199-4677-a46c-d5006a5e7f21"
               source="#f4856bc4-043a-460f-a518-9ac2b2afff92" exchangedItems="#bfaca94b-ca5e-423b-8367-61f6ba07ac9a #9a4a5953-e8c3-4216-86fd-813498e514c5"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="5abd04cd-b5e3-4d13-a264-202b1cae0ffb" name="FunctionalExchange 4"
+              id="5abd04cd-b5e3-4d13-a264-202b1cae0ffb" name="FillingStation.LineControl"
               target="#c56ac10f-3e01-405e-b3cb-bdd2a1498b4d" source="#e3752f00-fed4-4c30-880f-09f6329a1054"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="fccadcad-fb7e-4a4a-a605-f01c9251fa2d" name="FunctionalExchange 5"
+              id="fccadcad-fb7e-4a4a-a605-f01c9251fa2d" name="FillingStation.MachineStatus"
               target="#8b8251a5-90fc-4353-8bdb-574f19250bcc" source="#7b8003ae-2044-43ca-9044-19674ae2b167"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="b575dc55-891b-43ea-8809-91ff4a628138" name="FunctionalExchange 6"
+              id="b575dc55-891b-43ea-8809-91ff4a628138" name="FillingStation.OperatorControl"
               target="#a4d2a45c-537d-43d3-aa2b-5f308ec75926" source="#25156988-82c1-4e84-904f-58b3c38077f9"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
@@ -511,15 +511,17 @@
               sourceElement="#7c7350b5-c17c-4f3f-b7c0-e06400dd6ed1"/>
         </ownedComponentExchanges>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-            id="b59359ea-fc30-45ef-b1b6-8e9a6036748a" name="C 3" source="#fb49ce97-f01d-4d64-9b75-d60f5f5fae7f"
-            target="#1cdd2527-2bec-40cb-8bf3-f36fd76f0f9d" kind="ASSEMBLY">
+            id="b59359ea-fc30-45ef-b1b6-8e9a6036748a" name="FillingStation.OperatorInterface"
+            source="#fb49ce97-f01d-4d64-9b75-d60f5f5fae7f" target="#1cdd2527-2bec-40cb-8bf3-f36fd76f0f9d"
+            kind="ASSEMBLY">
           <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
               id="aaa2eb1b-1282-4766-b0e6-3b150a8d1c6d" targetElement="#b575dc55-891b-43ea-8809-91ff4a628138"
               sourceElement="#b59359ea-fc30-45ef-b1b6-8e9a6036748a"/>
         </ownedComponentExchanges>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-            id="20302825-d22f-42fa-b143-ed845fe4c229" name="C 4" source="#aa1d903f-0257-407d-97ec-b88df72bcb68"
-            target="#733eb75d-b9fc-4302-83ef-d31f8c18766f" kind="FLOW">
+            id="20302825-d22f-42fa-b143-ed845fe4c229" name="FillingStation.LineControlInterface"
+            source="#aa1d903f-0257-407d-97ec-b88df72bcb68" target="#733eb75d-b9fc-4302-83ef-d31f8c18766f"
+            kind="FLOW">
           <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
               id="7c36b55a-20b8-4ab6-9d42-d2be60ad2974" targetElement="#5abd04cd-b5e3-4d13-a264-202b1cae0ffb"
               sourceElement="#20302825-d22f-42fa-b143-ed845fe4c229"/>
@@ -879,13 +881,13 @@
               id="8e54a21c-82a6-46bd-9bc9-16ec07cb6e86" targetElement="#9b6bb5c9-c82d-4e0f-afa1-865d39e50373"
               sourceElement="#e664c49c-0430-46ae-8662-fec20329b5af"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-              id="f178c7ce-453d-4b66-9eab-3d162bfab8bc" name="Machine I/F" orientation="INOUT">
+              id="f178c7ce-453d-4b66-9eab-3d162bfab8bc" name="InfeedLoad I/F" orientation="INOUT">
             <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                 id="f7077cf0-e800-447a-9134-2dd7c762285f" targetElement="#18042899-3598-4c74-9a49-f43c0c18fd3b"
                 sourceElement="#f178c7ce-453d-4b66-9eab-3d162bfab8bc"/>
           </ownedFeatures>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-              id="fb49ce97-f01d-4d64-9b75-d60f5f5fae7f" name="CP 2">
+              id="fb49ce97-f01d-4d64-9b75-d60f5f5fae7f" name="FillingStation I/F">
             <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                 id="97ec097f-a3c9-4261-8253-6c7974460f6e" targetElement="#25156988-82c1-4e84-904f-58b3c38077f9"
                 sourceElement="#fb49ce97-f01d-4d64-9b75-d60f5f5fae7f"/>
@@ -897,7 +899,7 @@
               id="9e8e85c2-38e5-4a4a-89b1-62cb15c35d8d" targetElement="#794c5d6f-6c44-4ac9-b12e-e1cb35a07aa7"
               sourceElement="#5af96d98-13f5-47f5-8cef-a1e47893791d"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-              id="bb1bed90-f75a-424e-8aff-292cb1826d2b" name="Machine I/F" orientation="INOUT">
+              id="bb1bed90-f75a-424e-8aff-292cb1826d2b" name="InfeedLoad I/F" orientation="INOUT">
             <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                 id="1ce2f8e2-2167-4cff-a91c-be8d47b5c20e" targetElement="#6f82835b-497c-4abb-927f-f8b725cadc5f"
                 sourceElement="#bb1bed90-f75a-424e-8aff-292cb1826d2b"/>
@@ -906,7 +908,8 @@
                 sourceElement="#bb1bed90-f75a-424e-8aff-292cb1826d2b"/>
           </ownedFeatures>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-              id="733eb75d-b9fc-4302-83ef-d31f8c18766f" name="CP 2" orientation="INOUT">
+              id="733eb75d-b9fc-4302-83ef-d31f8c18766f" name="FillingStation I/F"
+              orientation="INOUT">
             <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                 id="e57afcd4-dd2f-41ef-8e0a-a14855fe205a" targetElement="#e3752f00-fed4-4c30-880f-09f6329a1054"
                 sourceElement="#733eb75d-b9fc-4302-83ef-d31f8c18766f"/>
