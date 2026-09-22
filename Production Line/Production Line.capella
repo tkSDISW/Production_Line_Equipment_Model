@@ -279,10 +279,6 @@
                       id="b0707af7-3047-49e5-81f5-f206734952ad" name="region"/>
                 </ownedStates>
                 <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
-                    id="2563fa64-a637-4a09-b7c5-c2f55dc49e6b" triggerDescription=""
-                    source="#f10d60fc-e18a-4026-94af-b9e6a1af0e62" target="#a09d6923-2fd4-4159-8163-891a4f4bca5e"
-                    triggers="#24896ad2-5b60-4790-a54f-f01d303628a0"/>
-                <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
                     id="0851752a-de02-45f0-89bb-0dd2b966c460" triggerDescription=""
                     source="#a09d6923-2fd4-4159-8163-891a4f4bca5e" target="#b1bf0b6d-48c7-48b7-8bcc-529ce617fe77"
                     triggers="#834c369c-a492-48d6-9a93-71878d9c97d1"/>

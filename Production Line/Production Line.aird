@@ -23,7 +23,7 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_cOgi8LYmEfG4xNSpshQb1Q">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_-w6AALYmEfG4xNSpshQb1Q" name="[MSM] TR88 PackML 7 state" repPath="#_-w5Y8LYmEfG4xNSpshQb1Q" changeId="1790074444179">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_-w6AALYmEfG4xNSpshQb1Q" name="[MSM] TR88 PackML 7 state" repPath="#_-w5Y8LYmEfG4xNSpshQb1Q" changeId="1790074748880">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Mode%20State%20Machine']"/>
         <target xmi:type="org.polarsys.capella.core.data.capellacommon:Region" href="Production%20Line.capella#5c5ab4f8-7238-4995-b890-813c0bf634a2"/>
       </ownedRepresentationDescriptors>
@@ -218,22 +218,6 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rzIkQrZvEfG4xNSpshQb1Q" x="550" y="290"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_-w8cQrYmEfG4xNSpshQb1Q"/>
-        <edges xmi:type="notation:Edge" xmi:id="_yQRm0LZvEfG4xNSpshQb1Q" type="4001" element="_yP2wELZvEfG4xNSpshQb1Q" source="_rzIkQLZvEfG4xNSpshQb1Q" target="_mWR6ALZvEfG4xNSpshQb1Q">
-          <children xmi:type="notation:Node" xmi:id="_yQRm1LZvEfG4xNSpshQb1Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yQRm1bZvEfG4xNSpshQb1Q" x="-3" y="20"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_yQRm1rZvEfG4xNSpshQb1Q" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yQRm17ZvEfG4xNSpshQb1Q" x="7" y="-3"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_yQRm2LZvEfG4xNSpshQb1Q" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yQRm2bZvEfG4xNSpshQb1Q" x="-18" y="-3"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_yQRm0bZvEfG4xNSpshQb1Q" jumpLinkStatus="Above" jumpLinkType="Tunnel"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_yQRm0rZvEfG4xNSpshQb1Q" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yQRm07ZvEfG4xNSpshQb1Q" points="[0, -2, 143, 151]$[-150, -2, -7, 151]$[-150, -153, -7, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yQRm2rZvEfG4xNSpshQb1Q" id="(0.0,0.24489795918367346)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yQRm27ZvEfG4xNSpshQb1Q" id="(0.5056179775280899,1.0)"/>
-        </edges>
         <edges xmi:type="notation:Edge" xmi:id="_86TgkLZvEfG4xNSpshQb1Q" type="4001" element="_8520pLZvEfG4xNSpshQb1Q" source="_mWR6ALZvEfG4xNSpshQb1Q" target="_nLfDsLZvEfG4xNSpshQb1Q">
           <children xmi:type="notation:Node" xmi:id="_86TglLZvEfG4xNSpshQb1Q" type="6001">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_86TglbZvEfG4xNSpshQb1Q" x="-4" y="-7"/>
@@ -431,7 +415,7 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Mode%20State%20Machine']/@defaultLayer/@containerMappings[name='MSM_ModeState_Container']/@subContainerMappings[name='MSM_Region']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_mVt5ULZvEfG4xNSpshQb1Q" name="Idle" outgoingEdges="_8520pLZvEfG4xNSpshQb1Q" incomingEdges="_yP2wELZvEfG4xNSpshQb1Q _tJO_JLZwEfG4xNSpshQb1Q _2n5R_LZwEfG4xNSpshQb1Q _9MN6oLZwEfG4xNSpshQb1Q" childrenPresentation="VerticalStack">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_mVt5ULZvEfG4xNSpshQb1Q" name="Idle" outgoingEdges="_8520pLZvEfG4xNSpshQb1Q" incomingEdges="_tJO_JLZwEfG4xNSpshQb1Q _2n5R_LZwEfG4xNSpshQb1Q _9MN6oLZwEfG4xNSpshQb1Q" childrenPresentation="VerticalStack">
       <target xmi:type="org.polarsys.capella.core.data.capellacommon:State" href="Production%20Line.capella#a09d6923-2fd4-4159-8163-891a4f4bca5e"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.capellacommon:State" href="Production%20Line.capella#a09d6923-2fd4-4159-8163-891a4f4bca5e"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_mVt5UbZvEfG4xNSpshQb1Q" borderSize="1" borderSizeComputationExpression="1" borderColor="69,69,69" backgroundStyle="GradientTopToBottom" backgroundColor="239,239,239" foregroundColor="239,239,239">
@@ -511,7 +495,7 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Mode%20State%20Machine']/@defaultLayer/@containerMappings[name='MSM_ModeState_Container']/@subContainerMappings[name='MSM_Region']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_ryjVcLZvEfG4xNSpshQb1Q" name="Aborted" outgoingEdges="_yP2wELZvEfG4xNSpshQb1Q _tJO_JLZwEfG4xNSpshQb1Q" incomingEdges="_npG-dLZwEfG4xNSpshQb1Q" childrenPresentation="VerticalStack">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_ryjVcLZvEfG4xNSpshQb1Q" name="Aborted" outgoingEdges="_tJO_JLZwEfG4xNSpshQb1Q" incomingEdges="_npG-dLZwEfG4xNSpshQb1Q" childrenPresentation="VerticalStack">
       <target xmi:type="org.polarsys.capella.core.data.capellacommon:State" href="Production%20Line.capella#f10d60fc-e18a-4026-94af-b9e6a1af0e62"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.capellacommon:State" href="Production%20Line.capella#f10d60fc-e18a-4026-94af-b9e6a1af0e62"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_ryj8gLZvEfG4xNSpshQb1Q" borderSize="1" borderSizeComputationExpression="1" borderColor="69,69,69" backgroundStyle="GradientTopToBottom" backgroundColor="239,239,239" foregroundColor="239,239,239">
@@ -527,16 +511,7 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Mode%20State%20Machine']/@defaultLayer/@containerMappings[name='MSM_ModeState_Container']/@subContainerMappings[name='MSM_Region']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_yP2wELZvEfG4xNSpshQb1Q" name="(WHEN) Clear" sourceNode="_ryjVcLZvEfG4xNSpshQb1Q" targetNode="_mVt5ULZvEfG4xNSpshQb1Q">
-      <target xmi:type="org.polarsys.capella.core.data.capellacommon:StateTransition" href="Production%20Line.capella#2563fa64-a637-4a09-b7c5-c2f55dc49e6b"/>
-      <semanticElements xmi:type="org.polarsys.capella.core.data.capellacommon:StateTransition" href="Production%20Line.capella#2563fa64-a637-4a09-b7c5-c2f55dc49e6b"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_yP2wEbZvEfG4xNSpshQb1Q" strokeColor="0,0,0">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Mode%20State%20Machine']/@defaultLayer/@edgeMappings[name='MSM_Transition']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_yP2wErZvEfG4xNSpshQb1Q" showIcon="false"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Mode%20State%20Machine']/@defaultLayer/@edgeMappings[name='MSM_Transition']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_8520pLZvEfG4xNSpshQb1Q" name="(WHEN) Start" sourceNode="_mVt5ULZvEfG4xNSpshQb1Q" targetNode="_nK-GULZvEfG4xNSpshQb1Q">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_8520pLZvEfG4xNSpshQb1Q" name="(WHEN) start" sourceNode="_mVt5ULZvEfG4xNSpshQb1Q" targetNode="_nK-GULZvEfG4xNSpshQb1Q">
       <target xmi:type="org.polarsys.capella.core.data.capellacommon:StateTransition" href="Production%20Line.capella#0851752a-de02-45f0-89bb-0dd2b966c460"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.capellacommon:StateTransition" href="Production%20Line.capella#0851752a-de02-45f0-89bb-0dd2b966c460"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_8520pbZvEfG4xNSpshQb1Q" strokeColor="0,0,0">
@@ -554,7 +529,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Mode%20State%20Machine']/@defaultLayer/@edgeMappings[name='MSM_Transition']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ZkiQbLZwEfG4xNSpshQb1Q" name="(WHEN) Suspend" sourceNode="_nK-GULZvEfG4xNSpshQb1Q" targetNode="_qxVJALZvEfG4xNSpshQb1Q">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ZkiQbLZwEfG4xNSpshQb1Q" name="(WHEN) suspend" sourceNode="_nK-GULZvEfG4xNSpshQb1Q" targetNode="_qxVJALZvEfG4xNSpshQb1Q">
       <target xmi:type="org.polarsys.capella.core.data.capellacommon:StateTransition" href="Production%20Line.capella#d78b6521-d050-4c9d-b9c4-86727a8a6b70"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.capellacommon:StateTransition" href="Production%20Line.capella#d78b6521-d050-4c9d-b9c4-86727a8a6b70"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ZkiQbbZwEfG4xNSpshQb1Q" strokeColor="0,0,0">
@@ -563,7 +538,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Mode%20State%20Machine']/@defaultLayer/@edgeMappings[name='MSM_Transition']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_iTgywLZwEfG4xNSpshQb1Q" name="(WHEN) Hold" sourceNode="_nK-GULZvEfG4xNSpshQb1Q" targetNode="_p581ELZvEfG4xNSpshQb1Q">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_iTgywLZwEfG4xNSpshQb1Q" name="(WHEN) hold" sourceNode="_nK-GULZvEfG4xNSpshQb1Q" targetNode="_p581ELZvEfG4xNSpshQb1Q">
       <target xmi:type="org.polarsys.capella.core.data.capellacommon:StateTransition" href="Production%20Line.capella#6a519dbe-6ac5-4456-a9cc-b0f3fc6c973f"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.capellacommon:StateTransition" href="Production%20Line.capella#6a519dbe-6ac5-4456-a9cc-b0f3fc6c973f"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_iTgywbZwEfG4xNSpshQb1Q" strokeColor="0,0,0">
@@ -617,7 +592,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Mode%20State%20Machine']/@defaultLayer/@edgeMappings[name='MSM_Transition']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_jpZLOLZxEfG4xNSpshQb1Q" name="(WHEN) Unsuspend" sourceNode="_qxVJALZvEfG4xNSpshQb1Q" targetNode="_nK-GULZvEfG4xNSpshQb1Q">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_jpZLOLZxEfG4xNSpshQb1Q" name="(WHEN) unsuspend" sourceNode="_qxVJALZvEfG4xNSpshQb1Q" targetNode="_nK-GULZvEfG4xNSpshQb1Q">
       <target xmi:type="org.polarsys.capella.core.data.capellacommon:StateTransition" href="Production%20Line.capella#79a7abc3-2696-4207-aae5-e79180de943e"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.capellacommon:StateTransition" href="Production%20Line.capella#79a7abc3-2696-4207-aae5-e79180de943e"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_jpZLObZxEfG4xNSpshQb1Q" strokeColor="0,0,0">
@@ -626,7 +601,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Mode%20State%20Machine']/@defaultLayer/@edgeMappings[name='MSM_Transition']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_m2E3vLZzEfG4xNSpshQb1Q" name="(WHEN) Stop" sourceNode="_nK-GULZvEfG4xNSpshQb1Q" targetNode="_lIXVYLZvEfG4xNSpshQb1Q">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_m2E3vLZzEfG4xNSpshQb1Q" name="(WHEN) stop" sourceNode="_nK-GULZvEfG4xNSpshQb1Q" targetNode="_lIXVYLZvEfG4xNSpshQb1Q">
       <target xmi:type="org.polarsys.capella.core.data.capellacommon:StateTransition" href="Production%20Line.capella#22db8c22-fbe2-4d3e-a374-47cfecd5124a"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.capellacommon:StateTransition" href="Production%20Line.capella#22db8c22-fbe2-4d3e-a374-47cfecd5124a"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_m2E3vbZzEfG4xNSpshQb1Q" strokeColor="0,0,0">
