@@ -428,10 +428,4 @@
       </ownedArchitectures>
     </ownedModelRoots>
   </org.polarsys.capella.core.data.capellamodeller:Library>
-  <org.polarsys.capella.core.data.capellamodeller:Library id="4a04b40f-d94d-4ec1-99b0-d292ca382225"
-      name="Production Line">
-    <ownedExtensions xsi:type="libraries:ModelInformation" id="945d3e01-9d36-4dff-818f-d6ee769dd3ba"/>
-    <keyValuePairs xsi:type="org.polarsys.capella.core.data.capellacore:KeyValue"
-        id="c9349dfc-eaae-415e-9fa7-85a2659f8eee" key="projectApproach" value="SingletonComponents"/>
-  </org.polarsys.capella.core.data.capellamodeller:Library>
 </xmi:XMI>
