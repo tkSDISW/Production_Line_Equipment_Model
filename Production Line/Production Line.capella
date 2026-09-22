@@ -186,14 +186,14 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="9b6bb5c9-c82d-4e0f-afa1-865d39e50373" name="Control Machine">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="18042899-3598-4c74-9a49-f43c0c18fd3b" name="FOP 1"/>
+                id="18042899-3598-4c74-9a49-f43c0c18fd3b" name="Operator Commands Out"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="794c5d6f-6c44-4ac9-b12e-e1cb35a07aa7" name="Control Machine">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="1af68d62-5199-4677-a46c-d5006a5e7f21" name="FIP 1"/>
+                id="1af68d62-5199-4677-a46c-d5006a5e7f21" name="Machine Status In"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="6f82835b-497c-4abb-927f-f8b725cadc5f" name="FOP 1"/>
+                id="6f82835b-497c-4abb-927f-f8b725cadc5f" name="Line Control Out"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="c40e99f0-78a1-4f01-92ae-cc0e0338f1a9" name="Manage States">
