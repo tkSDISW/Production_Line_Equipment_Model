@@ -530,7 +530,7 @@
                 id="6d434089-5952-47c8-9ee1-fa01abff70c7" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="e278de7f-9544-427e-b8ee-53b0ac0b2ac7" name="File Bottle">
+              id="e278de7f-9544-427e-b8ee-53b0ac0b2ac7" name="Fill Bottle">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="d642a476-a6e4-4fe4-abc3-be29df13150e" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
@@ -1892,7 +1892,7 @@
           </ownedFeatures>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="02c76ae5-444e-488e-b21e-9f1891068eaa" name="Bottle Pallette" actor="true">
+            id="02c76ae5-444e-488e-b21e-9f1891068eaa" name="Bottle Pallet" actor="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="acdbf2b6-cd1b-4ac8-bee7-13cd360d6319" targetElement="#d7b04328-df47-41bc-be4f-169076179b33"
               sourceElement="#02c76ae5-444e-488e-b21e-9f1891068eaa"/>
