@@ -938,7 +938,7 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="2590c413-0bf7-4ad5-843d-4a57e3ab27b1"
             name="Line Control" abstractType="#5af96d98-13f5-47f5-8cef-a1e47893791d"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="73b8c126-e40f-4dea-a720-d1cf116de1cd"
-            name="Bottle Pallette" abstractType="#02c76ae5-444e-488e-b21e-9f1891068eaa"/>
+            name="Bottle Pallet" abstractType="#02c76ae5-444e-488e-b21e-9f1891068eaa"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="db428a0a-13bd-4521-8926-dca2b65886c0"
             name="Case Receiver" abstractType="#9360338b-4578-4866-b10f-a937bbfb545c"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
@@ -1556,6 +1556,14 @@
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="bcd6599d-8ba8-43bf-920f-13d1b810ae97" name="Filling Station">
+              <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+                  id="74e8ca05-4fa4-48e7-8b8f-fac81590d16d" name="" constrainedElements="#bcd6599d-8ba8-43bf-920f-13d1b810ae97">
+                <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                    id="a10cd6ca-3e49-4747-8a28-4fd8a883cca0">
+                  <bodies></bodies>
+                  <languages>capella:linkedText</languages>
+                </ownedSpecification>
+              </ownedConstraints>
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="7dcfabfd-0943-4837-b429-8f748d53d90a" targetElement="#010155c8-c2fa-472c-a229-895b204d1a02"
                   sourceElement="#bcd6599d-8ba8-43bf-920f-13d1b810ae97"/>
@@ -1771,7 +1779,8 @@
                 </ownedRegions>
               </ownedStateMachines>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                  id="76660931-fa0f-4e84-a7dd-889f9740d9cf" name="Line Control I/F">
+                  id="76660931-fa0f-4e84-a7dd-889f9740d9cf" name="Line Control I/F"
+                  orientation="INOUT">
                 <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                     id="7619bab2-01c0-4edd-8328-03300a0caca4" targetElement="#e43a30cb-47d3-4bab-9a76-294076df2333"
                     sourceElement="#76660931-fa0f-4e84-a7dd-889f9740d9cf"/>
@@ -1805,6 +1814,14 @@
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="e664c49c-0430-46ae-8662-fec20329b5af" name="Operator" actor="true"
             human="true">
+          <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+              id="25582e5b-4c19-4c5d-bf68-edcd6c6f4766" name="" constrainedElements="#e664c49c-0430-46ae-8662-fec20329b5af">
+            <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                id="d930c4b3-28eb-4600-811c-a9c754b8512a">
+              <bodies></bodies>
+              <languages>capella:linkedText</languages>
+            </ownedSpecification>
+          </ownedConstraints>
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="8e54a21c-82a6-46bd-9bc9-16ec07cb6e86" targetElement="#9b6bb5c9-c82d-4e0f-afa1-865d39e50373"
               sourceElement="#e664c49c-0430-46ae-8662-fec20329b5af"/>
@@ -1841,6 +1858,14 @@
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="5af96d98-13f5-47f5-8cef-a1e47893791d" name="Line Control" actor="true">
+          <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+              id="4389c197-fcdf-42bd-b9a9-1354ba6027eb" name="" constrainedElements="#5af96d98-13f5-47f5-8cef-a1e47893791d">
+            <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                id="55a33fbb-3a67-4623-b279-1c3cfbd62c70">
+              <bodies></bodies>
+              <languages>capella:linkedText</languages>
+            </ownedSpecification>
+          </ownedConstraints>
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="9e8e85c2-38e5-4a4a-89b1-62cb15c35d8d" targetElement="#794c5d6f-6c44-4ac9-b12e-e1cb35a07aa7"
               sourceElement="#5af96d98-13f5-47f5-8cef-a1e47893791d"/>
