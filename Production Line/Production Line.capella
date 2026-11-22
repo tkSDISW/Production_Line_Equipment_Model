@@ -458,7 +458,7 @@
                 id="9abd80db-93c6-4c26-956c-f76900fc3f6d" name="FOP 5"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="794c5d6f-6c44-4ac9-b12e-e1cb35a07aa7" name="Control Machines" description="&lt;p>Monitors every machine on the line for an &amp;#39;abort&amp;#39; report on its Machine Status exchange. When a machine downstream reports Aborted, this function suspends every machine downstream of the fault point (so unfinished/in-flight material doesn&amp;#39;t back up into a station that can no longer accept it), and issues &amp;#39;unsuspend&amp;#39; back to those same downstream machines once the faulted machine reports Clear and returns to Idle, resuming normal line flow.&lt;/p>&#xA;">
+              id="794c5d6f-6c44-4ac9-b12e-e1cb35a07aa7" name="Control Machines" description="&lt;p>The &amp;#39;reset&amp;#39; command, issued from Stopped to prepare the machine to run again after a full stop. Moves Stopped to Idle.&lt;/p>&#xA;">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="1af68d62-5199-4677-a46c-d5006a5e7f21" name="Machine Status In"
                 incomingExchangeItems="#2d72bf14-dac4-47e6-90a2-8e6a6946c1c2 #3d1f2b89-09d5-4aa7-9f2d-0a469609ac20 #bfaca94b-ca5e-423b-8367-61f6ba07ac9a #9a4a5953-e8c3-4216-86fd-813498e514c5"/>
