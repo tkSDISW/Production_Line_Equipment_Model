@@ -942,7 +942,7 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="db428a0a-13bd-4521-8926-dca2b65886c0"
             name="Case Receiver" abstractType="#9360338b-4578-4866-b10f-a937bbfb545c"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-            id="db99ec33-deb2-44ea-8f93-02cbe12dba69" name="InfeedLoad.Line Control Interface"
+            id="db99ec33-deb2-44ea-8f93-02cbe12dba69" name="InfeedLoad.LineControlInterface"
             source="#bb1bed90-f75a-424e-8aff-292cb1826d2b" target="#76660931-fa0f-4e84-a7dd-889f9740d9cf"
             kind="FLOW">
           <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
@@ -953,7 +953,7 @@
               sourceElement="#db99ec33-deb2-44ea-8f93-02cbe12dba69"/>
         </ownedComponentExchanges>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-            id="7c7350b5-c17c-4f3f-b7c0-e06400dd6ed1" name="InfeedLoad.Operator Interface"
+            id="7c7350b5-c17c-4f3f-b7c0-e06400dd6ed1" name="InfeedLoad.OperatorInterface"
             source="#f178c7ce-453d-4b66-9eab-3d162bfab8bc" target="#3271e34f-f7a3-4901-ac09-3a24c20d936b"
             kind="FLOW">
           <ownedComponentExchangeFunctionalExchangeAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentExchangeFunctionalExchangeAllocation"
