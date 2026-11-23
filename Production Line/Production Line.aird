@@ -128,7 +128,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg" href="Production%20Line.capella#43d74527-681c-4e84-b6ac-e459527d878a"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_U4598LdQEfGlw5yDVbCAXA" name="[LAB] Production Line (Components Images)" repPath="#_U43hsLdQEfGlw5yDVbCAXA" changeId="1795399736225">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_U4598LdQEfGlw5yDVbCAXA" name="[LAB] Production Line (Components Images)" repPath="#_U43hsLdQEfGlw5yDVbCAXA" changeId="1795441346058">
         <eAnnotations xmi:type="description:DAnnotation" uid="_U426oLdQEfGlw5yDVbCAXA" source="https://www.polarsys.org/capella/dannotation/DesactivatedFilters">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U5DH4LdQEfGlw5yDVbCAXA" key="hide.computed.component.exchanges.filter" value="true"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U5DH4bdQEfGlw5yDVbCAXA" key="hide.computed.physical.links.filter" value="true"/>
@@ -136,7 +136,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']"/>
         <target xmi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg" href="Production%20Line.capella#43d74527-681c-4e84-b6ac-e459527d878a"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_llAngrdTEfGlw5yDVbCAXA" name="[LAB] Control Filling Control" repPath="#_llAngLdTEfGlw5yDVbCAXA" changeId="1795437160452">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_llAngrdTEfGlw5yDVbCAXA" name="[LAB] Control Filling Control" repPath="#_llAngLdTEfGlw5yDVbCAXA" changeId="1795441358805">
         <eAnnotations xmi:type="description:DAnnotation" uid="_llKYg7dTEfGlw5yDVbCAXA" source="https://www.polarsys.org/capella/dannotation/DesactivatedFilters">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_llKYhLdTEfGlw5yDVbCAXA" key="hide.computed.component.exchanges.filter" value="true"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_llKYhbdTEfGlw5yDVbCAXA" key="hide.computed.physical.links.filter" value="true"/>
@@ -20237,7 +20237,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']/@defaultLayer/@edgeMappings[name='LAB%20DataFlow%20between%20Function']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_U44wHbdQEfGlw5yDVbCAXA" name="Machine Status [InfeedLoad.abort, InfeedLoad.machineStateComplete]" visible="false" sourceNode="_U44wQ7dQEfGlw5yDVbCAXA" targetNode="_U44v97dQEfGlw5yDVbCAXA" beginLabel="." endLabel=".">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_U44wHbdQEfGlw5yDVbCAXA" name="Machine Status [InfeedLoad.abort, InfeedLoad.machineStateComplete, InfeedLoad.stopped, InfeedLoad.held, InfeedLoad.returnedToIdle, InfeedLoad.resumedExecute]" visible="false" sourceNode="_U44wQ7dQEfGlw5yDVbCAXA" targetNode="_U44v97dQEfGlw5yDVbCAXA" beginLabel="." endLabel=".">
       <target xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="Production%20Line.capella#88e47106-6766-4687-bd80-bc15d7c4f17f"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="Production%20Line.capella#88e47106-6766-4687-bd80-bc15d7c4f17f"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalChain" href="Production%20Line.capella#200b5f7a-670e-457e-ab7b-a5139571368e"/>
@@ -20580,7 +20580,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']/@defaultLayer/@edgeMappings[name='LAB%20DataFlow%20between%20Function']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_U44whLdQEfGlw5yDVbCAXA" name="FillingStation.MachineStatus [FillingStation.abort, FillingStation.machineStateComplete]" visible="false" sourceNode="_U44wardQEfGlw5yDVbCAXA" targetNode="_U44v_bdQEfGlw5yDVbCAXA" beginLabel="." endLabel=".">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_U44whLdQEfGlw5yDVbCAXA" name="FillingStation.MachineStatus [FillingStation.abort, FillingStation.machineStateComplete, FillingStation.stopped, FillingStation.held, FillingStation.returnedToIdle, FillingStation.resumedExecute]" visible="false" sourceNode="_U44wardQEfGlw5yDVbCAXA" targetNode="_U44v_bdQEfGlw5yDVbCAXA" beginLabel="." endLabel=".">
       <target xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="Production%20Line.capella#fccadcad-fb7e-4a4a-a605-f01c9251fa2d"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="Production%20Line.capella#fccadcad-fb7e-4a4a-a605-f01c9251fa2d"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalChain" href="Production%20Line.capella#c6a4fc28-a56f-4a3e-add2-abfe9b3d44e1"/>
@@ -21653,7 +21653,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']/@defaultLayer/@edgeMappings[name='LAB%20DataFlow%20between%20Function']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_U44x0rdQEfGlw5yDVbCAXA" name="CappingStation.MachineStatus [CappingStation.abort, CappingStation.machineStateComplete]" visible="false" sourceNode="_U44w4bdQEfGlw5yDVbCAXA" targetNode="_U44wA7dQEfGlw5yDVbCAXA" beginLabel="." endLabel=".">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_U44x0rdQEfGlw5yDVbCAXA" name="CappingStation.MachineStatus [CappingStation.abort, CappingStation.machineStateComplete, CappingStation.stopped, CappingStation.held, CappingStation.returnedToIdle, CappingStation.resumedExecute]" visible="false" sourceNode="_U44w4bdQEfGlw5yDVbCAXA" targetNode="_U44wA7dQEfGlw5yDVbCAXA" beginLabel="." endLabel=".">
       <target xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="Production%20Line.capella#263eee02-715f-463f-915b-294c3a9a8c78"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="Production%20Line.capella#263eee02-715f-463f-915b-294c3a9a8c78"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalChain" href="Production%20Line.capella#95edd8af-9bcd-4e71-af30-e7476da22752"/>
@@ -21695,7 +21695,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']/@defaultLayer/@edgeMappings[name='LAB%20DataFlow%20between%20Function']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_U44x4bdQEfGlw5yDVbCAXA" name="LabelingStation.MachineStatus [LabelingStation.abort, LabelingStation.machineStateComplete]" visible="false" sourceNode="_U44xC7dQEfGlw5yDVbCAXA" targetNode="_U44wCbdQEfGlw5yDVbCAXA" beginLabel="." endLabel=".">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_U44x4bdQEfGlw5yDVbCAXA" name="LabelingStation.MachineStatus [LabelingStation.abort, LabelingStation.machineStateComplete, LabelingStation.stopped, LabelingStation.held, LabelingStation.returnedToIdle, LabelingStation.resumedExecute]" visible="false" sourceNode="_U44xC7dQEfGlw5yDVbCAXA" targetNode="_U44wCbdQEfGlw5yDVbCAXA" beginLabel="." endLabel=".">
       <target xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="Production%20Line.capella#4244d4e9-f495-4a6a-afd8-7a253b18806e"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="Production%20Line.capella#4244d4e9-f495-4a6a-afd8-7a253b18806e"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalChain" href="Production%20Line.capella#e8ea5de3-2e6f-4543-b2e6-288d7b904919"/>
@@ -21723,7 +21723,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']/@defaultLayer/@edgeMappings[name='LAB%20DataFlow%20between%20Function']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_U44x67dQEfGlw5yDVbCAXA" name="CasePackingStation.MachineStatus [CasePackingStation.abort, CasePackingStation.machineStateComplete]" visible="false" sourceNode="_U44xNbdQEfGlw5yDVbCAXA" targetNode="_U44wD7dQEfGlw5yDVbCAXA" beginLabel="." endLabel=".">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_U44x67dQEfGlw5yDVbCAXA" name="CasePackingStation.MachineStatus [CasePackingStation.abort, CasePackingStation.machineStateComplete, CasePackingStation.stopped, CasePackingStation.held, CasePackingStation.returnedToIdle, CasePackingStation.resumedExecute]" visible="false" sourceNode="_U44xNbdQEfGlw5yDVbCAXA" targetNode="_U44wD7dQEfGlw5yDVbCAXA" beginLabel="." endLabel=".">
       <target xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="Production%20Line.capella#cf4cd311-6e07-4114-b40e-e0c4819f302c"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="Production%20Line.capella#cf4cd311-6e07-4114-b40e-e0c4819f302c"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalChain" href="Production%20Line.capella#c3167a60-bdb6-426d-83ee-506da6ad936e"/>
@@ -23296,7 +23296,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']/@defaultLayer/@edgeMappings[name='LAB%20DataFlow%20between%20Function']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_slNT1LdTEfGlw5yDVbCAXA" name="FillingStation.MachineStatus [FillingStation.abort, FillingStation.machineStateComplete]" sourceNode="_slNT0LdTEfGlw5yDVbCAXA" targetNode="_slMswLdTEfGlw5yDVbCAXA" beginLabel="." endLabel=".">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_slNT1LdTEfGlw5yDVbCAXA" name="FillingStation.MachineStatus [FillingStation.abort, FillingStation.machineStateComplete, FillingStation.stopped, FillingStation.held, FillingStation.returnedToIdle, FillingStation.resumedExecute]" sourceNode="_slNT0LdTEfGlw5yDVbCAXA" targetNode="_slMswLdTEfGlw5yDVbCAXA" beginLabel="." endLabel=".">
       <target xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="Production%20Line.capella#fccadcad-fb7e-4a4a-a605-f01c9251fa2d"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="Production%20Line.capella#fccadcad-fb7e-4a4a-a605-f01c9251fa2d"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalChain" href="Production%20Line.capella#c6a4fc28-a56f-4a3e-add2-abfe9b3d44e1"/>
