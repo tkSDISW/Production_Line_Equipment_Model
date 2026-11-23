@@ -973,6 +973,21 @@
         <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
             id="0fe66b58-6768-484e-acd6-3d46478ddec5" description="&lt;p>Status notification from this machine to Line Control: the machine has returned to Idle, from Stopped after reset or from Aborted after clear. Not a TR88 signal. Added so Line Control can tell when a stopped or aborted machine has recovered. Allocated on the Machine Status exchange.&lt;/p>"
             name="CasePackingStation.returnedToIdle"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="0f3a8a8c-c396-41c9-ae95-85f6daebe138" description="&lt;p>Status notification from this machine to Line Control: the machine has left Held and returned to Execute (after unhold). Not a TR88 signal. Added so Line Control can tell when a held machine has resumed. Allocated on the Machine Status exchange.&lt;/p>"
+            name="InfeedLoad.resumedExecute"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="7ba981e3-7bc7-4fec-9129-e446ae68d1ac" description="&lt;p>Status notification from this machine to Line Control: the machine has left Held and returned to Execute (after unhold). Not a TR88 signal. Added so Line Control can tell when a held machine has resumed. Allocated on the Machine Status exchange.&lt;/p>"
+            name="FillingStation.resumedExecute"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="b9bd3494-8e08-4a58-b535-5789e09cd7e3" description="&lt;p>Status notification from this machine to Line Control: the machine has left Held and returned to Execute (after unhold). Not a TR88 signal. Added so Line Control can tell when a held machine has resumed. Allocated on the Machine Status exchange.&lt;/p>"
+            name="CappingStation.resumedExecute"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="2d224ef6-7a45-4f55-ad94-33c3b54136d9" description="&lt;p>Status notification from this machine to Line Control: the machine has left Held and returned to Execute (after unhold). Not a TR88 signal. Added so Line Control can tell when a held machine has resumed. Allocated on the Machine Status exchange.&lt;/p>"
+            name="LabelingStation.resumedExecute"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="a1a76009-e49d-4114-9b81-3e152a4dd54b" description="&lt;p>Status notification from this machine to Line Control: the machine has left Held and returned to Execute (after unhold). Not a TR88 signal. Added so Line Control can tell when a held machine has resumed. Allocated on the Machine Status exchange.&lt;/p>"
+            name="CasePackingStation.resumedExecute"/>
       </ownedDataPkg>
       <ownedLogicalComponentPkg xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
           id="43d74527-681c-4e84-b6ac-e459527d878a" name="Structure">
