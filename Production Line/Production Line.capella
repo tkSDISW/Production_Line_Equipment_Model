@@ -458,7 +458,7 @@
                 id="9abd80db-93c6-4c26-956c-f76900fc3f6d" name="FOP 5"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="794c5d6f-6c44-4ac9-b12e-e1cb35a07aa7" name="Control Machines" description="&lt;p>Line Control's supervisory function. Monitors every machine's abort and machine-state-complete reports. When one machine aborts, it suspends the downstream machines so in-flight material does not back up into a station that can no longer accept it. It unsuspends them once the faulted machine has been cleared and returned to Idle. It never issues clear. Recovery from Aborted needs the Operator.&lt;/p>">
+              id="794c5d6f-6c44-4ac9-b12e-e1cb35a07aa7" name="Control Machines" description="&lt;p>Line Control's supervisory function. Monitors the reports every machine sends on Machine Status (abort and machine-state-complete).&lt;/p>&lt;p>Line-suspend logic: when any machine is Stopped, Aborted or Held, this function sends suspend to all the other machines, so the rest of the line pauses instead of continuing to run while one machine is not producing. It sends unsuspend to the other machines once no machine is Stopped, Aborted or Held.&lt;/p>&lt;p>It never issues clear, reset or unhold. Recovery of the affected machine needs the Operator: clear from Aborted, reset from Stopped, unhold from Held.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="1af68d62-5199-4677-a46c-d5006a5e7f21" name="Machine Status In"
                 incomingExchangeItems="#2d72bf14-dac4-47e6-90a2-8e6a6946c1c2 #3d1f2b89-09d5-4aa7-9f2d-0a469609ac20 #bfaca94b-ca5e-423b-8367-61f6ba07ac9a #9a4a5953-e8c3-4216-86fd-813498e514c5"/>
