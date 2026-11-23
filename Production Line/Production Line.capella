@@ -928,6 +928,51 @@
             id="e50eda49-8b6d-4ed8-b035-72b820dd8008" name="CasePackingStation.hold"
             description="&lt;p>Per ANSI/ISA-TR88.00.02: the 'hold' command. Carries the command pausing the machine for an internal condition (low material, minor sensor flag, operator intervention). Allocated on the Operator Control exchange.&lt;/p>"
             exchangeMechanism="EVENT"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="33c047e7-97a2-43f2-992f-2e835ca557f3" description="&lt;p>Status notification from this machine to Line Control: the machine has entered Stopped (after an operator stop). Not a TR88 signal. Added so Line Control can apply its line-suspend logic. Allocated on the Machine Status exchange.&lt;/p>"
+            name="InfeedLoad.stopped"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="ff1bd361-94ec-4080-a84c-e5e1dcfe3a7b" description="&lt;p>Status notification from this machine to Line Control: the machine has entered Held (after a hold). Not a TR88 signal. Added so Line Control can apply its line-suspend logic. Allocated on the Machine Status exchange.&lt;/p>"
+            name="InfeedLoad.held"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="146ee40e-93bb-4ca0-a020-726a7e7c6681" description="&lt;p>Status notification from this machine to Line Control: the machine has returned to Idle, from Stopped after reset or from Aborted after clear. Not a TR88 signal. Added so Line Control can tell when a stopped or aborted machine has recovered. Allocated on the Machine Status exchange.&lt;/p>"
+            name="InfeedLoad.returnedToIdle"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="3d5fd738-47ea-4375-91da-d9c6855a096b" description="&lt;p>Status notification from this machine to Line Control: the machine has entered Stopped (after an operator stop). Not a TR88 signal. Added so Line Control can apply its line-suspend logic. Allocated on the Machine Status exchange.&lt;/p>"
+            name="FillingStation.stopped"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="7411e17d-0528-4f4c-9376-8f18b48b8755" description="&lt;p>Status notification from this machine to Line Control: the machine has entered Held (after a hold). Not a TR88 signal. Added so Line Control can apply its line-suspend logic. Allocated on the Machine Status exchange.&lt;/p>"
+            name="FillingStation.held"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="8b33eca7-546c-4072-bb52-917254cabaa8" description="&lt;p>Status notification from this machine to Line Control: the machine has returned to Idle, from Stopped after reset or from Aborted after clear. Not a TR88 signal. Added so Line Control can tell when a stopped or aborted machine has recovered. Allocated on the Machine Status exchange.&lt;/p>"
+            name="FillingStation.returnedToIdle"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="75c199d1-96e5-4ba7-8a97-d88f336c5bcc" description="&lt;p>Status notification from this machine to Line Control: the machine has entered Stopped (after an operator stop). Not a TR88 signal. Added so Line Control can apply its line-suspend logic. Allocated on the Machine Status exchange.&lt;/p>"
+            name="CappingStation.stopped"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="a4e27abd-c683-4db2-9e5b-0519e2306c36" description="&lt;p>Status notification from this machine to Line Control: the machine has entered Held (after a hold). Not a TR88 signal. Added so Line Control can apply its line-suspend logic. Allocated on the Machine Status exchange.&lt;/p>"
+            name="CappingStation.held"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="9a59e651-0a7b-4c56-ab67-acb4f197c249" description="&lt;p>Status notification from this machine to Line Control: the machine has returned to Idle, from Stopped after reset or from Aborted after clear. Not a TR88 signal. Added so Line Control can tell when a stopped or aborted machine has recovered. Allocated on the Machine Status exchange.&lt;/p>"
+            name="CappingStation.returnedToIdle"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="e0dc2d3c-1492-4105-adc5-8f8ad6b0f68f" description="&lt;p>Status notification from this machine to Line Control: the machine has entered Stopped (after an operator stop). Not a TR88 signal. Added so Line Control can apply its line-suspend logic. Allocated on the Machine Status exchange.&lt;/p>"
+            name="LabelingStation.stopped"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="9c3c5002-7414-4ffc-8719-53e0d9e3269b" description="&lt;p>Status notification from this machine to Line Control: the machine has entered Held (after a hold). Not a TR88 signal. Added so Line Control can apply its line-suspend logic. Allocated on the Machine Status exchange.&lt;/p>"
+            name="LabelingStation.held"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="f1572daa-dabe-4e72-9920-5aa3feafe324" description="&lt;p>Status notification from this machine to Line Control: the machine has returned to Idle, from Stopped after reset or from Aborted after clear. Not a TR88 signal. Added so Line Control can tell when a stopped or aborted machine has recovered. Allocated on the Machine Status exchange.&lt;/p>"
+            name="LabelingStation.returnedToIdle"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="3d0bd616-ed8f-47f3-b366-005fa291081c" description="&lt;p>Status notification from this machine to Line Control: the machine has entered Stopped (after an operator stop). Not a TR88 signal. Added so Line Control can apply its line-suspend logic. Allocated on the Machine Status exchange.&lt;/p>"
+            name="CasePackingStation.stopped"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="df132b68-95c7-4c69-995a-ae91929ddeae" description="&lt;p>Status notification from this machine to Line Control: the machine has entered Held (after a hold). Not a TR88 signal. Added so Line Control can apply its line-suspend logic. Allocated on the Machine Status exchange.&lt;/p>"
+            name="CasePackingStation.held"/>
+        <ownedExchangeItems xsi:type="org.polarsys.capella.core.data.information:ExchangeItem"
+            id="0fe66b58-6768-484e-acd6-3d46478ddec5" description="&lt;p>Status notification from this machine to Line Control: the machine has returned to Idle, from Stopped after reset or from Aborted after clear. Not a TR88 signal. Added so Line Control can tell when a stopped or aborted machine has recovered. Allocated on the Machine Status exchange.&lt;/p>"
+            name="CasePackingStation.returnedToIdle"/>
       </ownedDataPkg>
       <ownedLogicalComponentPkg xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
           id="43d74527-681c-4e84-b6ac-e459527d878a" name="Structure">
