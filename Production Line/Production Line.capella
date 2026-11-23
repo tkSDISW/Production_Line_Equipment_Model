@@ -444,7 +444,7 @@
                 source="#e23ec5a8-9e33-46a6-8957-5c98b673ca36" target="#3cf076fd-33d7-4286-b39a-aade95462c22"/>
           </ownedFunctionalChains>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="9b6bb5c9-c82d-4e0f-afa1-865d39e50373" name="Control Machine">
+              id="9b6bb5c9-c82d-4e0f-afa1-865d39e50373" name="Control Machine" description="&lt;p>The Operator's function. Sends operator commands (start, stop, hold, unhold, reset, clear) to the Manage States function of each machine.&lt;/p>">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="18042899-3598-4c74-9a49-f43c0c18fd3b" name="Operator Commands Out"
                 outgoingExchangeItems="#a9556d07-c77a-4c92-bced-269417bbe4a9 #cd6016d8-0fe9-45b4-a70b-e18c1ff4add2 #2091100a-571d-402d-b4e7-269c01ec26ee #458458d8-39c7-4a29-a2d5-dbe847bbc7db #88ebd2bd-ae30-43b4-af7b-fd074e7e75f6 #73fcf1dd-1f92-4c88-b25a-8263f10465e1"/>
@@ -458,7 +458,7 @@
                 id="9abd80db-93c6-4c26-956c-f76900fc3f6d" name="FOP 5"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="794c5d6f-6c44-4ac9-b12e-e1cb35a07aa7" name="Control Machines" description="&lt;p>The &amp;#39;reset&amp;#39; command, issued from Stopped to prepare the machine to run again after a full stop. Moves Stopped to Idle.&lt;/p>&#xA;">
+              id="794c5d6f-6c44-4ac9-b12e-e1cb35a07aa7" name="Control Machines" description="&lt;p>Line Control's supervisory function. Monitors every machine's abort and machine-state-complete reports. When one machine aborts, it suspends the downstream machines so in-flight material does not back up into a station that can no longer accept it. It unsuspends them once the faulted machine has been cleared and returned to Idle. It never issues clear. Recovery from Aborted needs the Operator.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="1af68d62-5199-4677-a46c-d5006a5e7f21" name="Machine Status In"
                 incomingExchangeItems="#2d72bf14-dac4-47e6-90a2-8e6a6946c1c2 #3d1f2b89-09d5-4aa7-9f2d-0a469609ac20 #bfaca94b-ca5e-423b-8367-61f6ba07ac9a #9a4a5953-e8c3-4216-86fd-813498e514c5"/>
@@ -483,7 +483,7 @@
                 id="fe3680c5-f759-42ca-addf-1f54bd352917" name="FOP 5"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="c40e99f0-78a1-4f01-92ae-cc0e0338f1a9" name="Manage States">
+              id="c40e99f0-78a1-4f01-92ae-cc0e0338f1a9" name="Manage States" description="&lt;p>Runs this machine's TR88 seven-state machine: Stopped, Idle, Execute, Complete, Held, Suspended, Aborted. Accepts operator commands and line-control suspend and unsuspend. Reports abort and machine-state-complete on Machine Status.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="c6b9a1e5-5fe0-4cfc-b09e-47aa9b73ae13" name="Operator Commands In"
                 incomingExchangeItems="#a9556d07-c77a-4c92-bced-269417bbe4a9 #cd6016d8-0fe9-45b4-a70b-e18c1ff4add2 #2091100a-571d-402d-b4e7-269c01ec26ee #458458d8-39c7-4a29-a2d5-dbe847bbc7db #88ebd2bd-ae30-43b4-af7b-fd074e7e75f6 #73fcf1dd-1f92-4c88-b25a-8263f10465e1"/>
@@ -496,7 +496,7 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="17e927fe-b778-46f7-a4fc-a2560f986a61" name="Manage States"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="445fe798-4d9a-48ca-ad32-085f0630d90c" name="Manage States">
+              id="445fe798-4d9a-48ca-ad32-085f0630d90c" name="Manage States" description="&lt;p>Runs this machine's TR88 seven-state machine: Stopped, Idle, Execute, Complete, Held, Suspended, Aborted. Accepts operator commands and line-control suspend and unsuspend. Reports abort and machine-state-complete on Machine Status.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="eb0f0b73-8a63-4a1d-9028-2d9e9effaa38" name="Operator Commands In"
                 incomingExchangeItems="#795c9e42-292f-4ca0-b964-a2145db4e460 #e5b7cf28-b7b3-4e13-82e1-38e0ef37b48a #d5227c1f-4f41-44e4-8427-42e2614aee78 #5775db58-9921-430a-bd56-ed9b921cc1a2 #0d541da9-b58f-4b3c-ac8e-4ec42cb42a10 #9815a2ac-ee92-43bb-8aa8-cac85fc881a4"/>
@@ -507,7 +507,7 @@
                 outgoingExchangeItems="#bfaca94b-ca5e-423b-8367-61f6ba07ac9a #1c6e2719-a622-40e2-a5d6-81d7ca48d4de #9a4a5953-e8c3-4216-86fd-813498e514c5"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="010155c8-c2fa-472c-a229-895b204d1a02" name="Manage States">
+              id="010155c8-c2fa-472c-a229-895b204d1a02" name="Manage States" description="&lt;p>Runs this machine's TR88 seven-state machine: Stopped, Idle, Execute, Complete, Held, Suspended, Aborted. Accepts operator commands and line-control suspend and unsuspend. Reports abort and machine-state-complete on Machine Status.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="a4d2a45c-537d-43d3-aa2b-5f308ec75926" name="Operator Commands In"
                 incomingExchangeItems="#d46776cf-56b9-49d7-9d21-6231988436ba #76f58de5-1e64-4382-a51e-5febbb7e6df7 #35670c09-5ebd-475e-8aee-a7b5ab84a5d8 #91e64d7e-1408-4572-9cb9-2b0d42874a6d #07be5c73-fc3f-4197-8616-5140954b2083 #67d201d6-7994-4db4-8460-f5e917462b10"/>
@@ -518,26 +518,26 @@
                 outgoingExchangeItems="#96b7ac36-8a70-4b0b-a7d2-7761e65dd035 #9a4a5953-e8c3-4216-86fd-813498e514c5"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="59408a75-44e4-40ec-b052-9b8fa52efbb0" name="Load">
+              id="59408a75-44e4-40ec-b052-9b8fa52efbb0" name="Load" description="&lt;p>Takes bottles from Supply Bottle and passes them to Fill Bottle.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="8cc69f47-a3ce-40aa-81d1-188e2ab76223" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="ba61d465-653d-4897-b8ff-16a1005edd50" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="d7b04328-df47-41bc-be4f-169076179b33" name="Supply Bottle">
+              id="d7b04328-df47-41bc-be4f-169076179b33" name="Supply Bottle" description="&lt;p>Supplies bottles from the pallet to Load.&lt;/p>">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="6d434089-5952-47c8-9ee1-fa01abff70c7" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="e278de7f-9544-427e-b8ee-53b0ac0b2ac7" name="Fill Bottle">
+              id="e278de7f-9544-427e-b8ee-53b0ac0b2ac7" name="Fill Bottle" description="&lt;p>Fills bottles and passes them to Cap Bottle.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="d642a476-a6e4-4fe4-abc3-be29df13150e" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="c4e86a14-f74b-40e9-8088-ccc32ed4dce5" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="aedbf5a2-a315-43c7-8066-bdeae7d4bdf5" name="Manage States">
+              id="aedbf5a2-a315-43c7-8066-bdeae7d4bdf5" name="Manage States" description="&lt;p>Runs this machine's TR88 seven-state machine: Stopped, Idle, Execute, Complete, Held, Suspended, Aborted. Accepts operator commands and line-control suspend and unsuspend. Reports abort and machine-state-complete on Machine Status.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="b4e0aa7c-59ba-43ec-9612-c980da7b692f" name="Operator Commands In"
                 incomingExchangeItems="#8aafd4f7-6b54-414e-9c73-ee3ff33df8f1 #4934c753-6bd4-49f8-a7bf-0df4bf756d18 #1d9c9b5b-a771-4b2f-abf6-41394be5c911 #1bbdeea0-5dd6-40f5-a1bb-ca86aeeb028a #67ac4d7b-3c5c-40ab-b84f-f4f6ff395b97 #533dadd6-4243-4832-bfd6-2e8519161730"/>
@@ -548,7 +548,7 @@
                 outgoingExchangeItems="#bb3c0e02-54dd-4717-8d6d-2e38254dfb34 #07b618d3-86ea-487a-8368-76ff24b4a871"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="a2f12199-7d28-4f13-b4e3-6337689486d9" name="Manage States">
+              id="a2f12199-7d28-4f13-b4e3-6337689486d9" name="Manage States" description="&lt;p>Runs this machine's TR88 seven-state machine: Stopped, Idle, Execute, Complete, Held, Suspended, Aborted. Accepts operator commands and line-control suspend and unsuspend. Reports abort and machine-state-complete on Machine Status.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="f3cefc53-f55c-42d4-a24c-a77712b37a4f" name="Operator Commands In"
                 incomingExchangeItems="#961de12a-045b-4c39-90f9-8b719a1e8721 #fec434ea-631c-44c2-8769-0d222d34129f #313cdc75-40e0-4152-a47e-ee949e0091b7 #1642bbb7-e17c-4243-a572-8b0c8f214a99 #25911dca-b08d-48de-9889-fc0ca80d6914 #1a03cb00-8a13-494c-8e40-b327a4aab9bc"/>
@@ -559,7 +559,7 @@
                 outgoingExchangeItems="#eec24a18-9703-4118-af9d-bff1d689c20a #0722f880-fa21-437b-bfed-2618ab18b34f"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="90232d60-e87e-4ec9-92c4-564d9c2763d8" name="Manage States">
+              id="90232d60-e87e-4ec9-92c4-564d9c2763d8" name="Manage States" description="&lt;p>Runs this machine's TR88 seven-state machine: Stopped, Idle, Execute, Complete, Held, Suspended, Aborted. Accepts operator commands and line-control suspend and unsuspend. Reports abort and machine-state-complete on Machine Status.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="f8a77011-b57f-4120-b3a9-8e1e606ce403" name="Operator Commands In"
                 incomingExchangeItems="#a417654a-f7c5-48a4-a33a-58697f1bd246 #f1d7d2f4-7624-439e-92ec-3794e025b36c #e50eda49-8b6d-4ed8-b035-72b820dd8008 #609bf3a8-00ff-45c4-afed-8ce857c9e0a5 #3ae31cca-ff85-4a0e-9607-e9aca3d735b1 #838c535f-50db-4917-8c3b-5b4e3bb891ba"/>
@@ -579,42 +579,42 @@
                 id="fab73cd4-50ed-426a-a142-9eb6504d3b45" name="Machine Status Out"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="9c3d656a-dfc1-4911-99ac-a03420e3ccb6" name="Cap Bottle">
+              id="9c3d656a-dfc1-4911-99ac-a03420e3ccb6" name="Cap Bottle" description="&lt;p>Caps filled bottles and passes them to Label Bottle.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="a0226453-d264-431c-aebf-387bbfcb8e00" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="b4e9b9d4-a099-45f5-804f-d7f930f1384c" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="7ce05600-548d-4613-b54c-656436c463c3" name="Label Bottle">
+              id="7ce05600-548d-4613-b54c-656436c463c3" name="Label Bottle" description="&lt;p>Labels capped bottles and passes them to Inspect Bottle.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="b0457ae7-e606-4a4e-b6d9-85b46c35749e" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="7894170f-9977-4eb1-a613-b183944b9b42" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="7fc3e7c8-a431-429a-a4e1-09d333005b0b" name="Inspect Bottle">
+              id="7fc3e7c8-a431-429a-a4e1-09d333005b0b" name="Inspect Bottle" description="&lt;p>Inspects labeled bottles and passes them to Case Pack.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="e3270a89-d081-4dbe-bc23-feecda4a229e" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="4571f59c-8c76-4454-a2ca-d2f3a9f89fcf" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="72c4a9ea-02f0-4ffd-b54a-3f62c10ab90b" name="Case Pack">
+              id="72c4a9ea-02f0-4ffd-b54a-3f62c10ab90b" name="Case Pack" description="&lt;p>Packs inspected bottles into cases and passes them to Case Label.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="e0a61311-73db-4e36-ba05-ff81b15598e1" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="8a71a813-6810-4406-bd09-83da8272d729" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="4e6e61c2-08d2-404f-956d-17716592e96c" name="Case Label">
+              id="4e6e61c2-08d2-404f-956d-17716592e96c" name="Case Label" description="&lt;p>Labels cases and passes them to Receive Case.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="7ece6165-cb26-4e65-8a17-5b65d15991fd" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="8ebaee97-96ed-4d09-a13b-d8a40274acb9" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="0eb45c39-e095-4d56-a74c-ab000fe42a1d" name="Receive Case">
+              id="0eb45c39-e095-4d56-a74c-ab000fe42a1d" name="Receive Case" description="&lt;p>Receives finished cases at Case Receiver.&lt;/p>">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="2a4ab263-2774-4a4f-8281-df1b26893dc2" name="FIP 1"/>
           </ownedFunctions>
@@ -1049,7 +1049,7 @@
             source="#628de27a-3fbb-4fd4-9209-fc93726fe211" target="#3cbf0b3b-ffbc-4914-a533-4bdec56eb2d7"
             kind="FLOW"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="43f3ca86-31b0-4358-a2b3-88deab2da32f" name="Logical System">
+            id="43f3ca86-31b0-4358-a2b3-88deab2da32f" name="Logical System" description="&lt;p>Top-level logical system: the production line plus the master state-machine template.&lt;/p>">
           <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
               id="73acbc1a-a11b-4f67-8fde-c6af02dc6d15" name="InfeedLoad.FillingStation.MaterialFlow"
               source="#4e144a93-ca6c-42bb-aa84-85e3bfa5c6b3" target="#acb05471-5738-4fc7-aa95-e3aebabaf258"
@@ -1078,7 +1078,8 @@
               id="73df2e7d-ed81-44e0-91d9-9cbd34c031fe" targetElement="#d9113f53-bd75-4226-98fd-0b2f8a238657"
               sourceElement="#43f3ca86-31b0-4358-a2b3-88deab2da32f"/>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-              id="5c74d990-9098-48cf-a445-59182d69fa9a" name="Master TR88 Seven State ">
+              id="5c74d990-9098-48cf-a445-59182d69fa9a" name="Master TR88 Seven State "
+              description="&lt;p>Master template for the machine state machine. Each station's state machine was replicated from it, then customized. It is not in the material flow and has no exchanges.&lt;/p>">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="e82b2613-72ed-46a0-8843-5b74af966c73" targetElement="#c40e99f0-78a1-4f01-92ae-cc0e0338f1a9"
                 sourceElement="#5c74d990-9098-48cf-a445-59182d69fa9a"/>
@@ -1186,7 +1187,7 @@
             </ownedFeatures>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-              id="03639799-069b-44e6-a6a8-ad42f1707be9" name="Production Line">
+              id="03639799-069b-44e6-a6a8-ad42f1707be9" name="Production Line" description="&lt;p>The five-station bottling line. Bottles move from Bottle Pallet through Infeed Load, Filling, Capping, Labeling and Inspections, and Case Packing and Labeling to Case Receiver. Each station runs its own copy of the TR88 seven-state machine.&lt;/p>">
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="80fa77aa-c5af-4d63-b02f-052cbd4e060c"
                 name="Labeling and Inspections Station" abstractType="#c0532f43-dda5-4644-b7cd-0231cba4507b"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="0fa1be0c-ae2a-4f4d-96d5-6a7eb6455e73"
@@ -1198,7 +1199,8 @@
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="f0655f1c-b71c-457e-ae9a-b2c88b7db393"
                 name="Case Packing and Labeling" abstractType="#5bf724d8-5d99-4a0b-a865-3709942ba008"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="5bf724d8-5d99-4a0b-a865-3709942ba008" name="Case Packing and Labeling">
+                id="5bf724d8-5d99-4a0b-a865-3709942ba008" name="Case Packing and Labeling"
+                description="&lt;p>Packs inspected bottles into cases, labels the cases, and delivers them to Case Receiver.&lt;/p>">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="3048ef6e-cf51-4b8f-a7ce-c211875d3949" targetElement="#90232d60-e87e-4ec9-92c4-564d9c2763d8"
                   sourceElement="#5bf724d8-5d99-4a0b-a865-3709942ba008"/>
@@ -1318,7 +1320,7 @@
                   orientation="OUT" kind="FLOW"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="6660aa50-05ae-4b51-bdbc-9606e420dec2" name="Capping Station">
+                id="6660aa50-05ae-4b51-bdbc-9606e420dec2" name="Capping Station" description="&lt;p>Caps filled bottles and passes them to Labeling and Inspections.&lt;/p>">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="b1f719ec-fe46-40c5-a2c4-06301748833c" targetElement="#aedbf5a2-a315-43c7-8066-bdeae7d4bdf5"
                   sourceElement="#6660aa50-05ae-4b51-bdbc-9606e420dec2"/>
@@ -1435,7 +1437,8 @@
                   orientation="OUT" kind="FLOW"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="c0532f43-dda5-4644-b7cd-0231cba4507b" name="Labeling and Inspections Station">
+                id="c0532f43-dda5-4644-b7cd-0231cba4507b" name="Labeling and Inspections Station"
+                description="&lt;p>Labels and inspects capped bottles, then passes them to Case Packing and Labeling.&lt;/p>">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="a7393135-e9b7-42d4-a8e4-514552686814" targetElement="#a2f12199-7d28-4f13-b4e3-6337689486d9"
                   sourceElement="#c0532f43-dda5-4644-b7cd-0231cba4507b"/>
@@ -1555,7 +1558,7 @@
                   orientation="OUT" kind="FLOW"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="bcd6599d-8ba8-43bf-920f-13d1b810ae97" name="Filling Station">
+                id="bcd6599d-8ba8-43bf-920f-13d1b810ae97" name="Filling Station" description="&lt;p>Fills bottles received from Infeed Load and passes them to Capping Station.&lt;/p>">
               <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
                   id="74e8ca05-4fa4-48e7-8b8f-fac81590d16d" name="" constrainedElements="#bcd6599d-8ba8-43bf-920f-13d1b810ae97">
                 <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
@@ -1684,7 +1687,7 @@
                   orientation="OUT" kind="FLOW"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="529c290e-f4b1-474f-9000-4fd0e04f1252" name="Infeed Load">
+                id="529c290e-f4b1-474f-9000-4fd0e04f1252" name="Infeed Load" description="&lt;p>Receives bottles from Bottle Pallet and passes them to Filling Station.&lt;/p>">
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="819c3595-2529-40d5-a4c1-80dc87a62c3c" targetElement="#445fe798-4d9a-48ca-ad32-085f0630d90c"
                   sourceElement="#529c290e-f4b1-474f-9000-4fd0e04f1252"/>
@@ -1813,7 +1816,7 @@
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="e664c49c-0430-46ae-8662-fec20329b5af" name="Operator" actor="true"
-            human="true">
+            human="true" description="&lt;p>Human operator. Issues start, stop, hold, unhold, reset and clear to each machine over its Operator interface. The only actor that can issue clear, which is the only way out of Aborted.&lt;/p>">
           <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
               id="25582e5b-4c19-4c5d-bf68-edcd6c6f4766" name="" constrainedElements="#e664c49c-0430-46ae-8662-fec20329b5af">
             <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
@@ -1857,7 +1860,8 @@
           </ownedFeatures>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="5af96d98-13f5-47f5-8cef-a1e47893791d" name="Line Control" actor="true">
+            id="5af96d98-13f5-47f5-8cef-a1e47893791d" name="Line Control" actor="true"
+            description="&lt;p>Line-level supervisory actor. Receives each machine's abort and machine-state-complete reports on Machine Status. Sends suspend and unsuspend so a fault at one station does not back material up into others. It does not issue operator commands and cannot clear a fault.&lt;/p>">
           <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
               id="4389c197-fcdf-42bd-b9a9-1354ba6027eb" name="" constrainedElements="#5af96d98-13f5-47f5-8cef-a1e47893791d">
             <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
@@ -1917,7 +1921,8 @@
           </ownedFeatures>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="02c76ae5-444e-488e-b21e-9f1891068eaa" name="Bottle Pallet" actor="true">
+            id="02c76ae5-444e-488e-b21e-9f1891068eaa" name="Bottle Pallet" actor="true"
+            description="&lt;p>Source of unfilled bottles. Supplies bottles to Infeed Load.&lt;/p>">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="acdbf2b6-cd1b-4ac8-bee7-13cd360d6319" targetElement="#d7b04328-df47-41bc-be4f-169076179b33"
               sourceElement="#02c76ae5-444e-488e-b21e-9f1891068eaa"/>
@@ -1930,7 +1935,8 @@
           </ownedFeatures>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="9360338b-4578-4866-b10f-a937bbfb545c" name="Case Receiver" actor="true">
+            id="9360338b-4578-4866-b10f-a937bbfb545c" name="Case Receiver" actor="true"
+            description="&lt;p>Receives finished cases from Case Packing and Labeling.&lt;/p>">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="8764526d-6a48-474e-84a8-0f6faf64ea3d" targetElement="#0eb45c39-e095-4d56-a74c-ab000fe42a1d"
               sourceElement="#9360338b-4578-4866-b10f-a937bbfb545c"/>
