@@ -628,7 +628,7 @@
               source="#6f82835b-497c-4abb-927f-f8b725cadc5f" exchangedItems="#7f28128f-09c6-4a54-8245-af317e947e89 #0fd528a6-4acd-4400-96de-31596573ab75"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="88e47106-6766-4687-bd80-bc15d7c4f17f" name="Machine Status" target="#1af68d62-5199-4677-a46c-d5006a5e7f21"
-              source="#f4856bc4-043a-460f-a518-9ac2b2afff92" exchangedItems="#bfaca94b-ca5e-423b-8367-61f6ba07ac9a #1c6e2719-a622-40e2-a5d6-81d7ca48d4de"/>
+              source="#f4856bc4-043a-460f-a518-9ac2b2afff92" exchangedItems="#bfaca94b-ca5e-423b-8367-61f6ba07ac9a #1c6e2719-a622-40e2-a5d6-81d7ca48d4de #33c047e7-97a2-43f2-992f-2e835ca557f3 #ff1bd361-94ec-4080-a84c-e5e1dcfe3a7b #146ee40e-93bb-4ca0-a020-726a7e7c6681"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="5abd04cd-b5e3-4d13-a264-202b1cae0ffb" name="FillingStation.LineControl"
               target="#c56ac10f-3e01-405e-b3cb-bdd2a1498b4d" source="#e3752f00-fed4-4c30-880f-09f6329a1054"
@@ -636,7 +636,7 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="fccadcad-fb7e-4a4a-a605-f01c9251fa2d" name="FillingStation.MachineStatus"
               target="#8b8251a5-90fc-4353-8bdb-574f19250bcc" source="#7b8003ae-2044-43ca-9044-19674ae2b167"
-              exchangedItems="#96b7ac36-8a70-4b0b-a7d2-7761e65dd035 #9a4a5953-e8c3-4216-86fd-813498e514c5"/>
+              exchangedItems="#96b7ac36-8a70-4b0b-a7d2-7761e65dd035 #9a4a5953-e8c3-4216-86fd-813498e514c5 #3d5fd738-47ea-4375-91da-d9c6855a096b #7411e17d-0528-4f4c-9376-8f18b48b8755 #8b33eca7-546c-4072-bb52-917254cabaa8"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="b575dc55-891b-43ea-8809-91ff4a628138" name="FillingStation.OperatorControl"
               target="#a4d2a45c-537d-43d3-aa2b-5f308ec75926" source="#25156988-82c1-4e84-904f-58b3c38077f9"
@@ -676,7 +676,7 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="263eee02-715f-463f-915b-294c3a9a8c78" name="CappingStation.MachineStatus"
               target="#7e7fb67b-a8b0-4d57-8286-a01b7860760f" source="#ec08f94f-ee71-44ac-ae9d-37fb225e3558"
-              exchangedItems="#bb3c0e02-54dd-4717-8d6d-2e38254dfb34 #07b618d3-86ea-487a-8368-76ff24b4a871"/>
+              exchangedItems="#bb3c0e02-54dd-4717-8d6d-2e38254dfb34 #07b618d3-86ea-487a-8368-76ff24b4a871 #75c199d1-96e5-4ba7-8a97-d88f336c5bcc #a4e27abd-c683-4db2-9e5b-0519e2306c36 #9a59e651-0a7b-4c56-ab67-acb4f197c249"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="2ee2cf12-9243-4b0b-8cba-2b61d5e981a8" name="LabelingStation.OperatorControl"
               target="#f3cefc53-f55c-42d4-a24c-a77712b37a4f" source="#279ac076-3284-4b31-8c82-0c68a5c3f675"
@@ -688,7 +688,7 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="4244d4e9-f495-4a6a-afd8-7a253b18806e" name="LabelingStation.MachineStatus"
               target="#9f556d8b-21c3-4057-8c5c-fcb9fcbdf712" source="#b61fdfef-d013-4eac-a9b3-300292f7f9bd"
-              exchangedItems="#eec24a18-9703-4118-af9d-bff1d689c20a #0722f880-fa21-437b-bfed-2618ab18b34f"/>
+              exchangedItems="#eec24a18-9703-4118-af9d-bff1d689c20a #0722f880-fa21-437b-bfed-2618ab18b34f #e0dc2d3c-1492-4105-adc5-8f8ad6b0f68f #9c3c5002-7414-4ffc-8719-53e0d9e3269b #f1572daa-dabe-4e72-9920-5aa3feafe324"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="17c1bb45-bfdd-4125-af90-a262f7a11fe1" name="CasePackingStation.LineControl"
               target="#a0629f7e-d1ef-4fde-8ab7-b8354a6d3b09" source="#fe3680c5-f759-42ca-addf-1f54bd352917"
@@ -696,7 +696,7 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="cf4cd311-6e07-4114-b40e-e0c4819f302c" name="CasePackingStation.MachineStatus"
               target="#550a7f3e-5a93-4277-b6ed-d4b3c8ac643d" source="#75eabd46-0d03-4acf-b5cc-bc3ffdbd90f4"
-              exchangedItems="#f877463b-45a0-4311-8bb8-fa7703518ecf #594f223c-4a68-47c0-91db-72839b8792f1"/>
+              exchangedItems="#f877463b-45a0-4311-8bb8-fa7703518ecf #594f223c-4a68-47c0-91db-72839b8792f1 #3d0bd616-ed8f-47f3-b366-005fa291081c #df132b68-95c7-4c69-995a-ae91929ddeae #0fe66b58-6768-484e-acd6-3d46478ddec5"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="c8ee1594-34b2-4674-a2eb-6436e91fef2c" name="CasePackingStation.OperatorControl"
               target="#f8a77011-b57f-4120-b3a9-8e1e606ce403" source="#9abd80db-93c6-4c26-956c-f76900fc3f6d"
