@@ -1088,6 +1088,14 @@
               <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
                   id="5c5ab4f8-7238-4995-b890-813c0bf634a2" name="Default Region"
                   involvedStates="#c943619b-a930-4fbd-bf6f-cd510db794ce #a09d6923-2fd4-4159-8163-891a4f4bca5e #b1bf0b6d-48c7-48b7-8bcc-529ce617fe77 #d03f2477-24d3-4585-b10f-c847928a340d #1aa700b9-5d61-4e0c-82cf-a923352190df #5fef6834-a840-485f-a672-093cc2896514 #f10d60fc-e18a-4026-94af-b9e6a1af0e62">
+                <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
+                    id="06b4342d-c9db-4515-8d1e-2b09ce0c8475" name="">
+                  <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
+                      id="b8257b4f-7462-42fb-b0b1-1fb2e8576fbc">
+                    <bodies></bodies>
+                    <languages>capella:linkedText</languages>
+                  </ownedSpecification>
+                </ownedConstraints>
                 <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
                     id="c943619b-a930-4fbd-bf6f-cd510db794ce" name="Stopped" description="&lt;p>Per ANSI/ISA-TR88.00.02: the machine is halted and not ready to produce. This is the default state after power-up or a full Stop, before any Reset has been issued. No PackTags/recipe data are being processed.&lt;/p>">
                   <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
@@ -1815,8 +1823,8 @@
           </ownedLogicalComponents>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="e664c49c-0430-46ae-8662-fec20329b5af" name="Operator" actor="true"
-            human="true" description="&lt;p>Human operator. Issues start, stop, hold, unhold, reset and clear to each machine over its Operator interface. The only actor that can issue clear, which is the only way out of Aborted.&lt;/p>">
+            id="e664c49c-0430-46ae-8662-fec20329b5af" name="Operator" description="&lt;p>Human operator. Issues start, stop, hold, unhold, reset and clear to each machine over its Operator interface. The only actor that can issue clear, which is the only way out of Aborted.&lt;/p>"
+            actor="true" human="true">
           <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
               id="25582e5b-4c19-4c5d-bf68-edcd6c6f4766" name="" constrainedElements="#e664c49c-0430-46ae-8662-fec20329b5af">
             <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
@@ -1860,8 +1868,8 @@
           </ownedFeatures>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="5af96d98-13f5-47f5-8cef-a1e47893791d" name="Line Control" actor="true"
-            description="&lt;p>Line-level supervisory actor. Receives each machine's abort and machine-state-complete reports on Machine Status. Sends suspend and unsuspend so a fault at one station does not back material up into others. It does not issue operator commands and cannot clear a fault.&lt;/p>">
+            id="5af96d98-13f5-47f5-8cef-a1e47893791d" name="Line Control" description="&lt;p>Line-level supervisory actor. Receives each machine's abort and machine-state-complete reports on Machine Status. Sends suspend and unsuspend so a fault at one station does not back material up into others. It does not issue operator commands and cannot clear a fault.&lt;/p>"
+            actor="true">
           <ownedConstraints xsi:type="org.polarsys.capella.core.data.capellacore:Constraint"
               id="4389c197-fcdf-42bd-b9a9-1354ba6027eb" name="" constrainedElements="#5af96d98-13f5-47f5-8cef-a1e47893791d">
             <ownedSpecification xsi:type="org.polarsys.capella.core.data.information.datavalue:OpaqueExpression"
@@ -1921,8 +1929,8 @@
           </ownedFeatures>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="02c76ae5-444e-488e-b21e-9f1891068eaa" name="Bottle Pallet" actor="true"
-            description="&lt;p>Source of unfilled bottles. Supplies bottles to Infeed Load.&lt;/p>">
+            id="02c76ae5-444e-488e-b21e-9f1891068eaa" name="Bottle Pallet" description="&lt;p>Source of unfilled bottles. Supplies bottles to Infeed Load.&lt;/p>"
+            actor="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="acdbf2b6-cd1b-4ac8-bee7-13cd360d6319" targetElement="#d7b04328-df47-41bc-be4f-169076179b33"
               sourceElement="#02c76ae5-444e-488e-b21e-9f1891068eaa"/>
@@ -1935,8 +1943,8 @@
           </ownedFeatures>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-            id="9360338b-4578-4866-b10f-a937bbfb545c" name="Case Receiver" actor="true"
-            description="&lt;p>Receives finished cases from Case Packing and Labeling.&lt;/p>">
+            id="9360338b-4578-4866-b10f-a937bbfb545c" name="Case Receiver" description="&lt;p>Receives finished cases from Case Packing and Labeling.&lt;/p>"
+            actor="true">
           <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
               id="8764526d-6a48-474e-84a8-0f6faf64ea3d" targetElement="#0eb45c39-e095-4d56-a74c-ab000fe42a1d"
               sourceElement="#9360338b-4578-4866-b10f-a937bbfb545c"/>
